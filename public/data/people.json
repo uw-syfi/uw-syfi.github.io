@@ -241,6 +241,26 @@
       "email": "cyulin@cs.washington.edu",
       "website": "https://cylinbao.github.io/",
       "image": "/img/people/chienyu.jpg"
+    },
+    {
+      "id": "yiyu-liu",
+      "name": "Yiyu Liu",
+      "degree": "Undergraduate",
+      "year": "2024",
+      "current_position": "PhD Student at Harvard University",
+      "email": "liu_yiyu@sjtu.edu.cn",
+      "website": "https://lau.yeeyu.org/",
+      "image": "/img/people/yiyu.png"
+    },
+    {
+      "id": "yilong-zhao",
+      "name": "Yilong Zhao",
+      "degree": "Undergraduate",
+      "year": "2023",
+      "current_position": "PhD Student at UC Berkeley",
+      "email": "yilongzhao@berkeley.edu",
+      "website": "https://happierpig.github.io/",
+      "image": "/img/people/ylzhao.jpg"
     }
   ]
 }
