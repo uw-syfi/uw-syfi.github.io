@@ -1,0 +1,246 @@
+{
+  "directors": [
+    {
+      "id": "baris-kasikci",
+      "name": "Baris Kasikci",
+      "title": "Associate Professor",
+      "email": "baris@cs.washington.edu",
+      "website": "https://homes.cs.washington.edu/~baris/",
+      "image": "/img/people/baris.jpeg"
+    },
+    {
+      "id": "stephanie-wang",
+      "name": "Stephanie Wang",
+      "title": "Assistant Professor",
+      "email": "smwang@cs.washington.edu",
+      "website": "https://stephanie-wang.github.io/",
+      "image": "/img/people/stephanie.jpg"
+    }
+  ],
+  "affiliated_faculty": [
+    {
+      "id": "luis-ceze",
+      "name": "Luis Ceze",
+      "title": "Professor",
+      "email": "luisceze@cs.washington.edu",
+      "website": "https://homes.cs.washington.edu/~luisceze/",
+      "image": "/img/people/ceze.jpg"
+    },
+    {
+      "id": "arvind-krishnamurthy",
+      "name": "Arvind Krishnamurthy",
+      "title": "Professor",
+      "email": "arvind@cs.washington.edu",
+      "website": "https://homes.cs.washington.edu/~arvind/",
+      "image": "/img/people/arvind.png"
+    },
+    {
+      "id": "tom-anderson",
+      "name": "Tom Anderson",
+      "title": "Professor",
+      "email": "tom@cs.washington.edu",
+      "website": "https://homes.cs.washington.edu/~tom/",
+      "image": "/img/people/tom.jpg"
+    },
+    {
+      "id": "ratul-mahajan",
+      "name": "Ratul Mahajan",
+      "title": "Associate Professor",
+      "email": "ratul@cs.washington.edu",
+      "website": "https://homes.cs.washington.edu/~ratul/",
+      "image": "/img/people/ratul.jpeg"
+    },
+    {
+      "id": "simon-peter",
+      "name": "Simon Peter",
+      "title": "Associate Professor",
+      "email": "simpeter@cs.washington.edu",
+      "website": "https://homes.cs.washington.edu/~simpeter/",
+      "image": "/img/people/simon.jpeg"
+    },
+    {
+      "id": "banghua-zhu",
+      "name": "Banghua Zhu",
+      "title": "Assistant Professor",
+      "email": "banghua@cs.washington.edu",
+      "website": "https://banghuazhu.github.io/",
+      "image": "/img/people/banghua.jpg"
+    }
+  ],
+  "postdocs": [
+    {
+      "id": "xiangyu-gao",
+      "name": "Xiangyu Gao",
+      "email": "xiangyug@cs.washington.edu",
+      "website": "https://xiangyug.github.io/",
+      "image": "/img/people/xiangyu.jpg"
+    },
+    {
+      "id": "rohan-kadekodi",
+      "name": "Rohan Kadekodi",
+      "email": "kadekodirohan@gmail.com",
+      "website": "https://scholar.google.com/citations?user=IVnxMOkAAAAJ&hl=en",
+      "image": "/img/people/rohan.jpeg"
+    },
+    {
+      "id": "huihong-shi",
+      "name": "Huihong Shi",
+      "email": "shihh@smail.nju.edu.cn",
+      "website": "https://shihuihong214.github.io/huihong.shi/",
+      "image": "/img/people/huihong.jpg"
+    }
+  ],
+  "phd_students": [
+    {
+      "id": "maddie-burbage",
+      "name": "Maddie Burbage",
+      "email": "mburbage@cs.washington.edu",
+      "website": "https://maddieburbage.github.io/",
+      "image": "/img/people/maddie.png"
+    },
+    {
+      "id": "megan-frisella",
+      "name": "Megan Frisella",
+      "email": "mfris@cs.washington.edu",
+      "website": "https://www.linkedin.com/in/megan-frisella/",
+      "image": "/img/people/megan.png"
+    },
+    {
+      "id": "steven-gao",
+      "name": "Steven Gao",
+      "email": "me@stevengao.net",
+      "website": "https://stevengao.net/",
+      "image": "/img/people/default.jpg"
+    },
+    {
+      "id": "yufei-gao",
+      "name": "Yufei Gao",
+      "email": "ygao2306@gmail.com",
+      "image": "/img/people/yufei.jpeg"
+    },
+    {
+      "id": "matthew-giordano",
+      "name": "Matthew Giordano",
+      "email": "mgiordan@cs.washington.edu",
+      "website": "https://homes.cs.washington.edu/~mgiordan/",
+      "image": "/img/people/matthew.jpg"
+    },
+    {
+      "id": "yile-gu",
+      "name": "Michael Gu",
+      "email": "yilegu@cs.washington.edu",
+      "website": "https://ikace.github.io/",
+      "image": "/img/people/yilegu.jpg"
+    },
+    {
+      "id": "keisuke-kamahori",
+      "name": "Keisuke Kamahori",
+      "email": "kamahori@cs.washington.edu",
+      "website": "https://kamahori.org/",
+      "image": "/img/people/keisuke.png"
+    },
+    {
+      "id": "katie-lim",
+      "name": "Katie Lim",
+      "email": "katielim@cs.washington.edu",
+      "website": "https://homes.cs.washington.edu/~katielim/",
+      "image": "/img/people/katie.png"
+    },
+    {
+      "id": "marina-minkin",
+      "name": "Marina Minkin",
+      "email": "minkin@umich.edu",
+      "website": "https://web.eecs.umich.edu/~minkin/",
+      "image": "/img/people/marina.jpeg"
+    },
+    {
+      "id": "haoran-peng",
+      "name": "Haoran Peng",
+      "email": "hrpeng@cs.washington.edu",
+      "website": "https://hurrypeng.cc/",
+      "image": "/img/people/haoran.webp"
+    },
+    {
+      "id": "tian-tang",
+      "name": "Tian Tang",
+      "email": "tian21@cs.washington.edu",
+      "website": "https://tang-t21.github.io/",
+      "image": "/img/people/tian.png"
+    },
+    {
+      "id": "dedong-xie",
+      "name": "Dedong Xie",
+      "email": "dedongx@cs.washington.edu",
+      "website": "https://ddxxdd-code.github.io/",
+      "image": "/img/people/dedong.jpg"
+    },
+    {
+      "id": "zihao-ye",
+      "name": "Zihao Ye",
+      "email": "zhye@cs.washington.edu",
+      "website": "https://homes.cs.washington.edu/~zhye/",
+      "image": "/img/people/zhye.png"
+    },
+    {
+      "id": "kan-zhu",
+      "name": "Kan Zhu",
+      "year": "",
+      "email": "kanzhu@cs.washington.edu",
+      "website": "https://kanzhu.netlify.app/",
+      "image": "/img/people/kanzhu.jpg"
+    }
+  ],
+  "students": [
+    {
+      "id": "zhan-jin",
+      "name": "Zhan Jin",
+      "level": "Undergraduate",
+      "email": "zhanjin@cs.washington.edu",
+      "image": "/img/people/zhan.jpeg"
+    },
+    {
+      "id": "yi-pan",
+      "name": "Yi Pan",
+      "level": "Undergraduate",
+      "email": "conlesspan@sjtu.edu.cn",
+      "website": "https://conless.dev/",
+      "image": "/img/people/yipan.png"
+    },
+    {
+      "id": "ziren-wang",
+      "name": "Ziren Wang",
+      "level": "Undergraduate",
+      "email": "zirenw2@uw.edu",
+      "image": "/img/people/ziren.jpeg"
+    },
+    {
+      "id": "yibo-wu",
+      "name": "Yibo Wu",
+      "level": "Undergraduate",
+      "email": "yibowu@cs.washington.edu",
+      "image": "/img/people/yibo.jpg"
+    }
+  ],
+  "alumni": [
+    {
+      "id": "yigong-hu",
+      "name": "Prof. Yigong Hu",
+      "degree": "Postdoc",
+      "year": "2025",
+      "current_position": "Assistant Professor at Boston University",
+      "email": "gongxini@cs.washington.edu",
+      "website": "https://yigonghu.github.io/",
+      "image": "/img/people/yigong.jpeg"
+    },
+    {
+      "id": "chienyu-lin",
+      "name": "Dr. Chien-Yu Lin",
+      "degree": "PhD",
+      "year": "2025",
+      "current_position": "Research Scientist at Meta",
+      "email": "cyulin@cs.washington.edu",
+      "website": "https://cylinbao.github.io/",
+      "image": "/img/people/chienyu.jpg"
+    }
+  ]
+}

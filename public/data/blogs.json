@@ -1,0 +1,18 @@
+[
+  {
+    "id": "future-disaggregated-ai",
+    "title": "The Future of Disaggregated AI: Our Vision",
+    "excerpt": "Exploring how disaggregated AI models will transform the landscape of machine learning infrastructure and enable more sustainable computing.",
+    "date": "December 15, 2024",
+    "image": "https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
+    "link": "/blog/future-disaggregated-ai"
+  },
+  {
+    "id": "icml-2024-journey",
+    "title": "ICML 2024: Our Journey and Key Insights",
+    "excerpt": "Reflecting on our experience at ICML 2024 and the exciting conversations around the future of AI systems architecture.",
+    "date": "November 28, 2024",
+    "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
+    "link": "/blog/icml-2024-journey"
+  }
+]

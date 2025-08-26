@@ -1,0 +1,14 @@
+[
+  {
+    "id": "llm-serving",
+    "title": "LLM Serving",
+    "description": "Developing high-performance LLM serving systems. Highlight projects: Nanoflow.",
+    "icon": "zap"
+  },
+  {
+    "id": "efficient-llm-inference",
+    "title": "Efficient LLM Inference",
+    "description": "Developing efficient algorithms, kernels and quantization techniques for LLM inference. Highlight projects: Flashinfer, Atom, Quest.",
+    "icon": "code"
+  }
+]

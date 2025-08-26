@@ -1,0 +1,211 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(0, 0%, 100%);
+  --foreground: hsl(210, 40%, 20%);
+  --muted: hsl(210, 40%, 96%);
+  --muted-foreground: hsl(215, 16%, 47%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(210, 40%, 20%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(210, 40%, 20%);
+  --border: hsl(214, 32%, 91%);
+  --input: hsl(214, 32%, 91%);
+  --primary: hsl(217, 91%, 60%);
+  --primary-foreground: hsl(210, 40%, 98%);
+  --secondary: hsl(210, 40%, 96%);
+  --secondary-foreground: hsl(222, 84%, 5%);
+  --accent: hsl(210, 40%, 96%);
+  --accent-foreground: hsl(222, 84%, 5%);
+  --destructive: hsl(0, 84%, 60%);
+  --destructive-foreground: hsl(210, 40%, 98%);
+  --ring: hsl(210, 40%, 20%);
+  --radius: 0.5rem;
+  
+  /* Custom UW colors */
+  --uw-purple: hsl(269, 100%, 35%);
+  --uw-gray: hsl(215, 16%, 47%);
+  --uw-gold: hsl(45, 100%, 51%);
+  --uw-slate: hsl(215, 25%, 27%);
+}
+
+.dark {
+  --background: hsl(222, 84%, 5%);
+  --foreground: hsl(210, 40%, 98%);
+  --muted: hsl(217, 33%, 17%);
+  --muted-foreground: hsl(215, 20%, 65%);
+  --popover: hsl(222, 84%, 5%);
+  --popover-foreground: hsl(210, 40%, 98%);
+  --card: hsl(222, 84%, 5%);
+  --card-foreground: hsl(210, 40%, 98%);
+  --border: hsl(217, 33%, 17%);
+  --input: hsl(217, 33%, 17%);
+  --primary: hsl(217, 91%, 60%);
+  --primary-foreground: hsl(210, 40%, 98%);
+  --secondary: hsl(217, 33%, 17%);
+  --secondary-foreground: hsl(210, 40%, 98%);
+  --accent: hsl(217, 33%, 17%);
+  --accent-foreground: hsl(210, 40%, 98%);
+  --destructive: hsl(0, 63%, 31%);
+  --destructive-foreground: hsl(210, 40%, 98%);
+  --ring: hsl(212, 100%, 50%);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+    font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  }
+}
+
+/* UW color utilities */
+.text-uw-purple {
+  color: var(--uw-purple);
+}
+
+.text-uw-gray {
+  color: var(--uw-gray);
+}
+
+.text-uw-gold {
+  color: var(--uw-gold);
+}
+
+.text-uw-slate {
+  color: var(--uw-slate);
+}
+
+.bg-uw-purple {
+  background-color: var(--uw-purple);
+}
+
+.bg-uw-gray {
+  background-color: var(--uw-gray);
+}
+
+.bg-uw-gold {
+  background-color: var(--uw-gold);
+}
+
+.bg-uw-slate {
+  background-color: var(--uw-slate);
+}
+
+.border-uw-purple {
+  border-color: var(--uw-purple);
+}
+
+.hover\:text-uw-purple:hover {
+  color: var(--uw-purple);
+}
+
+.hover\:text-uw-gold:hover {
+  color: var(--uw-gold);
+}
+
+.hover\:bg-uw-purple:hover {
+  background-color: var(--uw-purple);
+}
+
+/* Gradient backgrounds */
+.bg-gradient-uw {
+  background: var(--uw-purple);
+}
+
+/* Smooth transitions */
+.transition-colors {
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+
+.transition-shadow {
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+/* Custom hover effects */
+.hover\:bg-blue-50:hover {
+  background-color: hsl(214, 100%, 97%);
+}
+
+/* Blog post content styling */
+.blog-content h1 {
+  @apply text-3xl font-bold text-uw-slate mt-8 mb-6 border-b-2 border-uw-purple pb-3;
+}
+
+.blog-content h2 {
+  @apply text-2xl font-bold text-uw-slate mt-8 mb-4 border-b border-gray-200 pb-2;
+}
+
+.blog-content h3 {
+  @apply text-xl font-semibold text-uw-slate mt-6 mb-3;
+}
+
+.blog-content h4 {
+  @apply text-lg font-medium text-uw-slate mt-4 mb-2;
+}
+
+.blog-content p {
+  @apply mb-4 leading-relaxed text-uw-gray;
+}
+
+.blog-content ul {
+  @apply mb-4 pl-6 space-y-2;
+}
+
+.blog-content ol {
+  @apply mb-4 pl-6 space-y-2 list-decimal;
+}
+
+.blog-content li {
+  @apply list-disc text-uw-gray leading-relaxed;
+}
+
+.blog-content ol li {
+  @apply list-decimal;
+}
+
+.blog-content strong {
+  @apply font-semibold text-uw-slate;
+}
+
+.blog-content em {
+  @apply italic text-uw-gray;
+}
+
+.blog-content blockquote {
+  @apply border-l-4 border-uw-purple pl-4 my-6 italic text-uw-gray bg-slate-50 py-4 rounded-r-lg;
+}
+
+.blog-content code {
+  @apply bg-slate-100 text-uw-purple px-2 py-1 rounded text-sm font-mono;
+}
+
+.blog-content pre {
+  @apply bg-slate-100 p-4 rounded-lg overflow-x-auto my-6;
+}
+
+.blog-content pre code {
+  @apply bg-transparent px-0 py-0;
+}
+
+.blog-content a {
+  @apply text-blue-600 hover:text-blue-500 underline font-medium;
+}
+
+.blog-content img {
+  @apply rounded-lg shadow-md my-6 max-w-full h-auto;
+}
+
+.blog-content hr {
+  @apply my-8 border-gray-200;
+}
+
+/* Scrolling behavior */
+html {
+  scroll-behavior: smooth;
+}
