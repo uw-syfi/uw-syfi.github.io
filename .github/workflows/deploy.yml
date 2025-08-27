@@ -37,7 +37,7 @@ jobs:
       - name: Update gh-pages branch
         run: |
           # Remove all files except .git and dist/
-          find . -mindepth 1 -not -path './.git*' -not -path './dist*' -delete
+          find . -mindepth 1 -not -path './.git' -not -path './.git/*' -not -path './dist' -not -path './dist/*' -delete
           # Move built files to root
           mv dist/* .
           rmdir dist
