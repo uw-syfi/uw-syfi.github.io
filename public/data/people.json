@@ -250,7 +250,7 @@
       "current_position": "PhD Student at Harvard University",
       "email": "liu_yiyu@sjtu.edu.cn",
       "website": "https://lau.yeeyu.org/",
-      "image": "/img/people/yiyu.png"
+      "image": "/img/people/yiyu.jpg"
     },
     {
       "id": "yilong-zhao",
@@ -261,6 +261,15 @@
       "email": "yilongzhao@berkeley.edu",
       "website": "https://happierpig.github.io/",
       "image": "/img/people/ylzhao.jpg"
+    },
+    {
+      "id": "yixin-dong",
+      "name": "Yixin Dong",
+      "degree": "Undergraduate",
+      "year": "2023",
+      "current_position": "PhD Student at CMU",
+      "email": "yixind@andrew.cmu.edu",
+      "image": "/img/people/yixin.png"
     }
   ]
 }
