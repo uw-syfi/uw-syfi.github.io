@@ -1,0 +1,29 @@
+[
+  {
+    "id": "nanoflow",
+    "title": "NanoFlow: Towards Optimal Large Language Model Serving Throughput",
+    "authors": "Kan Zhu, Yufei Gao, Yilong Zhao, Liangyu Zhao, Gefei Zuo, Yile Gu, Dedong Xie, Tian Tang, Qinyu Xu, Zihao Ye, Keisuke Kamahori, Chien-Yu Lin, Ziren Wang, Stephanie Wang, Arvind Krishnamurthy, Baris Kasikci",
+    "venue": "Symposium on Operating Systems Design and Implementation. (OSDI)",
+    "year": "2025",
+    "pdf": "https://arxiv.org/abs/2408.12757v1",
+    "code": "https://github.com/efeslab/Nanoflow"
+  },
+  {
+    "id": "flashinfer",
+    "title": "FlashInfer: Efficient and Customizable Attention Engine for LLM Inference Serving",
+    "authors": "Zihao Ye, Lequn Chen, Ruihang Lai, Wuwei Lin, Yineng Zhang, Stephanie Wang, Tianqi Chen, Baris Kasikci, Vinod Grover, Arvind Krishnamurthy, Luis Ceze",
+    "venue": "Annual Conference on Machine Learning and Systems. (MLSys). <strong>Best Paper Award. </strong>",
+    "year": "2025",
+    "pdf": "https://arxiv.org/abs/2501.01005",
+    "code": "https://github.com/flashinfer-ai/flashinfer"
+  },
+  {
+    "id": "fiddler",
+    "title": "Fiddler: CPU-GPU Orchestration for Fast Inference of Mixture-of-Experts Models",
+    "authors": "Keisuke Kamahori, Tian Tang, Yile Gu, Kan Zhu, Baris Kasikci",
+    "venue": "International Conference on Learning Representations. (ICLR)",
+    "year": "2025",
+    "pdf": "https://arxiv.org/pdf/2402.07033",
+    "code": "https://github.com/efeslab/fiddler"
+  }
+]

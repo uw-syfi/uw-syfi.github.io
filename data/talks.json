@@ -1,0 +1,11 @@
+[
+  {
+    "id": "yeonju-ro",
+    "title": "Guest Speaker: Yeonju Ro (UT Austin)",
+    "location": "University of Washington, Seattle",
+    "date": "July 18, 2025",
+    "abstract": "LLM inference is becoming increasingly challenging as models grow in architectural complexity and are expected to handle ever-longer input contexts. Architectures like Mixture of Experts (MoE) introduce conditional computation, leading to irregular execution patterns and inefficiencies in memory usage and batching. Meanwhile, context windows often span hundreds of thousands of tokens—driven by bursty inputs and prolonged sessions—straining memory and compute resources, particularly in Transformer layers. To address these challenges, we explore the use of late binding techniques for adaptive serving. In Read-ME, we defer batching and scheduling decisions until after routing paths are computed. Unlike conventional layerwise routers, our proposed decoupled Read-ME router supports precomputation of expert assignments, enabling informed scheduling. This allows for expert-aware batching that aligns with routing patterns, significantly boosting MoE serving throughput. Next, we explore architectural late binding to address the compute and memory overhead of long-context inference. In DSLA-Serve, we progressively convert Transformer layers into Dual-State Linear Attention (DSLA) layers—a new linear attention architecture. This conversion is guided by a sensitivity-based layer ordering and adapts to system load at inference time, replacing more layers as needed to balance efficiency and accuracy.",
+    "speakerBio": "Yeonju Ro is a Ph.D. student at the University of Texas at Austin, co-advised by Professors Aditya Akella and Atlas Wang. Her research focuses on systems for machine learning, algorithm–system co-design, and applying machine learning to systems problems. She has worked at Microsoft Azure, Meta, HP Labs, and Samsung Research. She is a recipient of the 2024 IBM PhD Fellowship.",
+    "homepage": "https://sites.google.com/view/hey-yeonju"
+  }
+]
