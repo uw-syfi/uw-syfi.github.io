@@ -6,10 +6,19 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
 
 jobs:
   deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -27,23 +36,14 @@ jobs:
       - name: Build static website
         run: npm run build
       
-      - name: Setup gh-pages branch
-        run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git fetch origin gh-pages || git checkout --orphan gh-pages
-          git checkout gh-pages || git checkout -b gh-pages
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
       
-      - name: Update gh-pages branch
-        run: |
-          # Remove all files except .git and dist/
-          find . -mindepth 1 -not -path './.git' -not -path './.git/*' -not -path './dist' -not -path './dist/*' -delete
-          # Move built files to root
-          mv dist/* .
-          rmdir dist
-          # Add and commit
-          git add .
-          git diff --staged --quiet || git commit -m "Update gh-pages with latest build"
-      
-      - name: Push to gh-pages branch
-        run: git push origin gh-pages
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './dist'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
