@@ -9,22 +9,50 @@ export default function RollingGallery({ className = '' }: RollingGalleryProps) 
   const { getAssetPath } = useBasePath();
   const [currentIndex, setCurrentIndex] = useState(0);
   const [imagesLoaded, setImagesLoaded] = useState<boolean[]>([]);
+  const [galleryImages, setGalleryImages] = useState<string[]>([]);
   
-  const galleryImages = [
-    '/img/gallery/IMG_3584.jpeg',
-    '/img/gallery/IMG_3667.jpg',
-    '/img/gallery/IMG_6761.jpg',
-    '/img/gallery/IMG_7847 (1).jpg',
-    '/img/gallery/IMG_7891 (1).jpg',
-    '/img/gallery/IMG_8614.jpg'
-  ];
-
+  // Dynamically scan all images from the gallery directory
   useEffect(() => {
-    // Initialize loaded state
-    setImagesLoaded(new Array(galleryImages.length).fill(false));
+    const scanGalleryImages = async () => {
+      // Fetch the gallery directory listing
+      const response = await fetch('/img/gallery/');
+      if (!response.ok) {
+        throw new Error('Failed to fetch gallery directory');
+      }
+      
+      const html = await response.text();
+      const parser = new DOMParser();
+      const doc = parser.parseFromString(html, 'text/html');
+      
+      // Extract image file names from the directory listing
+      const links = doc.querySelectorAll('a[href]');
+      const imageFiles: string[] = [];
+      
+      links.forEach(link => {
+        const href = link.getAttribute('href');
+        if (href && /\.(jpg|jpeg|png|gif|webp)$/i.test(href)) {
+          imageFiles.push(`/img/gallery/${href}`);
+        }
+      });
+      
+      setGalleryImages(imageFiles);
+    };
+    
+    scanGalleryImages().catch(error => {
+      console.error('Failed to scan gallery images:', error);
+    });
   }, []);
 
   useEffect(() => {
+    // Initialize loaded state when gallery images are loaded
+    if (galleryImages.length > 0) {
+      setImagesLoaded(new Array(galleryImages.length).fill(false));
+    }
+  }, [galleryImages]);
+
+  useEffect(() => {
+    if (galleryImages.length === 0) return;
+    
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % galleryImages.length);
     }, 4000); // Change image every 4 seconds
@@ -49,7 +77,7 @@ export default function RollingGallery({ className = '' }: RollingGalleryProps) 
 
   return (
     <div className={`w-full h-full ${className}`}>
-      {galleryImages.map((image, index) => (
+      {galleryImages.length > 0 && galleryImages.map((image, index) => (
         <div
           key={image}
           className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${

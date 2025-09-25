@@ -38,7 +38,7 @@ export default function Home() {
         <People />
         <Publications />
         <Blogs />
-        <Talks />
+        <Talks limit={1} />
       </main>
       <Footer />
     </div>

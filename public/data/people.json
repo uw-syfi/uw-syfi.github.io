@@ -106,6 +106,13 @@
       "image": "/img/people/megan.png"
     },
     {
+      "id": "hongtao-zhang",
+      "name": "Hongtao Zhang",
+      "email": "hongtaoz@cs.washington.edu",
+      "website": "https://github.com/taooceros",
+      "image": "/img/people/hongtao.jpg"
+    },
+    {
       "id": "steven-gao",
       "name": "Steven Gao",
       "email": "me@stevengao.net",
@@ -161,13 +168,6 @@
       "image": "/img/people/haoran.webp"
     },
     {
-      "id": "tian-tang",
-      "name": "Tian Tang",
-      "email": "tian21@cs.washington.edu",
-      "website": "https://tang-t21.github.io/",
-      "image": "/img/people/tian.png"
-    },
-    {
       "id": "dedong-xie",
       "name": "Dedong Xie",
       "email": "dedongx@cs.washington.edu",
@@ -175,19 +175,18 @@
       "image": "/img/people/dedong.jpg"
     },
     {
-      "id": "zihao-ye",
-      "name": "Zihao Ye",
-      "email": "zhye@cs.washington.edu",
-      "website": "https://homes.cs.washington.edu/~zhye/",
-      "image": "/img/people/zhye.png"
-    },
-    {
       "id": "kan-zhu",
       "name": "Kan Zhu",
-      "year": "",
       "email": "kanzhu@cs.washington.edu",
       "website": "https://kanzhu.netlify.app/",
       "image": "/img/people/kanzhu.jpg"
+    },
+    {
+      "id": "wei-shen",
+      "name": "Wei Shen",
+      "email": "wshen@cs.washington.edu",
+      "website": "https://www.linkedin.com/in/wei-shen-675b471a1/",
+      "image": "/img/people/wei.jpeg"
     }
   ],
   "students": [
@@ -223,6 +222,16 @@
   ],
   "alumni": [
     {
+      "id": "zihao-ye",
+      "name": "Zihao Ye",
+      "degree": "PhD",
+      "year": "2025",
+      "current_position": "Research Scientist at NVIDIA",
+      "email": "zhye@cs.washington.edu",
+      "website": "https://homes.cs.washington.edu/~zhye/",
+      "image": "/img/people/zhye.png"
+    },
+    {
       "id": "yigong-hu",
       "name": "Prof. Yigong Hu",
       "degree": "Postdoc",
@@ -251,6 +260,15 @@
       "email": "yiyuliu@g.harvard.edu",
       "website": "https://lau.yeeyu.org/",
       "image": "/img/people/yiyu.jpg"
+    },
+    {
+      "id": "tian-tang",
+      "name": "Tian Tang",
+      "degree": "Undergraduate",
+      "year": "2025",
+      "email": "tian21@cs.washington.edu",
+      "website": "https://tang-t21.github.io/",
+      "image": "/img/people/tian.png"
     },
     {
       "id": "yilong-zhao",

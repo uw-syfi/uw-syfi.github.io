@@ -18,7 +18,11 @@ interface Talk {
   video?: string;
 }
 
-export default function Talks() {
+interface TalksProps {
+  limit?: number;
+}
+
+export default function Talks({ limit }: TalksProps = {}) {
   const [location, navigate] = useLocation();
   const { data: talks, isLoading } = useContent<Talk[]>('talks');
   const [expandedAbstracts, setExpandedAbstracts] = useState<Set<string>>(new Set());
@@ -74,7 +78,7 @@ export default function Talks() {
     );
   }
 
-  const presentations = talks || [];
+  const presentations = limit ? (talks || []).slice(0, limit) : (talks || []);
 
   const getTypeColor = (type?: string) => {
     if (!type) return 'bg-gray-100 text-gray-800';

@@ -1,5 +1,38 @@
 [
   {
+    "id": "xingyang-li",
+    "title": "Guest Speaker: Xingyang Li (MIT)",
+    "location": "University of Washington, Seattle",
+    "date": "Sep 5, 2025",
+    "abstract": "Diffusion models are capable of generating photo-realistic images and videos, showing a promising future for AIGC. However inference speed, training speed and memory efficiency hinder their deployment in real world as well as their long-context ability. In this talk, I will present our recent works, RadialAttention and SVDQuant. Radial Attention identifies the Spatiotemporal Energy Decay in video diffusion models: post-softmax attention scores diminish as spatial and temporal token distance increases. Guided by this motivation, we translates this energy decay into a unified and static mask with exponentially decaying compute density, which is sub-quadratic and allows longer video generation through efficient LoRA-based fine-tuning. Radial Attention accelerates default-length video generation with quality maintained for state-of-the-art video diffusion models and allows up to 4 times longer video generation with high quality. SVDQuant targets at 4-bit diffusion models, which is challenging due to high sensitivity in both weights and activations. The method facilitates conventional smoothing techniques by using a high-precision, low-rank branch to take in the weight outliers with Singular Value Decomposition (SVD), while a low-bit quantized branch handles the residuals. Moreover, its co-designed inference engine Nunchaku fuses the low-rank branch kernels into the low-bit branch to eliminate redundant memory access. SVDQuant enables off-the-shelf W4A4 diffusion models with high fidelity and up to a 3.1 times speedup on RTX 5090 GPUs.",
+    "speakerBio": "Xingyang Li is a senior undergraduate at ACM Honors Class, SJTU. He is currently a student intern at MIT HAN Lab, advised by Professor Song Han. His research focuses on developing efficient algorithms and systems for deep learning, with applications in the realm of computer vision. Before starting the internship at MIT, he conducted research in algorithm-hardware co-design for vision applications like 3D Gaussian Splatting and Video Transformers, and his works were published in top-tier EDA conferences including DAC and ICCAD. He is also seeking a Ph.D. position starting in 2026 Fall."
+  },
+  {
+    "id": "esha-choukse",
+    "title": "Guest Speaker: Esha Choukse (Azure)",
+    "location": "University of Washington, Seattle",
+    "date": "Aug 22, 2025",
+    "abstract": "This talk explores two fronts of scaling AI: reducing inference latency and boosting throughput on emerging model types and usecases, and addressing the power and cooling demands of hyperscale data centers. I’ll highlight platform-level optimizations that improve efficiency and responsiveness, and show how infrastructure design choices—spanning power delivery to efficient cooling—are becoming inseparable from AI system performance and sustainability.",
+    "speakerBio": "Esha Choukse is a Principal Researcher in the Azure Research- Systems team. Esha is currently leading the efficient AI research project, working on cross-stack projects to optimize the AI platform (scheduling/routing), hardware, and datacenter infrastructure for emerging GenAI workloads in cloud, working toward the goal of datacenter efficiency and sustainability."
+  },
+  {
+    "id": "animesh-dangwal",
+    "title": "Guest Speaker: Animesh Dangwal (UCSB)",
+    "location": "University of Washington, Seattle",
+    "date": "Aug 15, 2025",
+    "abstract": "Edge computing distributes cloud functionality to task specific, resource-constrained and low-cost devices operating at data collection points, for low latency, low power and cost effective compute. This coordination requires redesigning cloud paradigms to either communicate or compute over the edge. Rather than adapting cloud technologies for edge constraints, what if we reconfigure the edge environment to enable seamless adoption of cloud research with minimal modifications to existing algorithms and runtimes? In this work, we define this transformation by modelling an edge rack analogous to server racks in the cloud to construct a high performance edge cluster. This allows us to explore the impact of cloud scheduling and runtime paradigms to the edge using metrics such as temperature, voltage fluctuations and maintenance cost such as cooling. In this talk, I present my work on exploring scheduling principles for such giant edge clusters, using UCSB’s (and unofficially the world’s) largest Raspberry Pi cluster, and reveal how metric fluctuations are magnified for edge workloads.",
+    "speakerBio": "Animesh Dangwal is a 5th year PhD student in the Computer Science department at UC Santa Barbara, working with Professor Chandra Krintz and Professor Rich Wolski. His research interests are in edge, serverless computing and distributed systems. His recent work has been in bridging the gap between the edge and cloud by developing flexible, and sustainable deployments at the edge for diverse workloads and hardware."
+  },
+  {
+    "id": "yutong-bai",
+    "title": "Guest Speaker: Yutong Bai (UC Berkeley)",
+    "location": "University of Washington, Seattle",
+    "date": "Aug 1, 2025",
+    "abstract": "We train models to Predict Ego-centric Video from human Actions (PEVA), given the past video and an action represented by the relative 3D body pose. By conditioning on kinematic pose trajectories, structured by the joint hierarchy of the body, our model learns to simulate how physical human actions shape the environment from a first-person point of view. We train an auto-regressive conditional diffusion transformer on Nymeria, a large-scale dataset of real-world egocentric video and body pose capture. We further design a hierarchical evaluation protocol with increasingly challenging tasks, enabling a comprehensive analysis of the model's embodied prediction and control abilities. Our work represents an initial attempt to tackle the challenges of modeling complex real-world environments and embodied agent behaviors with video prediction from the perspective of a human.",
+    "speakerBio": "Yutong is currently a Postdoc Researcher at UC Berkeley (BAIR), advised by Prof. Alexei (Alyosha) Efros, Prof. Jitendra Malik and Prof. Trevor Darrell. Prior to that, she obtained CS PhD degree at Johns Hopkins University advised by Prof. Alan Yuille. She used to intern at Meta AI (FAIR Labs) and Google Brain, and was selected as 2023 Apple Scholar and MIT EECS Rising Star. Her work was norminated for CVPR 2022 Best Paper Award.",
+    "homepage": "https://yutongbai.com/"
+  },
+  {
     "id": "yeonju-ro",
     "title": "Guest Speaker: Yeonju Ro (UT Austin)",
     "location": "University of Washington, Seattle",
@@ -7,5 +40,31 @@
     "abstract": "LLM inference is becoming increasingly challenging as models grow in architectural complexity and are expected to handle ever-longer input contexts. Architectures like Mixture of Experts (MoE) introduce conditional computation, leading to irregular execution patterns and inefficiencies in memory usage and batching. Meanwhile, context windows often span hundreds of thousands of tokens—driven by bursty inputs and prolonged sessions—straining memory and compute resources, particularly in Transformer layers. To address these challenges, we explore the use of late binding techniques for adaptive serving. In Read-ME, we defer batching and scheduling decisions until after routing paths are computed. Unlike conventional layerwise routers, our proposed decoupled Read-ME router supports precomputation of expert assignments, enabling informed scheduling. This allows for expert-aware batching that aligns with routing patterns, significantly boosting MoE serving throughput. Next, we explore architectural late binding to address the compute and memory overhead of long-context inference. In DSLA-Serve, we progressively convert Transformer layers into Dual-State Linear Attention (DSLA) layers—a new linear attention architecture. This conversion is guided by a sensitivity-based layer ordering and adapts to system load at inference time, replacing more layers as needed to balance efficiency and accuracy.",
     "speakerBio": "Yeonju Ro is a Ph.D. student at the University of Texas at Austin, co-advised by Professors Aditya Akella and Atlas Wang. Her research focuses on systems for machine learning, algorithm–system co-design, and applying machine learning to systems problems. She has worked at Microsoft Azure, Meta, HP Labs, and Samsung Research. She is a recipient of the 2024 IBM PhD Fellowship.",
     "homepage": "https://sites.google.com/view/hey-yeonju"
+  },
+  {
+    "id": "xiangpeng-hao-liquidcache",
+    "title": "Guest Speaker: Xiangpeng Hao (UW-Madison)",
+    "location": "University of Washington, Seattle",
+    "date": "July 11, 2025",
+    "abstract": "We present LiquidCache, a novel pushdown-based disaggregated caching system that evaluates filters on cache servers before transmitting data to compute nodes, which addresses our key observation that data decoding, not filter evaluation, is the primary bottleneck by transcoding Parquet data into a lightweight, cache-exclusive “Liquid” format that is co-designed with filter evaluation semantics to enable selective decoding, late filter materialization, and encoding-aware filter evaluation for low decoding costs and high compression ratios, allowing easy adoption without breaking ecosystem compatibility and demonstrating through integration with Apache DataFusion and evaluation with ClickBench and TPC-H that it reduces cache CPU time by up to 10× without increasing memory footprint and cuts network traffic by two orders of magnitude compared to non-pushdown systems.",
+    "speakerBio": "Xiangpeng Hao is a fifth year PhD student at UW-Madison adviced by Andrea Arpaci-Dusseau and Remzi Arpaci-Dusseau. His research focuses on building large scale analytical data systems. Notably, his PhD is supported by industry funding he independently raised through the LiquidCache project."
+  },
+  {
+    "id": "yuxuan-jiang-traincheck",
+    "title": "Guest Speaker: Yuxuan Jiang (UMich)",
+    "location": "University of Washington, Seattle",
+    "date": "June 27, 2025",
+    "abstract": "Training deep learning (DL) models is a complex process, making it prone to silent errors that are challenging to detect and diagnose. This paper presents TrainCheck, a framework that takes a proactive checking approach to address silent training errors. TrainCheck automatically infers invariants tailored for DL training. It uses these invariants to proactively detect silent errors during the training process while providing debugging help. To evaluate TrainCheck, we reproduce 20 real-world silent training errors with diverse root causes. TRAINCHECK successfully detects 18 errors within a single training iteration. It also uncovers 6 unknown bugs in popular training libraries that lead to silent errors.",
+    "speakerBio": "Yuxuan Jiang is a second-year Ph.D. student in Computer Science and Engineering at the University of Michigan, advised by Prof. Ryan Huang. His research focuses on building tools to improve the reliability of cloud-scale and machine learning systems, with an emphasis on detecting silent failures and automating quality checks. He is the creator of TrainCheck, a runtime monitoring framework that proactively detects training bugs by inferring and checking invariants during deep learning training. Yuxuan is currently interning at Microsoft Research, where he is working on AIOps, and will be based in Seattle for the summer.",
+    "homepage": "https://essoz.github.io/"
+  },
+  {
+    "id": "zhiyuan-zeng-evaltree",
+    "title": "Guest Speaker: Zhiyuan Zeng (UWNLP)",
+    "location": "University of Washington, Seattle",
+    "date": "June 20, 2025",
+    "abstract": "An ideal model evaluation should achieve two goals: identifying where the model fails and providing actionable improvement guidance. However, current model evaluations commonly fail to achieve these goals by reducing model performance to a single aggregate metric, thereby obscuring the model’s heterogeneous performance across diverse capabilities tested within a benchmark. In this talk, I will introduce how we advance the two goals by formulating the research problem of generating a weakness profile, a set of weaknesses expressed in natural language, given a language model's performance on every individual instance in a benchmark. I will introduce a new weakness profiling method, EvalTree. EvalTree automatically constructs a tree for any benchmark that hierarchically organizes and interprets the capabilities tested within the benchmark; it then extracts nodes where the model performs poorly to generate a weakness profile. Experiments show that EvalTree profiles model weaknesses more precisely and comprehensively than existing weakness profiling methods, and that synthetic data generation guided by EvalTree-identified weaknesses effectively improves model performance. I will also talk about how EvalTree exposes flaws in Chatbot Arena’s human-voter-based evaluation practice. To facilitate future work, we provide an interface that allows practitioners to interactively explore the capability trees built by EvalTree.",
+    "speakerBio": "Zhiyuan Zeng is a first-year Ph.D. student in the Paul G. Allen School of Computer Science & Engineering at the University of Washington, advised by Hannaneh Hajishirzi and Pang Wei Koh. Previously, he received his bachelor's degree from the Department of Computer Science and Technology at Tsinghua University in China, where he worked with Danqi Chen at Princeton University and Zhiyuan Liu at Tsinghua University. Zhiyuan is a recipient of the 2022 SenseTime Scholarship, the 2022 China National Scholarship for undergraduate students, and a Gold Medal in the National Olympiad in Informatics (NOI) 2019.",
+    "homepage": "https://zhiyuan-zeng.github.io/"
   }
 ]
