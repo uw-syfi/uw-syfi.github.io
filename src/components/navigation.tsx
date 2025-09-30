@@ -37,9 +37,9 @@ export default function Navigation() {
     { id: 'home', label: 'Home', route: '/' },
     { id: 'research', label: 'Research', hash: '#research' },
     { id: 'people', label: 'People', hash: '#people' },
-    { id: 'publications', label: 'Publications', hash: '#publications' },
-    { id: 'blogs', label: 'Blogs', hash: '#blogs' },
-    { id: 'talks', label: 'Talks', hash: '#talks' }
+    { id: 'publications', label: 'Publications', hash: '/publications' },
+    { id: 'blogs', label: 'Blogs', route: '/blog' },
+    { id: 'talks', label: 'Talks', hash: '/talks' }
   ];
 
   const handleNavClick = (item: any) => {

@@ -37,17 +37,12 @@ export default function Blogs() {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {posts.map((post) => (
             <article key={post.id} className="bg-slate-50 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
-              <img 
-                src={post.image} 
-                alt={post.title} 
-                className="w-full h-48 object-cover"
-              />
               <div className="p-6">
                 <div className="text-sm text-uw-gray mb-2">{post.date}</div>
                 <h3 className="text-xl font-semibold text-uw-slate mb-3">{post.title}</h3>
                 <p className="text-uw-gray mb-4">{post.excerpt}</p>
-                <a 
-                  href={post.link} 
+                <a
+                  href={post.link}
                   className="text-uw-blue hover:text-uw-sky font-medium flex items-center"
                 >
                   Read More <ArrowRight size={16} className="ml-1" />
