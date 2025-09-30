@@ -5,12 +5,15 @@ import { useQuery } from "@tanstack/react-query";
 import { useBasePath } from "@/hooks/use-base-path";
 import matter from 'gray-matter';
 import { marked } from 'marked';
+import Navigation from "@/components/navigation";
+import Footer from "@/components/footer";
 
 interface BlogPost {
   slug: string;
   title: string;
   date: string;
   author: string;
+  authorLinks?: Array<{ name: string; url: string }>;
   excerpt: string;
   image: string;
   content: string;
@@ -63,6 +66,7 @@ export default function BlogPostPage() {
           title: data.title || 'Untitled',
           date: data.date || 'No date',
           author: data.author || 'Unknown author',
+          authorLinks: data.authorLinks,
           excerpt: data.excerpt || '',
           image: data.image || '',
           content: htmlContent,
@@ -119,48 +123,64 @@ export default function BlogPostPage() {
   }
 
   return (
-    <div className="min-h-screen bg-slate-50">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="mb-8">
-          <Link href="/#blogs" className="inline-flex items-center text-uw-purple hover:text-uw-gold mb-6">
-            <ArrowLeft size={16} className="mr-2" />
-            Back to Blog
-          </Link>
-          
-          <img 
-            src={post.image} 
-            alt={post.title}
-            className="w-full h-64 object-cover rounded-lg mb-6"
-          />
-          
-          <h1 className="text-4xl font-bold text-uw-slate mb-4">{post.title}</h1>
-          
-          <div className="flex items-center space-x-6 text-uw-gray mb-8">
-            <div className="flex items-center">
-              <Calendar size={16} className="mr-2" />
-              {post.date}
-            </div>
-            <div className="flex items-center">
-              <User size={16} className="mr-2" />
-              {post.author}
+    <div className="min-h-screen bg-white">
+      <Navigation />
+      <main>
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+          <div className="mb-12">
+            <Link href="/#blogs" className="inline-flex items-center text-uw-purple hover:text-uw-gold mb-8">
+              <ArrowLeft size={16} className="mr-2" />
+              Back to Blog
+            </Link>
+
+            <h1 className="text-5xl font-bold text-uw-slate mb-6">{post.title}</h1>
+
+            <div className="flex items-center space-x-6 text-uw-gray text-lg mb-8">
+              <div className="flex items-center">
+                <Calendar size={20} className="mr-2" />
+                {post.date}
+              </div>
+              <div className="flex items-center">
+                <User size={20} className="mr-2" />
+                {post.authorLinks && post.authorLinks.length > 0 ? (
+                  <span>
+                    {post.authorLinks.map((author: { name: string; url: string }, index: number) => (
+                      <span key={index}>
+                        <a
+                          href={author.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-uw-purple hover:text-uw-gold underline"
+                        >
+                          {author.name}
+                        </a>
+                        {index < post.authorLinks!.length - 1 && ', '}
+                      </span>
+                    ))}
+                  </span>
+                ) : (
+                  post.author
+                )}
+              </div>
             </div>
           </div>
-        </div>
 
-        <article className="bg-white rounded-lg shadow-md p-8">
-          <div 
-            className="blog-content prose prose-lg max-w-none text-uw-gray leading-relaxed"
-            dangerouslySetInnerHTML={{ __html: post.content }}
-          />
-        </article>
-        
-        <div className="mt-8 text-center">
-          <Link href="/#blogs" className="inline-flex items-center px-6 py-3 border border-uw-purple text-uw-purple hover:bg-uw-purple hover:text-white rounded-md font-medium transition-colors">
-            <ArrowLeft size={16} className="mr-2" />
-            Back to All Posts
-          </Link>
+          <article>
+            <div
+              className="blog-content prose prose-lg max-w-none text-black leading-relaxed"
+              dangerouslySetInnerHTML={{ __html: post.content }}
+            />
+          </article>
+
+          <div className="mt-12 pt-8 border-t border-gray-200 text-center">
+            <Link href="/#blogs" className="inline-flex items-center px-6 py-3 border border-uw-purple text-uw-purple hover:bg-uw-purple hover:text-white rounded-md font-medium transition-colors">
+              <ArrowLeft size={16} className="mr-2" />
+              Back to All Posts
+            </Link>
+          </div>
         </div>
-      </div>
+      </main>
+      <Footer />
     </div>
   );
 }

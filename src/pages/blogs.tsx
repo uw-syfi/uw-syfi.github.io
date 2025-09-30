@@ -36,11 +36,6 @@ export default function BlogsPage() {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {posts.map((post) => (
             <article key={post.slug} className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
-              <img 
-                src={post.image} 
-                alt={post.title} 
-                className="w-full h-48 object-cover"
-              />
               <div className="p-6">
                 <div className="flex items-center text-sm text-uw-gray mb-3">
                   <Calendar size={16} className="mr-2" />
@@ -48,8 +43,8 @@ export default function BlogsPage() {
                 </div>
                 <h2 className="text-xl font-semibold text-uw-slate mb-3">{post.title}</h2>
                 <p className="text-uw-gray mb-4 leading-relaxed">{post.excerpt}</p>
-                <a 
-                  href={post.link} 
+                <a
+                  href={post.link}
                   className="text-uw-blue hover:text-uw-sky font-medium flex items-center"
                 >
                   Read Full Article <ArrowRight size={16} className="ml-1" />

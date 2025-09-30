@@ -68,6 +68,7 @@ function getBlogPost(slug) {
       title: data.title || 'Untitled',
       date: data.date || 'No date',
       author: data.author || 'Unknown author',
+      authorLinks: data.authorLinks,
       excerpt: data.excerpt || '',
       image: data.image || '',
       content: htmlContent,
