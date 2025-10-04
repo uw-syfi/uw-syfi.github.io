@@ -35,22 +35,6 @@
       "image": "/img/people/arvind.png"
     },
     {
-      "id": "tom-anderson",
-      "name": "Tom Anderson",
-      "title": "Professor",
-      "email": "tom@cs.washington.edu",
-      "website": "https://homes.cs.washington.edu/~tom/",
-      "image": "/img/people/tom.jpg"
-    },
-    {
-      "id": "ratul-mahajan",
-      "name": "Ratul Mahajan",
-      "title": "Associate Professor",
-      "email": "ratul@cs.washington.edu",
-      "website": "https://homes.cs.washington.edu/~ratul/",
-      "image": "/img/people/ratul.jpeg"
-    },
-    {
       "id": "simon-peter",
       "name": "Simon Peter",
       "title": "Associate Professor",
@@ -92,38 +76,11 @@
   ],
   "phd_students": [
     {
-      "id": "maddie-burbage",
-      "name": "Maddie Burbage",
-      "email": "mburbage@cs.washington.edu",
-      "website": "https://maddieburbage.github.io/",
-      "image": "/img/people/maddie.png"
-    },
-    {
-      "id": "megan-frisella",
-      "name": "Megan Frisella",
-      "email": "mfris@cs.washington.edu",
-      "website": "https://www.linkedin.com/in/megan-frisella/",
-      "image": "/img/people/megan.png"
-    },
-    {
-      "id": "hongtao-zhang",
-      "name": "Hongtao Zhang",
-      "email": "hongtaoz@cs.washington.edu",
-      "website": "https://github.com/taooceros",
-      "image": "/img/people/hongtao.jpg"
-    },
-    {
-      "id": "steven-gao",
-      "name": "Steven Gao",
-      "email": "me@stevengao.net",
-      "website": "https://stevengao.net/",
-      "image": "/img/people/default.jpg"
-    },
-    {
-      "id": "yufei-gao",
-      "name": "Yufei Gao",
-      "email": "ygao2306@gmail.com",
-      "image": "/img/people/yufei.jpeg"
+      "id": "wei-shen",
+      "name": "Wei Shen",
+      "email": "wshen@cs.washington.edu",
+      "website": "https://www.linkedin.com/in/wei-shen-675b471a1/",
+      "image": "/img/people/wei.jpeg"
     },
     {
       "id": "matthew-giordano",
@@ -147,20 +104,6 @@
       "image": "/img/people/keisuke.png"
     },
     {
-      "id": "katie-lim",
-      "name": "Katie Lim",
-      "email": "katielim@cs.washington.edu",
-      "website": "https://homes.cs.washington.edu/~katielim/",
-      "image": "/img/people/katie.png"
-    },
-    {
-      "id": "marina-minkin",
-      "name": "Marina Minkin",
-      "email": "minkin@umich.edu",
-      "website": "https://web.eecs.umich.edu/~minkin/",
-      "image": "/img/people/marina.jpeg"
-    },
-    {
       "id": "haoran-peng",
       "name": "Haoran Peng",
       "email": "hrpeng@cs.washington.edu",
@@ -182,11 +125,37 @@
       "image": "/img/people/kanzhu.jpg"
     },
     {
-      "id": "wei-shen",
-      "name": "Wei Shen",
-      "email": "wshen@cs.washington.edu",
-      "website": "https://www.linkedin.com/in/wei-shen-675b471a1/",
-      "image": "/img/people/wei.jpeg"
+      "id": "yingbo-sun",
+      "name": "Yingbo Sun",
+      "email": "yingbosun@cs.washington.edu",
+      "image": "/img/people/yingbo.jpeg"
+    },
+    {
+      "id": "megan-frisella",
+      "name": "Megan Frisella",
+      "email": "mfris@cs.washington.edu",
+      "website": "https://www.linkedin.com/in/megan-frisella/",
+      "image": "/img/people/megan.png"
+    },
+    {
+      "id": "hongtao-zhang",
+      "name": "Hongtao Zhang",
+      "email": "hongtaoz@cs.washington.edu",
+      "website": "https://github.com/taooceros",
+      "image": "/img/people/hongtao.jpg"
+    },
+    {
+      "id": "yufei-gao",
+      "name": "Yufei Gao",
+      "email": "ygao2306@gmail.com",
+      "image": "/img/people/yufei.jpeg"
+    },
+    {
+      "id": "steven-gao",
+      "name": "Steven Gao",
+      "email": "me@stevengao.net",
+      "website": "https://stevengao.net/",
+      "image": "/img/people/default.jpg"
     }
   ],
   "students": [
@@ -226,7 +195,7 @@
       "name": "Zihao Ye",
       "degree": "PhD",
       "year": "2025",
-      "current_position": "Research Scientist at NVIDIA",
+      "current_position": "Software Engineer at NVIDIA",
       "email": "zhye@cs.washington.edu",
       "website": "https://homes.cs.washington.edu/~zhye/",
       "image": "/img/people/zhye.png"
