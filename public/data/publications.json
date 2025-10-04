@@ -1,5 +1,14 @@
 [
   {
+    "id": "liteasr",
+    "title": "LiteASR: Efficient Automatic Speech Recognition with Low-Rank Approximation",
+    "authors": "Keisuke Kamahori, Jungo Kasai, Noriyuki Kojima, Baris Kasikci",
+    "venue": "Conference on Empirical Methods in Natural Language Processing. (EMNLP)",
+    "year": "2025",
+    "pdf": "https://arxiv.org/abs/2502.20583",
+    "code": "https://github.com/efeslab/LiteASR"
+  },
+  {
     "id": "nanoflow",
     "title": "NanoFlow: Towards Optimal Large Language Model Serving Throughput",
     "authors": "Kan Zhu, Yufei Gao, Yilong Zhao, Liangyu Zhao, Gefei Zuo, Yile Gu, Dedong Xie, Tian Tang, Qinyu Xu, Zihao Ye, Keisuke Kamahori, Chien-Yu Lin, Ziren Wang, Stephanie Wang, Arvind Krishnamurthy, Baris Kasikci",
