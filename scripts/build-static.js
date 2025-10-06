@@ -148,7 +148,7 @@ const dataOutputDir = path.join(OUTPUT_DIR, 'data');
 fs.mkdirSync(dataOutputDir, { recursive: true });
 
 // Copy JSON data files
-const jsonFiles = ['people.json', 'research.json', 'publications.json', 'talks.json', 'blogs.json'];
+const jsonFiles = ['people.json', 'research.json', 'publications.json', 'talks.json', 'blogs.json', 'news.json'];
 jsonFiles.forEach(file => {
   const srcPath = path.join(DATA_DIR, file);
   const destPath = path.join(dataOutputDir, file);

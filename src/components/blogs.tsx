@@ -36,7 +36,7 @@ export default function Blogs() {
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {posts.map((post) => (
-            <article key={post.id} className="bg-slate-50 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+            <article key={post.id} className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
               <div className="p-6">
                 <div className="text-sm text-uw-gray mb-2">{post.date}</div>
                 <h3 className="text-xl font-semibold text-uw-slate mb-3">{post.title}</h3>

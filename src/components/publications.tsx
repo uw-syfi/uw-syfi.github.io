@@ -15,7 +15,7 @@ interface Publication {
   bibtex?: string;
 }
 
-export default function Publications() {
+export default function Publications({ limit }: { limit?: number }) {
   const [location, navigate] = useLocation();
   const { data: publications, isLoading } = useContent<Publication[]>('publications');
   const [filter, setFilter] = useState('all');
@@ -37,6 +37,9 @@ export default function Publications() {
   const filteredPapers = filter === 'all' 
     ? papers 
     : papers.filter(paper => paper.year === filter);
+  const displayedPapers = typeof limit === 'number' && limit > 0
+    ? filteredPapers.slice(0, limit)
+    : filteredPapers;
 
   return (
     <section id="publications" className="py-16 bg-slate-50">
@@ -62,7 +65,7 @@ export default function Publications() {
         </div>
 
         <div className="space-y-6">
-          {filteredPapers.map((paper) => (
+          {displayedPapers.map((paper) => (
             <div key={paper.id} className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
               <div className="flex items-start justify-between">
                 <div className="flex-1">

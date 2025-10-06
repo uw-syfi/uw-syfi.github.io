@@ -95,7 +95,7 @@ export default function People() {
           <h3 className="text-2xl font-semibold text-uw-slate mb-6">Directors</h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {directors.map((person) => (
-              <div key={person.id} className="bg-slate-50 rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+              <div key={person.id} className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
                 <img 
                   src={getAssetPath(person.image)} 
                   alt={`${person.name} profile`} 
@@ -127,7 +127,7 @@ export default function People() {
           <h3 className="text-2xl font-semibold text-uw-slate mb-6">Affiliated Faculty</h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {affiliatedFaculty.map((person) => (
-              <div key={person.id} className="bg-slate-50 rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+              <div key={person.id} className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
                 <img 
                   src={getAssetPath(person.image)} 
                   alt={`${person.name} profile`} 

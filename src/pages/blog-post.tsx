@@ -7,6 +7,8 @@ import matter from 'gray-matter';
 import { marked } from 'marked';
 import Navigation from "@/components/navigation";
 import Footer from "@/components/footer";
+import { useEffect, useRef } from "react";
+import { loadAndHydrateTwitterWidgets } from "@/lib/loadTwitterWidgets";
 
 interface BlogPost {
   slug: string;
@@ -78,6 +80,14 @@ export default function BlogPostPage() {
     },
     enabled: !!params?.slug
   });
+
+  // Hooks must be declared before any conditional returns to keep order consistent across renders
+  const contentRef = useRef<HTMLDivElement | null>(null);
+  useEffect(() => {
+    if (post) {
+      loadAndHydrateTwitterWidgets(contentRef.current);
+    }
+  }, [post]);
 
   if (!match || !params?.slug) {
     return (
@@ -167,6 +177,7 @@ export default function BlogPostPage() {
 
           <article>
             <div
+              ref={contentRef}
               className="blog-content prose prose-lg max-w-none text-black leading-relaxed"
               dangerouslySetInnerHTML={{ __html: post.content }}
             />
