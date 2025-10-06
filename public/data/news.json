@@ -1,11 +1,5 @@
 [
   {
-    "id": "2025-10-01-llmc-release",
-    "date": "Oct 1, 2025",
-    "title": "LLMc open-source release: a natural language compressor powered by LLMs",
-    "link": "/blog/2025-10-03-llmc-compression"
-  },
-  {
     "id": "2025-09-29-vox-serve",
     "date": "Sep 29, 2025",
     "title": "Introducing Vox-Serve: a high-throughput, low-latency serving system for SpeechLMs",
