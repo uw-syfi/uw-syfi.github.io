@@ -1,5 +1,12 @@
 [
   {
+    "title": "Meet LLMc: The LLM-Powered Natural Language Compressor",
+    "date": "October 3, 2025",
+    "author": "UW SyFI Lab",
+    "excerpt": "We present LLMc, an open-source tool to compress natural language using LLMs as the world's most reference-packed dictionary.",
+    "link": "/blog/2025-10-03-llmc-compression"
+  },
+  {
     "title": "Efficient Serving of SpeechLMs with VoxServe",
     "date": "September 29, 2025",
     "author": "Keisuke Kamahori, Baris Kasikci",
