@@ -36,7 +36,7 @@ Decompression replays the same LLM with identical context. By applying the store
 
 Benchmarks show that LLMc outperforms traditional compressors such as ZIP and LZMA across a range of datasets, including Wikipedia, narrative text, and scientific abstracts. It also achieves competitive or superior performance compared to other closed-source systems with similar objectives.
 
-![Compression Ratio Comparison](/img/blog/2025-10-03-llmc-compression/output.png)
+![Compression Ratio Comparison](/img/blog/2025-10-03-llmc-compression/result.png)
 
 ## Efficiency Considerations
 
