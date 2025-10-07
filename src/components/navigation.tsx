@@ -37,15 +37,29 @@ export default function Navigation() {
     { id: 'home', label: 'Home', route: '/' },
     { id: 'research', label: 'Research', hash: '#research' },
     { id: 'people', label: 'People', hash: '#people' },
-    { id: 'publications', label: 'Publications', hash: '/publications' },
-    { id: 'blogs', label: 'Blogs', route: '/blog' },
-    { id: 'talks', label: 'Talks', hash: '/talks' }
+    { id: 'publications', label: 'Publications', route: '/publications', hash: '#publications' },
+    { id: 'blogs', label: 'Blogs', route: '/blog', hash: '#blogs' },
+    { id: 'talks', label: 'Talks', route: '/talks', hash: '#talks' }
   ];
 
   const handleNavClick = (item: any) => {
-    if (item.route) {
+    // Special handling for items that have both route and hash (publications, blogs, talks)
+    if (item.route && item.hash) {
+      if (location === '/') {
+        // On home page: scroll to section
+        const element = document.getElementById(item.hash.substring(1));
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      } else {
+        // Not on home page: navigate to dedicated page
+        navigate(item.route);
+      }
+    } else if (item.route) {
+      // Simple route navigation (e.g., Home)
       navigate(item.route);
     } else if (item.hash) {
+      // Hash-only items (e.g., Research, People)
       // If we're not on the home page, navigate there first
       if (location !== '/') {
         navigate('/');
