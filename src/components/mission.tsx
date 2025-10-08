@@ -12,7 +12,7 @@ export default function Mission() {
             <h2 className="text-3xl font-bold text-uw-slate mb-6">Our Mission</h2>
             <div className="prose prose-lg text-uw-gray leading-relaxed">
               <p>
-                Welcome to SyFI Lab! Our research focuses on disaggregated, task-aware AI systems, with the goal of achieving scalable and resilient AI-native infrastructure. Current foundation models are hitting limits in scalability, cost, and efficiency, prompting a need for new architectures that can better leverage heterogeneous hardware and handle communication bottlenecks, data scarcity, and synchronous execution inefficiencies. The SyFI Lab addresses this by rethinking AI infrastructure through full-stack co-design, targeting adaptability, modularity, and sustainability across algorithms, runtimes, and hardware.
+              Welcome to the SyFI Lab, a research group within the Paul G. Allen School of Computer Science & Engineering at the University of Washington. Our research focuses on disaggregated, task-aware AI systems, with the goal of achieving scalable and resilient AI-native infrastructure. Current foundation models are hitting limits in scalability, cost, and efficiency, prompting a need for new architectures that can better leverage heterogeneous hardware and handle communication bottlenecks, data scarcity, and synchronous execution inefficiencies. The SyFI Lab addresses this by rethinking AI infrastructure through full-stack co-design, targeting adaptability, modularity, and sustainability across algorithms, runtimes, and hardware.
               </p>
             </div>
             <div className="mt-6 text-center">
