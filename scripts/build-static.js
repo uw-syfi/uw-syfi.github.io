@@ -80,6 +80,68 @@ function getBlogPost(slug) {
   }
 }
 
+function generateSitemap(blogPosts) {
+  const baseUrl = 'https://uw-syfi.github.io';
+  const today = new Date().toISOString().split('T')[0];
+  
+  // Static pages with their priorities and change frequencies
+  const staticPages = [
+    { path: '/', priority: '1.0', changefreq: 'weekly', lastmod: today },
+    { path: '/about', priority: '0.8', changefreq: 'monthly', lastmod: today },
+    { path: '/blog', priority: '0.9', changefreq: 'weekly', lastmod: today },
+    { path: '/publications', priority: '0.9', changefreq: 'monthly', lastmod: today },
+    { path: '/talks', priority: '0.9', changefreq: 'monthly', lastmod: today }
+  ];
+  
+  let sitemap = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  
+`;
+
+  // Add static pages
+  staticPages.forEach(page => {
+    sitemap += `  <url>
+    <loc>${baseUrl}${page.path}</loc>
+    <lastmod>${page.lastmod}</lastmod>
+    <changefreq>${page.changefreq}</changefreq>
+    <priority>${page.priority}</priority>
+  </url>
+  
+`;
+  });
+  
+  // Add blog posts
+  blogPosts.forEach(post => {
+    // Try to parse the date, fallback to today if invalid
+    let lastmod = today;
+    try {
+      const postDate = new Date(post.date);
+      if (!isNaN(postDate.getTime())) {
+        lastmod = postDate.toISOString().split('T')[0];
+      }
+    } catch (e) {
+      // Use today's date if parsing fails
+    }
+    
+    sitemap += `  <url>
+    <loc>${baseUrl}${post.link}</loc>
+    <lastmod>${lastmod}</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+`;
+  });
+  
+  sitemap += `</urlset>
+`;
+  
+  return sitemap;
+}
+
 console.log('🌟 SyFI Lab Static Site Generator');
 console.log('==================================');
 
@@ -176,6 +238,19 @@ routes.forEach(route => {
   fs.writeFileSync(routeIndexPath, indexContent);
   console.log(`✅ Created ${route}/index.html`);
 });
+
+// Step 5: Generate sitemap.xml
+console.log('🗺️  Generating sitemap.xml...');
+try {
+  const blogPosts = getAllBlogPosts();
+  const sitemapContent = generateSitemap(blogPosts);
+  const sitemapPath = path.join(OUTPUT_DIR, 'sitemap.xml');
+  fs.writeFileSync(sitemapPath, sitemapContent);
+  console.log(`✅ Generated sitemap.xml with ${blogPosts.length + 5} URLs`);
+} catch (error) {
+  console.error('❌ Sitemap generation failed:', error.message);
+  // Don't exit, it's not critical
+}
 
 console.log('✅ Static site built successfully!');
 console.log(`📂 Output directory: ${OUTPUT_DIR}`);
