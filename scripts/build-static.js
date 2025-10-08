@@ -81,7 +81,7 @@ function getBlogPost(slug) {
 }
 
 function generateSitemap(blogPosts) {
-  const baseUrl = 'https://uw-syfi.github.io';
+  const baseUrl = 'https://syfi.cs.washington.edu';
   const today = new Date().toISOString().split('T')[0];
   
   // Static pages with their priorities and change frequencies
