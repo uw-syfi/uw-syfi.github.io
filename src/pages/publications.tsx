@@ -74,7 +74,11 @@ export default function PublicationsPage() {
             <div key={paper.id} className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
               <div className="flex items-start justify-between">
                 <div className="flex-1">
-                  <h2 className="text-xl font-semibold text-uw-slate mb-3">{paper.title}</h2>
+                  <Link href={`/publications/${paper.id}`}>
+                    <h2 className="text-xl font-semibold text-uw-slate mb-3 hover:text-uw-purple cursor-pointer transition-colors">
+                      {paper.title}
+                    </h2>
+                  </Link>
                   <p className="text-uw-gray mb-2" dangerouslySetInnerHTML={{ __html: paper.authors }} />
                   <p className="text-uw-gray mb-4">
                     <em dangerouslySetInnerHTML={{ __html: paper.venue }} />
@@ -84,8 +88,8 @@ export default function PublicationsPage() {
                   )}
                   <div className="flex space-x-4">
                     {paper.pdf && (
-                      <a 
-                        href={paper.pdf} 
+                      <a
+                        href={paper.pdf}
                         className="text-uw-purple hover:text-uw-gold text-sm font-medium flex items-center px-3 py-1 border border-uw-purple rounded hover:bg-uw-purple hover:text-white transition-colors"
                       >
                         <FileText size={16} className="mr-1" />
@@ -93,8 +97,8 @@ export default function PublicationsPage() {
                       </a>
                     )}
                     {paper.code && (
-                      <a 
-                        href={paper.code} 
+                      <a
+                        href={paper.code}
                         className="text-uw-purple hover:text-uw-gold text-sm font-medium flex items-center px-3 py-1 border border-uw-purple rounded hover:bg-uw-purple hover:text-white transition-colors"
                       >
                         <Github size={16} className="mr-1" />
@@ -102,8 +106,8 @@ export default function PublicationsPage() {
                       </a>
                     )}
                     {paper.bibtex && (
-                      <a 
-                        href={paper.bibtex} 
+                      <a
+                        href={paper.bibtex}
                         className="text-uw-purple hover:text-uw-gold text-sm font-medium flex items-center px-3 py-1 border border-uw-purple rounded hover:bg-uw-purple hover:text-white transition-colors"
                       >
                         <Quote size={16} className="mr-1" />

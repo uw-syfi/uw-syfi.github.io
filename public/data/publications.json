@@ -52,11 +52,21 @@
     "code": "https://github.com/efeslab/fiddler"
   },
   {
+    "id": "quest",
+    "title": "Quest: Query-Aware Sparsity for Efficient Long-Context LLM Inference",
+    "authors": "Jiaming Tang, Yilong Zhao, Kan Zhu, Guangxuan Xiao, Baris Kasikci, Song Han",
+    "venue": "International Conference on Machine Learning. (ICML)",
+    "year": "2024",
+    "pdf": "https://arxiv.org/pdf/2406.10774",
+    "code": "https://github.com/mit-han-lab/Quest"
+  },
+  {
     "id": "atom",
     "title": "Atom: Low-bit Quantization for Efficient and Accurate LLM Serving",
     "authors": "Yilong Zhao, Chien-Yu Lin, Kan Zhu, Zihao Ye, Lequn Chen, Size Zheng, Luis Ceze, Arvind Krishnamurthy, Tianqi Chen, and Baris Kasikci",
     "venue": "Annual Conference on Machine Learning and Systems. (MLSys)",
     "year": "2024",
-    "pdf": "https://arxiv.org/pdf/2310.19102"
+    "pdf": "https://arxiv.org/pdf/2310.19102",
+    "code": "https://github.com/efeslab/Atom"
   }
 ]

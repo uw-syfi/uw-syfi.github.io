@@ -9,6 +9,7 @@ import Home from "@/pages/home";
 import BlogsPage from "@/pages/blogs";
 import TalksPage from "@/pages/talks";
 import PublicationsPage from "@/pages/publications";
+import PublicationDetailPage from "@/pages/publication-detail";
 import BlogPostPage from "@/pages/blog-post";
 import About from "@/pages/about";
 
@@ -18,7 +19,7 @@ function getBasePath() {
   if (segments.length > 0 && !['about', 'blog', 'talks', 'publications'].includes(segments[0])) {
     return `/${segments[0]}`;
   }
-  
+
   return '';
 }
 
@@ -31,6 +32,7 @@ function AppRouter() {
       <Route path="/blog/:slug" component={BlogPostPage} />
       <Route path="/talks" component={TalksPage} />
       <Route path="/publications" component={PublicationsPage} />
+      <Route path="/publications/:id" component={PublicationDetailPage} />
       <Route component={NotFound} />
     </Switch>
   );
