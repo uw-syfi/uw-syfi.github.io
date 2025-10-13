@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useLocation } from "wouter";
+import { useLocation, Link } from "wouter";
 import { useContent } from "@/hooks/use-content";
 import { FileText, Github, Quote, ArrowRight } from "lucide-react";
 
@@ -69,7 +69,11 @@ export default function Publications({ limit }: { limit?: number }) {
             <div key={paper.id} className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
               <div className="flex items-start justify-between">
                 <div className="flex-1">
-                  <h3 className="text-lg font-semibold text-uw-slate mb-2">{paper.title}</h3>
+                  <Link href={`/publications/${paper.id}`}>
+                    <h3 className="text-lg font-semibold text-uw-slate mb-2 hover:text-uw-purple cursor-pointer transition-colors">
+                      {paper.title}
+                    </h3>
+                  </Link>
                   <p className="text-uw-gray mb-2" dangerouslySetInnerHTML={{ __html: paper.authors }} />
                   <p className="text-uw-gray mb-3">
                     <em dangerouslySetInnerHTML={{ __html: paper.venue }} />
