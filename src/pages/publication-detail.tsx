@@ -76,6 +76,12 @@ export default function PublicationDetailPage() {
         const markdownText = await mdResponse.text();
         console.log('Markdown text length:', markdownText.length);
 
+        // Check if we got HTML instead of markdown (development server error page)
+        if (markdownText.trim().startsWith('<!DOCTYPE') || markdownText.trim().startsWith('<script')) {
+          console.log('Received HTML instead of markdown - file does not exist');
+          return null;
+        }
+
         // Parse frontmatter manually for browser compatibility
         let data: any = {};
         let content = markdownText;
