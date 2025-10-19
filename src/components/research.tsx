@@ -1,5 +1,6 @@
 import { useContent } from "@/hooks/use-content";
-import { Box, Network, Cpu, Code, Leaf, Layers } from "lucide-react";
+import { Box, Network, Cpu, Code, Leaf, Layers, ArrowRight } from "lucide-react";
+import { Link } from "wouter";
 
 interface ResearchArea {
   id: string;
@@ -47,7 +48,14 @@ export default function Research() {
                   <IconComponent size={48} />
                 </div>
                 <h3 className="text-xl font-semibold text-uw-slate mb-3">{area.title}</h3>
-                <p className="text-uw-gray">{area.description}</p>
+                <p className="text-uw-gray mb-4">{area.description}</p>
+                <Link 
+                  href={`/publications?topic=${encodeURIComponent(area.title)}`}
+                  className="inline-flex items-center text-uw-blue hover:text-uw-purple text-sm font-medium transition-colors"
+                >
+                  View Publications
+                  <ArrowRight size={14} className="ml-1" />
+                </Link>
               </div>
             );
           })}

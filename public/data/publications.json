@@ -5,6 +5,7 @@
     "authors": "Keisuke Kamahori, Jungo Kasai, Noriyuki Kojima, Baris Kasikci",
     "venue": "Conference on Empirical Methods in Natural Language Processing. (EMNLP)",
     "year": "2025",
+    "topics": ["Efficient ML"],
     "pdf": "https://arxiv.org/abs/2502.20583",
     "code": "https://github.com/efeslab/LiteASR"
   },
@@ -14,6 +15,7 @@
     "authors": "Zihao Ye, Lequn Chen, Ruihang Lai, Wuwei Lin, Yineng Zhang, Stephanie Wang, Tianqi Chen, Baris Kasikci, Vinod Grover, Arvind Krishnamurthy, Luis Ceze",
     "venue": "Annual Conference on Machine Learning and Systems. (MLSys). <strong>Best Paper Award. </strong>",
     "year": "2025",
+    "topics": ["LLM Serving"],
     "pdf": "https://arxiv.org/abs/2501.01005",
     "code": "https://github.com/flashinfer-ai/flashinfer"
   },
@@ -23,6 +25,7 @@
     "authors": "Chien-Yu Lin, Keisuke Kamahori, Yiyu Liu, Xiaoxiang Shi, Madhav Kashyap, Yile Gu, Rulin Shao, Zihao Ye, Kan Zhu, Stephanie Wang, Arvind Krishnamurthy, Rohan Kadekodi, Luis Ceze, Baris Kasikci",
     "venue": "arXiv preprint.",
     "year": "2025",
+    "topics": ["LLM Serving"],
     "pdf": "https://arxiv.org/pdf/2502.20969"
   },
   {
@@ -31,6 +34,7 @@
     "authors": "Kan Zhu, Tian Tang, Qinyu Xu, Yile Gu, Zhichen Zeng, Rohan Kadekodi, Liangyu Zhao, Ang Li, Arvind Krishnamurthy, and Baris Kasikci",
     "venue": "arXiv preprint.",
     "year": "2025",
+    "topics": ["LLM Serving"],
     "pdf": "https://arxiv.org/pdf/2502.12216"
   },
   {
@@ -39,6 +43,7 @@
     "authors": "Kan Zhu, Yufei Gao, Yilong Zhao, Liangyu Zhao, Gefei Zuo, Yile Gu, Dedong Xie, Tian Tang, Qinyu Xu, Zihao Ye, Keisuke Kamahori, Chien-Yu Lin, Ziren Wang, Stephanie Wang, Arvind Krishnamurthy, Baris Kasikci",
     "venue": "Symposium on Operating Systems Design and Implementation. (OSDI)",
     "year": "2025",
+    "topics": ["LLM Serving"],
     "pdf": "https://arxiv.org/abs/2408.12757v1",
     "code": "https://github.com/efeslab/Nanoflow"
   },
@@ -48,6 +53,7 @@
     "authors": "Keisuke Kamahori, Tian Tang, Yile Gu, Kan Zhu, Baris Kasikci",
     "venue": "International Conference on Learning Representations. (ICLR)",
     "year": "2025",
+    "topics": ["LLM Serving"],
     "pdf": "https://arxiv.org/pdf/2402.07033",
     "code": "https://github.com/efeslab/fiddler"
   },
@@ -57,6 +63,7 @@
     "authors": "Jiaming Tang, Yilong Zhao, Kan Zhu, Guangxuan Xiao, Baris Kasikci, Song Han",
     "venue": "International Conference on Machine Learning. (ICML)",
     "year": "2024",
+    "topics": ["LLM Serving"],
     "pdf": "https://arxiv.org/pdf/2406.10774",
     "code": "https://github.com/mit-han-lab/Quest"
   },
@@ -66,6 +73,7 @@
     "authors": "Yilong Zhao, Chien-Yu Lin, Kan Zhu, Zihao Ye, Lequn Chen, Size Zheng, Luis Ceze, Arvind Krishnamurthy, Tianqi Chen, and Baris Kasikci",
     "venue": "Annual Conference on Machine Learning and Systems. (MLSys)",
     "year": "2024",
+    "topics": ["LLM Serving"],
     "pdf": "https://arxiv.org/pdf/2310.19102",
     "code": "https://github.com/efeslab/Atom"
   }

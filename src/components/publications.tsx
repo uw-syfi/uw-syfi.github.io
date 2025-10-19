@@ -9,6 +9,7 @@ interface Publication {
   authors: string;
   venue: string;
   year: string;
+  topics?: string[];
   abstract: string;
   pdf?: string;
   code?: string;
@@ -18,7 +19,6 @@ interface Publication {
 export default function Publications({ limit }: { limit?: number }) {
   const [location, navigate] = useLocation();
   const { data: publications, isLoading } = useContent<Publication[]>('publications');
-  const [filter, setFilter] = useState('all');
 
   if (isLoading) {
     return (
@@ -32,37 +32,14 @@ export default function Publications({ limit }: { limit?: number }) {
   }
 
   const papers = publications || [];
-  const years = ['all', ...Array.from(new Set(papers.map(p => p.year))).sort().reverse()];
-  
-  const filteredPapers = filter === 'all' 
-    ? papers 
-    : papers.filter(paper => paper.year === filter);
   const displayedPapers = typeof limit === 'number' && limit > 0
-    ? filteredPapers.slice(0, limit)
-    : filteredPapers;
+    ? papers.slice(0, limit)
+    : papers;
 
   return (
     <section id="publications" className="py-16 bg-slate-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-bold text-uw-slate mb-8 text-center">Publications</h2>
-        
-        <div className="mb-6 flex justify-center">
-          <div className="flex space-x-4">
-            {years.map((year) => (
-              <button
-                key={year}
-                onClick={() => setFilter(year)}
-                className={`px-4 py-2 rounded-md font-medium transition-colors ${
-                  filter === year
-                    ? 'bg-uw-purple text-white'
-                    : 'bg-white text-uw-gray hover:bg-purple-50'
-                }`}
-              >
-                {year === 'all' ? 'All' : year}
-              </button>
-            ))}
-          </div>
-        </div>
+        <h2 className="text-3xl font-bold text-uw-slate mb-8 text-center">Recent Publications</h2>
 
         <div className="space-y-6">
           {displayedPapers.map((paper) => (
@@ -80,6 +57,18 @@ export default function Publications({ limit }: { limit?: number }) {
                   </p>
                   {paper.abstract && (
                     <p className="text-sm text-uw-gray mb-4">{paper.abstract}</p>
+                  )}
+                  {paper.topics && paper.topics.length > 0 && (
+                    <div className="flex flex-wrap gap-2 mb-3">
+                      {paper.topics.map((topic) => (
+                        <span
+                          key={topic}
+                          className="px-2 py-1 bg-blue-50 text-uw-blue text-xs font-medium rounded"
+                        >
+                          {topic}
+                        </span>
+                      ))}
+                    </div>
                   )}
                   <div className="flex space-x-4">
                     {paper.pdf && (
