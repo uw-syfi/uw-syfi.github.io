@@ -1,6 +1,5 @@
 import Navigation from "@/components/navigation";
 import Hero from "@/components/hero";
-import Mission from "@/components/mission";
 import People from "@/components/people";
 import Research from "@/components/research";
 import News from "@/components/news";
@@ -34,7 +33,6 @@ export default function Home() {
       <Navigation />
       <main>
         <Hero />
-        <Mission />
         <News limit={5} />
         <Research />
         <People />

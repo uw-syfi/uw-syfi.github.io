@@ -74,8 +74,13 @@ export default function RollingGallery({ className = '' }: RollingGalleryProps) 
         </div>
       ))}
       
-      {/* Overlay for better text readability */}
-      <div className="absolute inset-0 bg-gradient-to-b from-purple-900/50 via-purple-800/30 to-purple-900/60" />
+      {/* Overlay for better text readability - split left/right intensities */}
+      <div className="absolute inset-0 pointer-events-none">
+        {/* Left 70%: slightly lighter purple overlay */}
+        <div className="absolute inset-y-0 left-0 w-[68%] bg-gradient-to-b from-purple-900/45 via-purple-800/30 to-purple-900/55" />
+        {/* Right 30%: darker purple overlay with slight blur for text contrast */}
+        <div className="absolute inset-y-0 right-0 w-[32%] backdrop-blur-[2px] bg-gradient-to-b from-purple-900/75 via-purple-800/55 to-purple-900/85" />
+      </div>
     </div>
   );
 }
