@@ -14,11 +14,11 @@ export default function Hero() {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full h-full flex items-center py-8">
         <div className="w-full md:flex md:items-center md:gap-8">
           {/* Left side - removed title */}
-          <div className="hidden md:block md:w-[70%]" />
+          <div className="hidden md:block md:w-[75%]" />
           
           {/* Right side - Mission text directly on overlay */
           }
-          <div className="p-2 h-full flex flex-col justify-between text-white md:w-[30%]">
+          <div className="p-2 h-full flex flex-col justify-between text-white md:w-[25%]">
             <div>
               <h2 className="font-bold text-white mb-4 text-[26px]">SyFI Lab</h2>
               <div className="prose prose-sm text-white leading-relaxed mb-4">

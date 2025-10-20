@@ -36,19 +36,18 @@ export default function Blogs() {
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {posts.map((post) => (
-            <article key={post.id} className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
-              <div className="p-6">
-                <div className="text-sm text-uw-gray mb-2">{post.date}</div>
-                <h3 className="text-xl font-semibold text-uw-slate mb-3">{post.title}</h3>
-                <p className="text-uw-gray mb-4">{post.excerpt}</p>
-                <a
-                  href={post.link}
-                  className="text-uw-blue hover:text-uw-sky font-medium flex items-center"
-                >
-                  Read More <ArrowRight size={16} className="ml-1" />
-                </a>
-              </div>
-            </article>
+            <a key={post.id} href={post.link} className="block h-full">
+              <article className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow cursor-pointer h-full flex flex-col">
+                <div className="p-6 flex flex-col h-full">
+                  <div className="text-sm text-uw-gray mb-2">{post.date}</div>
+                  <h3 className="text-xl font-semibold text-uw-slate mb-3">{post.title}</h3>
+                  <p className="text-uw-gray mb-4">{post.excerpt}</p>
+                  <span className="text-uw-blue hover:text-uw-sky font-medium inline-flex items-center mt-auto">
+                    Read More <ArrowRight size={16} className="ml-1" />
+                  </span>
+                </div>
+              </article>
+            </a>
           ))}
         </div>
         

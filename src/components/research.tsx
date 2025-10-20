@@ -42,21 +42,17 @@ export default function Research() {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {areas.map((area) => {
             const IconComponent = iconMap[area.icon as keyof typeof iconMap] || Box;
+            const href = `/publications?topic=${encodeURIComponent(area.title)}`;
             return (
-              <div key={area.id} className="bg-white rounded-lg p-6 hover:bg-slate-100 transition-colors shadow-md hover:shadow-lg">
-                <div className="text-uw-blue mb-4">
-                  <IconComponent size={48} />
+              <Link key={area.id} href={href} className="block">
+                <div className="bg-white rounded-lg p-6 hover:bg-slate-100 transition-colors shadow-md hover:shadow-lg cursor-pointer h-full">
+                  <div className="text-uw-blue mb-4">
+                    <IconComponent size={48} />
+                  </div>
+                  <h3 className="text-xl font-semibold text-uw-slate mb-3">{area.title}</h3>
+                  <p className="text-uw-gray">{area.description}</p>
                 </div>
-                <h3 className="text-xl font-semibold text-uw-slate mb-3">{area.title}</h3>
-                <p className="text-uw-gray mb-4">{area.description}</p>
-                <Link 
-                  href={`/publications?topic=${encodeURIComponent(area.title)}`}
-                  className="inline-flex items-center text-uw-blue hover:text-uw-purple text-sm font-medium transition-colors"
-                >
-                  View Publications
-                  <ArrowRight size={14} className="ml-1" />
-                </Link>
-              </div>
+              </Link>
             );
           })}
         </div>

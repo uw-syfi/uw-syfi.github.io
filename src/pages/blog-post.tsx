@@ -138,7 +138,7 @@ export default function BlogPostPage() {
       <main>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <div className="mb-12">
-            <Link href="/#blogs" className="inline-flex items-center text-uw-purple hover:text-uw-gold mb-8">
+            <Link href="/blog" className="inline-flex items-center text-uw-purple hover:text-uw-gold mb-8">
               <ArrowLeft size={16} className="mr-2" />
               Back to Blog
             </Link>

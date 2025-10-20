@@ -22,6 +22,9 @@ export default function PublicationsPage() {
   const [yearFilter, setYearFilter] = useState('all');
   const [topicFilter, setTopicFilter] = useState('all');
 
+  // Ensure page starts at top on route mount
+  useEffect(() => { window.scrollTo(0, 0); }, []);
+
   // Handle URL parameters for topic filtering
   useEffect(() => {
     const urlParams = new URLSearchParams(window.location.search);

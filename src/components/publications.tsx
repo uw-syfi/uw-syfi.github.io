@@ -43,14 +43,13 @@ export default function Publications({ limit }: { limit?: number }) {
 
         <div className="space-y-6">
           {displayedPapers.map((paper) => (
-            <div key={paper.id} className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
-              <div className="flex items-start justify-between">
-                <div className="flex-1">
-                  <Link href={`/publications/${paper.id}`}>
-                    <h3 className="text-lg font-semibold text-uw-slate mb-2 hover:text-uw-purple cursor-pointer transition-colors">
+            <Link key={paper.id} href={`/publications/${paper.id}`} className="block">
+              <div className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow cursor-pointer">
+                <div className="flex items-start justify-between">
+                  <div className="flex-1">
+                    <h3 className="text-lg font-semibold text-uw-slate mb-2 hover:text-uw-purple transition-colors">
                       {paper.title}
                     </h3>
-                  </Link>
                   <p className="text-uw-gray mb-2" dangerouslySetInnerHTML={{ __html: paper.authors }} />
                   <p className="text-uw-gray mb-3">
                     <em dangerouslySetInnerHTML={{ __html: paper.venue }} />
@@ -90,16 +89,17 @@ export default function Publications({ limit }: { limit?: number }) {
                       </a>
                     )}
                   </div>
-                </div>
-                <div className="ml-4">
+                  </div>
+                  <div className="ml-4">
                   <span className={`px-2 py-1 rounded text-xs font-medium ${
                     paper.year === '2024' ? 'bg-uw-purple text-white' : 'bg-uw-gray text-white'
                   }`}>
                     {paper.year}
                   </span>
+                  </div>
                 </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
         

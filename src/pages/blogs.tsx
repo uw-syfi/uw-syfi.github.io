@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { useContent } from "@/hooks/use-content";
 import { ArrowRight, Calendar, ArrowLeft } from "lucide-react";
 import { Link } from "wouter";
@@ -5,6 +6,9 @@ import { BlogPost } from "@/lib/blog-parser";
 
 export default function BlogsPage() {
   const { data: blogPosts, isLoading } = useContent<BlogPost[]>('blogs');
+
+  // Ensure page starts at top on route mount
+  useEffect(() => { window.scrollTo(0, 0); }, []);
 
   if (isLoading) {
     return (
@@ -22,7 +26,7 @@ export default function BlogsPage() {
     <div className="min-h-screen bg-slate-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="mb-8">
-          <Link href="/#blogs" className="inline-flex items-center text-uw-purple hover:text-uw-gold mb-4">
+          <Link href="/" className="inline-flex items-center text-uw-purple hover:text-uw-gold mb-4">
             <ArrowLeft size={16} className="mr-2" />
             Back to Home
           </Link>
