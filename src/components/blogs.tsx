@@ -36,7 +36,7 @@ export default function Blogs() {
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {posts.map((post) => (
-            <a key={post.id} href={post.link} className="block h-full">
+            <a key={post.id} href={post.link} target="_blank" rel="noopener noreferrer" className="block h-full">
               <article className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow cursor-pointer h-full flex flex-col">
                 <div className="p-6 flex flex-col h-full">
                   <div className="text-sm text-uw-gray mb-2">{post.date}</div>

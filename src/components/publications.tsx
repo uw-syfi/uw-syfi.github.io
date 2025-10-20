@@ -42,8 +42,9 @@ export default function Publications({ limit }: { limit?: number }) {
         <h2 className="text-3xl font-bold text-uw-slate mb-8 text-center">Recent Publications</h2>
 
         <div className="space-y-6">
-          {displayedPapers.map((paper) => (
-            <Link key={paper.id} href={`/publications/${paper.id}`} className="block">
+          {displayedPapers.map((paper: any) => (
+            <a key={paper.id} href={paper.link ? paper.link : `/publications/${paper.id}`}
+               target="_blank" rel="noopener noreferrer" className="block">
               <div className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow cursor-pointer">
                 <div className="flex items-start justify-between">
                   <div className="flex-1">
@@ -99,7 +100,7 @@ export default function Publications({ limit }: { limit?: number }) {
                   </div>
                 </div>
               </div>
-            </Link>
+            </a>
           ))}
         </div>
         

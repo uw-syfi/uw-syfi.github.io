@@ -108,15 +108,15 @@ export default function PublicationsPage() {
         </div>
 
         <div className="space-y-6">
-          {filteredPapers.map((paper) => (
-            <div key={paper.id} className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+          {filteredPapers.map((paper: any) => (
+            <a key={paper.id} href={paper.link ? paper.link : `/publications/${paper.id}`}
+               target="_blank" rel="noopener noreferrer" className="block">
+              <div className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow cursor-pointer">
               <div className="flex items-start justify-between">
                 <div className="flex-1">
-                  <Link href={`/publications/${paper.id}`}>
-                    <h2 className="text-xl font-semibold text-uw-slate mb-3 hover:text-uw-purple cursor-pointer transition-colors">
-                      {paper.title}
-                    </h2>
-                  </Link>
+                  <h2 className="text-xl font-semibold text-uw-slate mb-3 hover:text-uw-purple transition-colors">
+                    {paper.title}
+                  </h2>
                   <p className="text-uw-gray mb-2" dangerouslySetInnerHTML={{ __html: paper.authors }} />
                   <p className="text-uw-gray mb-4">
                     <em dangerouslySetInnerHTML={{ __html: paper.venue }} />
@@ -139,6 +139,7 @@ export default function PublicationsPage() {
                   <div className="flex space-x-4">
                     {paper.pdf && (
                       <a
+                        onClick={(e) => e.stopPropagation()}
                         href={paper.pdf}
                         className="text-uw-purple hover:text-uw-gold text-sm font-medium flex items-center px-3 py-1 border border-uw-purple rounded hover:bg-uw-purple hover:text-white transition-colors"
                       >
@@ -148,6 +149,7 @@ export default function PublicationsPage() {
                     )}
                     {paper.code && (
                       <a
+                        onClick={(e) => e.stopPropagation()}
                         href={paper.code}
                         className="text-uw-purple hover:text-uw-gold text-sm font-medium flex items-center px-3 py-1 border border-uw-purple rounded hover:bg-uw-purple hover:text-white transition-colors"
                       >
@@ -157,6 +159,7 @@ export default function PublicationsPage() {
                     )}
                     {paper.bibtex && (
                       <a
+                        onClick={(e) => e.stopPropagation()}
                         href={paper.bibtex}
                         className="text-uw-purple hover:text-uw-gold text-sm font-medium flex items-center px-3 py-1 border border-uw-purple rounded hover:bg-uw-purple hover:text-white transition-colors"
                       >
@@ -174,7 +177,8 @@ export default function PublicationsPage() {
                   </span>
                 </div>
               </div>
-            </div>
+              </div>
+            </a>
           ))}
         </div>
 

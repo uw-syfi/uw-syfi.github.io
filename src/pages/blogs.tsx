@@ -39,22 +39,21 @@ export default function BlogsPage() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {posts.map((post) => (
-            <article key={post.slug} className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
-              <div className="p-6">
-                <div className="flex items-center text-sm text-uw-gray mb-3">
-                  <Calendar size={16} className="mr-2" />
-                  {post.date}
+            <a key={post.slug} href={post.link} target="_blank" rel="noopener noreferrer" className="block h-full">
+              <article className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow cursor-pointer h-full flex flex-col">
+                <div className="p-6 flex flex-col h-full">
+                  <div className="flex items-center text-sm text-uw-gray mb-3">
+                    <Calendar size={16} className="mr-2" />
+                    {post.date}
+                  </div>
+                  <h2 className="text-xl font-semibold text-uw-slate mb-3">{post.title}</h2>
+                  <p className="text-uw-gray mb-4 leading-relaxed">{post.excerpt}</p>
+                  <span className="text-uw-blue hover:text-uw-sky font-medium inline-flex items-center mt-auto">
+                    Read Full Article <ArrowRight size={16} className="ml-1" />
+                  </span>
                 </div>
-                <h2 className="text-xl font-semibold text-uw-slate mb-3">{post.title}</h2>
-                <p className="text-uw-gray mb-4 leading-relaxed">{post.excerpt}</p>
-                <a
-                  href={post.link}
-                  className="text-uw-blue hover:text-uw-sky font-medium flex items-center"
-                >
-                  Read Full Article <ArrowRight size={16} className="ml-1" />
-                </a>
-              </div>
-            </article>
+              </article>
+            </a>
           ))}
         </div>
 

@@ -17,7 +17,8 @@
     "year": "2025",
     "topics": ["LLM Serving"],
     "pdf": "https://arxiv.org/abs/2501.01005",
-    "code": "https://github.com/flashinfer-ai/flashinfer"
+    "code": "https://github.com/flashinfer-ai/flashinfer",
+    "link": "https://flashinfer.ai/2024/12/16/flashinfer-v02-release.html"
   },
   {
     "id": "telerag",

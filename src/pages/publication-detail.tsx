@@ -19,6 +19,7 @@ interface Publication {
   pdf?: string;
   code?: string;
   bibtex?: string;
+  link?: string; // optional external page to redirect to
 }
 
 interface PublicationContent {
@@ -37,7 +38,17 @@ export default function PublicationDetailPage() {
     window.scrollTo(0, 0);
   }, [params?.id]);
 
-  // Load publication content (markdown or JSON)
+  // Resolve the publication and redirect if an external link is provided
+  const publication = publications?.find(p => p.id === params?.id);
+
+  useEffect(() => {
+    if (publication?.link) {
+      // Redirect to external link if provided in publications.json
+      window.location.href = publication.link as string;
+    }
+  }, [publication?.link]);
+
+  // Load publication content from markdown only (no JSON), when there's no external link
   const { data: publicationContent, isLoading: contentLoading } = useQuery({
     queryKey: ['publication-content', params?.id],
     queryFn: async () => {
@@ -49,36 +60,19 @@ export default function PublicationDetailPage() {
         gfm: true
       });
 
-      // Try to fetch JSON first (for production/built site)
-      try {
-        const jsonPath = getAssetPath(`publications/${params.id}.json`);
-        const jsonResponse = await fetch(jsonPath);
-        if (jsonResponse.ok) {
-          const data = await jsonResponse.json();
-          return data;
-        }
-      } catch (error) {
-        console.log('JSON not found, trying markdown...');
-      }
-
-      // Fallback to fetching and processing markdown (for development)
+      // Fetch and process markdown
       try {
         const mdPath = getAssetPath(`publications/${params.id}.md`);
-        console.log('Fetching markdown from:', mdPath);
         const mdResponse = await fetch(mdPath);
-        console.log('Markdown fetch response:', mdResponse.status, mdResponse.ok);
         if (!mdResponse.ok) {
           // No content file found, return null (will show empty page)
-          console.log('Markdown file not found');
           return null;
         }
 
         const markdownText = await mdResponse.text();
-        console.log('Markdown text length:', markdownText.length);
 
         // Check if we got HTML instead of markdown (development server error page)
         if (markdownText.trim().startsWith('<!DOCTYPE') || markdownText.trim().startsWith('<script')) {
-          console.log('Received HTML instead of markdown - file does not exist');
           return null;
         }
 
@@ -120,9 +114,6 @@ export default function PublicationDetailPage() {
           }
         }
 
-        console.log('Frontmatter data:', data);
-        console.log('Content:', content.substring(0, 100));
-
         // Parse markdown to HTML
         const htmlContent = marked(content) as string;
 
@@ -131,15 +122,13 @@ export default function PublicationDetailPage() {
           tldr: data.tldr,
           keywords: data.keywords
         };
-        console.log('Returning publication content:', result);
         return result;
       } catch (error) {
         // No content file found, return null
-        console.error('Error loading markdown:', error);
         return null;
       }
     },
-    enabled: !!params?.id
+    enabled: !!params?.id && !publication?.link
   });
 
   const contentRef = useRef<HTMLDivElement | null>(null);
@@ -159,8 +148,6 @@ export default function PublicationDetailPage() {
       </div>
     );
   }
-
-  const publication = publications?.find(p => p.id === params?.id);
 
   if (!match || !params?.id || !publication) {
     return (
@@ -187,10 +174,6 @@ export default function PublicationDetailPage() {
       <main>
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <div className="mb-12">
-            <Link href="/publications" className="inline-flex items-center text-uw-purple hover:text-uw-gold mb-8">
-              <ArrowLeft size={16} className="mr-2" />
-              Back to Publications
-            </Link>
 
             {/* Title */}
             <h1 className="text-4xl font-bold text-uw-slate mb-6 leading-tight">
@@ -297,13 +280,7 @@ export default function PublicationDetailPage() {
             </article>
           )}
 
-          {/* Back button at bottom */}
-          <div className="mt-12 pt-8 border-t border-gray-200 text-center">
-            <Link href="/publications" className="inline-flex items-center px-6 py-3 border border-uw-purple text-uw-purple hover:bg-uw-purple hover:text-white rounded-md font-medium transition-colors">
-              <ArrowLeft size={16} className="mr-2" />
-              Back to All Publications
-            </Link>
-          </div>
+          {/* No back button; detail pages open in new tabs now */}
         </div>
       </main>
       <Footer />

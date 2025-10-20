@@ -77,7 +77,8 @@ export default function TalksPage() {
 
         <div className="space-y-6">
           {presentations.map((talk) => (
-            <div key={talk.id} className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+            <a key={talk.id} href={talk.video || talk.slides || '#'} className="block" onClick={(e) => { if (!talk.video && !talk.slides) e.preventDefault(); }}>
+            <div className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow cursor-pointer">
               <div className="flex items-start justify-between mb-4">
                 <div className="flex-1">
                   <h2 className="text-xl font-semibold text-uw-slate mb-3">{talk.title}</h2>
@@ -119,7 +120,7 @@ export default function TalksPage() {
                     </div>
                   )}
                 </div>
-                <div className="ml-6 flex space-x-4">
+                <div className="ml-6 flex space-x-4" onClick={(e) => e.stopPropagation()}>
                   {talk.slides && (
                     <a 
                       href={talk.slides} 
@@ -139,6 +140,7 @@ export default function TalksPage() {
                 </div>
               </div>
             </div>
+            </a>
           ))}
         </div>
 

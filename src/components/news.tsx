@@ -33,7 +33,7 @@ export default function News({ limit = 5 }: { limit?: number }) {
             <li key={n.id} className="py-1.5 flex items-baseline gap-4">
               <span className="text-sm text-uw-gray w-28 shrink-0">{n.date}</span>
               {n.link ? (
-                <a href={n.link} className="text-uw-slate hover:text-uw-purple truncate text-base">
+                <a href={n.link} target="_blank" rel="noopener noreferrer" className="text-uw-slate hover:text-uw-purple truncate text-base">
                   {n.title}
                 </a>
               ) : (

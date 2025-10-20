@@ -239,6 +239,49 @@ routes.forEach(route => {
   console.log(`✅ Created ${route}/index.html`);
 });
 
+// Step 4b: Create static pages (or redirects) for each publication detail route
+console.log('📄 Creating publication detail pages (and redirects)...');
+try {
+  const publicationsPath = path.join(DATA_DIR, 'publications.json');
+  if (fs.existsSync(publicationsPath)) {
+    const publications = JSON.parse(fs.readFileSync(publicationsPath, 'utf-8'));
+    let count = 0;
+    publications.forEach(pub => {
+      if (!pub || !pub.id) return;
+      const pubDir = path.join(OUTPUT_DIR, 'publications', pub.id);
+      fs.mkdirSync(pubDir, { recursive: true });
+      const pubIndexPath = path.join(pubDir, 'index.html');
+
+      if (pub.link) {
+        // Generate a lightweight static redirect page for external link
+        const redirectHtml = `<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="refresh" content="0; url=${pub.link}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Redirecting…</title>
+    <script>window.location.replace(${JSON.stringify(pub.link)});</script>
+  </head>
+  <body>
+    <p>Redirecting to <a href="${pub.link}">${pub.link}</a>…</p>
+  </body>
+</html>`;
+        fs.writeFileSync(pubIndexPath, redirectHtml);
+      } else {
+        // Serve SPA index for local markdown-backed publication detail
+        fs.writeFileSync(pubIndexPath, indexContent);
+      }
+      count += 1;
+    });
+    console.log(`✅ Created publication pages for ${count} items`);
+  } else {
+    console.log('⚠️  publications.json not found, skipping publication detail pages');
+  }
+} catch (err) {
+  console.error('❌ Failed to create publication detail pages:', err.message);
+}
+
 // Step 5: Generate sitemap.xml
 console.log('🗺️  Generating sitemap.xml...');
 try {
