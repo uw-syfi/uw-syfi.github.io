@@ -48,6 +48,15 @@ export default function PublicationDetailPage() {
     }
   }, [publication?.link]);
 
+  // Set document title to publication title
+  useEffect(() => {
+    if (publication?.title) {
+      const prev = document.title;
+      document.title = `${publication.title} - SyFI Lab`;
+      return () => { document.title = prev; };
+    }
+  }, [publication?.title]);
+
   // Load publication content from markdown only (no JSON), when there's no external link
   const { data: publicationContent, isLoading: contentLoading } = useQuery({
     queryKey: ['publication-content', params?.id],

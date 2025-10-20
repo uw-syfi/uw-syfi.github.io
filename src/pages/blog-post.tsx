@@ -89,6 +89,15 @@ export default function BlogPostPage() {
     }
   }, [post]);
 
+  // Set document title to blog post title
+  useEffect(() => {
+    if (post?.title) {
+      const prev = document.title;
+      document.title = `${post.title} - SyFI Lab`;
+      return () => { document.title = prev; };
+    }
+  }, [post?.title]);
+
   if (!match || !params?.slug) {
     return (
       <div className="min-h-screen bg-slate-50 flex items-center justify-center">
