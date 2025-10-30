@@ -1,5 +1,14 @@
 [
   {
+    "id": "piper",
+    "title": "Piper: Towards Flexible Pipeline Parallelism for PyTorch",
+    "authors": "Megan Frisella, Arvin Oentoro, Xiangyu Gao, Gilbert Bernstein, Stephanie Wang",
+    "venue": "Practical Adoption Challenges of ML for Systems (PACMI)",
+    "year": "2025",
+    "topics": ["Distributed Training"],
+    "pdf": "https://dl.acm.org/doi/10.1145/3766882.3767187",
+  },
+  {
     "id": "liteasr",
     "title": "LiteASR: Efficient Automatic Speech Recognition with Low-Rank Approximation",
     "authors": "Keisuke Kamahori, Jungo Kasai, Noriyuki Kojima, Baris Kasikci",
