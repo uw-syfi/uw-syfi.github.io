@@ -131,6 +131,13 @@
       "image": "/img/people/yingbo.jpeg"
     },
     {
+      "id": "yuyao-wang",
+      "name": "Yuyao Wang",
+      "email": "yuyao6@cs.washington.edu",
+      "website": "https://kristoff-starling.github.io/",
+      "image": "/img/people/yuyao.jpg"
+    },
+    {
       "id": "megan-frisella",
       "name": "Megan Frisella",
       "email": "mfris@cs.washington.edu",
@@ -156,6 +163,13 @@
       "email": "me@stevengao.net",
       "website": "https://stevengao.net/",
       "image": "/img/people/default.jpg"
+    },
+    {
+      "id": "mat-jacob",
+      "name": "Mat Jacob",
+      "email": "mjacob2@cs.washington.edu",
+      "website": "https://mjacob1002.github.io/",
+      "image": "/img/people/mat.png"
     }
   ],
   "students": [
