@@ -1,4 +1,10 @@
 talks:
+  - id: "in-gim"
+    title: "Guest Speaker: In Gim"
+    date: "Dec 12, 2025"
+    abstract: "As LLMs become the core of modern AI applications, inference efficiency has become critical, not just for speed but also for sustainability. An old lesson of systems design is that efficiency arises from understanding the workload. Yet today’s LLM serving systems are largely application agnostic. They are optimized for generic text completion, while real applications now perform far richer tasks such as invoking tools, retrieving data, executing code, and coordinating with other agents. It raises a question: How should we rethink LLM serving, not from the system’s perspective, but from the application’s? In this talk, I will explore that question and show how an application-centered approach leads to serving systems that are more programmable, flexible, and application aware."
+    speaker_bio: "In Gim is a fourth-year Ph.D. student at Yale University, advised by Prof. Lin Zhong. His research focuses on systems for machine learning, specifically on programmable systems for AI. His first-author works have been recognized by venues like SOSP, MLSys, MobiSys, HotOS, EMNLP, and AAAI."
+
   - id: "lequn-chen"
     title: "Guest Speaker: Lequn Chen"
     date: "Nov 21, 2025"
