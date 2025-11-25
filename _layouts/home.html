@@ -3,12 +3,17 @@ layout: default
 ---
 
 <!-- Section 1: Lab Introduction & Research Areas -->
-<div class="row g-5 mb-5">
-  <div class="col-md-7">
-    {{ content }}
+<div class="mb-5">
+  <div class="float-md-end ms-md-4 mb-3" style="max-width: 360px;">
+    <object
+      data="{{ site.github.url }}/assets/svg/areas.svg"
+      type="image/svg+xml"
+      width="100%"
+      style="display: block;"
+    ></object>
   </div>
-  <div class="col-md-5">
-    <object data="{{ site.github.url }}/assets/svg/areas.svg" type="image/svg+xml" width="100%" style="display: block;"></object>
+  <div class="clearfix">
+    {{ content }}
   </div>
 </div>
 
