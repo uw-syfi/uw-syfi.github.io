@@ -10,7 +10,7 @@ title: "Publications"
     {% if pub.link %}
       <h5><a href="{{ pub.link }}">{{ pub.title }}</a></h5>
     {% else %}
-      <h5><a href="{{ site.github.url }}/publications/{{ pub.id }}">{{ pub.title }}</a></h5>
+      <h5><a href="{{ pub.pdf }}">{{ pub.title }}</a></h5>
     {% endif %}
     {% if pub.award %}<span class="badge bg-warning text-dark">{{ pub.award }}</span>{% endif %}
     <p class="text-muted">{{ pub.authors | join: ", " }} &mdash; {{ pub.venue }} ({{ pub.year }})</p>
