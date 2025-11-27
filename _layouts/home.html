@@ -83,7 +83,12 @@ layout: default
       <h3 class="mb-1">{{ recent_talk.title }}</h3>
       <p class="text-muted small mb-2">
         <span class="badge bg-secondary me-2">{{ recent_talk.date }}</span>
-        {% if recent_talk.location %}{{ recent_talk.location }}{% endif %}
+        <span class="me-2">
+          {{ recent_talk.speaker }}
+          {% if recent_talk.affiliation %}
+            {% if recent_talk.speaker %} &mdash; {% endif %}{{ recent_talk.affiliation }}
+          {% endif %}
+        </span>
       </p>
 
       {% if recent_talk.abstract %}
