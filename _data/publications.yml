@@ -1,4 +1,19 @@
 index:
+  - id: "raydata"
+    title: "The Streaming Batch Model for Efficient and Fault-Tolerant Heterogeneous Execution"
+    authors: ["Frank Sifei Luan", "Ron Yifeng Wang", "Yile Gu", "Ziming Mao", "Charlotte Lin", "Amog Kamsetty", "Hao Chen", "Cheng Su", "Balaji Veeramani", "Scott Lee", "SangBin Cho", "Clark Zinzow", "Eric Liang", "Ion Stoica", "Stephanie Wang"]
+    year: 2025
+    topics: ["ML+Data", "Efficient AI", "Flexible AI"]
+    pdf: "https://arxiv.org/abs/2501.12407"
+
+  - id: "distscheduling"
+    title: "Programmable and Adaptive Scheduling for Distributed Systems"
+    authors: ["Yuyao Wang", "Xiangfeng Zhu", "Ratul Mahajan", "Stephanie Wang"]
+    venue: "Hot Topics in Networks (HotNets)"
+    year: 2025
+    topics: ["Distributed Scheduling"]
+    pdf: "https://dl.acm.org/doi/10.1145/3772356.3772391"
+
   - id: "piper"
     title: "Piper: Towards Flexible Pipeline Parallelism for PyTorch"
     authors: ["Megan Frisella", "Arvin Oentoro", "Xiangyu Gao", "Gilbert Bernstein", "Stephanie Wang"]
@@ -46,6 +61,14 @@ index:
     topics: ["LLM Serving"]
     pdf: "https://arxiv.org/pdf/2502.12216"
 
+  - id: "argos"
+    title: "Argos: Detecting Dynamic Anomalies in the Cloud with Rule Generation"
+    authors: ["Yile Gu", "Hoang Doan Nguyen", "Demirhan Celik", "Sifat Hasan", "Yifan Xiong", "Jonathan Mace", "Yuting Jiang", "Yigong Hu", "Baris Kasikci", "Peng Cheng"]
+    venue: "arXiv preprint (2025)"
+    year: 2025
+    topics: ["Agents", "Cloud Reliability"]
+    pdf: "https://arxiv.org/pdf/2501.14170"
+
   - id: "nanoflow"
     title: "NanoFlow: Towards Optimal Large Language Model Serving Throughput"
     authors: ["Kan Zhu", "Yufei Gao", "Yilong Zhao", "Liangyu Zhao", "Gefei Zuo", "Yile Gu", "Dedong Xie", "Tian Tang", "Qinyu Xu", "Zihao Ye", "Keisuke Kamahori", "Chien-Yu Lin", "Ziren Wang", "Stephanie Wang", "Arvind Krishnamurthy", "Baris Kasikci"]
@@ -56,6 +79,14 @@ index:
     code: "https://github.com/efeslab/Nanoflow"
     link: "https://syfi.cs.washington.edu/publications/nanoflow/"
 
+  - id: "mlsystemsextensibility"
+    title: "Towards ML System Extensibility"
+    authors: ["Weixin Deng", "Andy Ruan", "Megan Frisella", "Kai-Hsun Chen", "SangBin Cho", "Jack Tigar Humphries", "Rui Qiao", "Stephanie Wang"]
+    venue: "Hot Topics in Operating Systems (HotOS)"
+    year: 2025
+    topics: ["Flexible AI", "Efficient AI"]
+    pdf: "https://dl.acm.org/doi/10.1145/3713082.3730392"
+
   - id: "fiddler"
     title: "Fiddler: CPU-GPU Orchestration for Fast Inference of Mixture-of-Experts Models"
     authors: ["Keisuke Kamahori", "Tian Tang", "Yile Gu", "Kan Zhu", "Baris Kasikci"]
@@ -65,6 +96,14 @@ index:
     pdf: "https://arxiv.org/pdf/2402.07033"
     code: "https://github.com/efeslab/fiddler"
     link: "https://syfi.cs.washington.edu/publications/fiddler/"
+
+  - id: "datacomplm"
+    title: "Datacomp-LM: In search of the next generation of training sets for language models"
+    authors: ["Jeffrey Li", "Alex Fang", "Georgios Smyrnis", "Maor Ivgi", "Matt Jordan", "Samir Gadre", "Hritik Bansal", "Etash Guha", "Sedrick Keh", "Kushal Arora", "Saurabh Garg", "Rui Xin", "Niklas Muennighoff", "Reinhard Heckel", "Jean Mercat", "Mayee Chen", "Suchin Gururangan", "Mitchell Wortsman", "Alon Albalak", "Yonatan Bitton", "Marianna Nezhurina", "Amro Abbas", "Cheng-Yu Hsieh", "Dhruba Ghosh", "Josh Gardner", "Maciej Kilian", "Hanlin Zhang", "Rulin Shao", "Sarah Pratt", "Sunny Sanyal", "Gabriel Ilharco", "Giannis Daras", "Kalyani Marathe", "Aaron Gokaslan", "Jieyu Zhang", "Khyathi Chandu", "Thao Nguyen", "Igor Vasiljevic", "Sham Kakade", "Shuran Song", "Sujay Sanghavi", "Fartash Faghri", "Sewoong Oh", "Luke Zettlemoyer", "Kyle Lo", "Alaaeldin El-Nouby", "Hadi Pouransari", "Alexander Toshev", "Stephanie Wang", "Dirk Groeneveld", "Luca Soldaini", "Pang Wei Koh", "Jenia Jitsev", "Thomas Kollar", "Alexandros G Dimakis", "Yair Carmon", "Achal Dave", "Ludwig Schmidt", "Vaishaal Shankar"]
+    venue: "Conference on Neural Information Processing Systems (NeurIPS)"
+    year: 2024
+    topics: ["ML+Data"]
+    pdf: "https://proceedings.neurips.cc/paper_files/paper/2024/hash/19e4ea30dded58259665db375885e412-Abstract-Datasets_and_Benchmarks_Track.html"
 
   - id: "quest"
     title: "Quest: Query-Aware Sparsity for Efficient Long-Context LLM Inference"
