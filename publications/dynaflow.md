@@ -60,4 +60,8 @@ As models get bigger and hardware gets more complex, we cannot afford to leave p
 
 DynaFlow proves that we can have it both ways: the high performance of hand-tuned parallelism and the flexibility of high-level programming.
 
-Are you a system developer interested in how to write a custom scheduler script for your specific model architecture? We can walk you through the API.
+# Future Work
+
+The expressive frontend of DynaFlow has even more potential. We are working on adding more advanced features by using it, such as:
+- A unified interface for different parallelism (including intra-device and inter-device parallelism)
+- Making DynaFlow a plugin for any existing LLM serving framework
