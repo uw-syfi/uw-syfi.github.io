@@ -14,8 +14,8 @@ index:
     year: 2026
     topics: ["Efficient AI"]
 
-  - id: "raginfer"
-    title: "RagInfer: Efficient Retrieval-Augmented Generation Inference with Lookahead Retrieval"
+  - id: "telerag"
+    title: "TeleRAG: Efficient Retrieval-Augmented Generation Inference with Lookahead Retrieval"
     authors: ["Chien-Yu Lin", "Keisuke Kamahori", "Yiyu Liu", "Xiaoxiang Shi", "Madhav Kashyap", "Yile Gu", "Rulin Shao", "Zihao Ye", "Kan Zhu", "Stephanie Wang", "Arvind Krishnamurthy", "Rohan Kadekodi", "Luis Ceze", "Baris Kasikci"]
     venue: "Annual Conference on Machine Learning and Systems (MLSys)"
     year: 2026
