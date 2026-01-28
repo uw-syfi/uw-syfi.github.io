@@ -1,4 +1,36 @@
 index:
+  - id: "sparsespec"
+    title: "Accelerating Large-Scale Reasoning Model Inference with Sparse Self-Speculative Decoding"
+    authors: ["Yilong Zhao", "Jiaming Tang", "Kan Zhu", "Zihao Ye", "Chi-Chih Chang", "Chaofan Lin", "Jongseok Park", "Guangxuan Xiao", "Mohamed S. Abdelfattah", "Mingyu Gao", "Baris Kasikci", "Song Han", "Ion Stoica"]
+    venue: "Annual Conference on Machine Learning and Systems (MLSys)"
+    year: 2026
+    topics: ["LLM Serving"]
+    pdf: "https://arxiv.org/abs/2512.01278"
+
+  - id: "dynaflow"
+    title: "DynaFlow: Transparent and Flexible Intra-Device Parallelism via Programmable Operator Scheduling"
+    authors: ["Yi Pan", "Yile Gu", "Jinbin Luo", "Yibo Wu", "Ziren Wang", "Hongtao Zhang", "Ziyi Xu", "Shengkai Lin", "Baris Kasikci", "Stephanie Wang"]
+    venue: "Annual Conference on Machine Learning and Systems (MLSys)"
+    year: 2026
+    topics: ["Efficient AI"]
+
+  - id: "raginfer"
+    title: "RagInfer: Efficient Retrieval-Augmented Generation Inference with Lookahead Retrieval"
+    authors: ["Chien-Yu Lin", "Keisuke Kamahori", "Yiyu Liu", "Xiaoxiang Shi", "Madhav Kashyap", "Yile Gu", "Rulin Shao", "Zihao Ye", "Kan Zhu", "Stephanie Wang", "Arvind Krishnamurthy", "Rohan Kadekodi", "Luis Ceze", "Baris Kasikci"]
+    venue: "Annual Conference on Machine Learning and Systems (MLSys)"
+    year: 2026
+    topics: ["LLM Serving"]
+    link: "https://syfi.cs.washington.edu/publications/telerag/"
+    pdf: "https://arxiv.org/pdf/2502.20969"
+
+  - id: "tactic"
+    title: "Tactic: Adaptive Sparse Attention with Clustering and Distribution Fitting for Long-Context LLMs"
+    authors: ["Kan Zhu", "Tian Tang", "Qinyu Xu", "Yile Gu", "Zhichen Zeng", "Rohan Kadekodi", "Liangyu Zhao", "Ang Li", "Arvind Krishnamurthy", "Baris Kasikci"]
+    venue: "International Conference on Learning Representations (ICLR)"
+    year: 2026
+    topics: ["LLM Serving"]
+    pdf: "https://arxiv.org/pdf/2502.12216"
+
   - id: "raydata"
     title: "The Streaming Batch Model for Efficient and Fault-Tolerant Heterogeneous Execution"
     authors: ["Frank Sifei Luan", "Ron Yifeng Wang", "Yile Gu", "Ziming Mao", "Charlotte Lin", "Amog Kamsetty", "Hao Chen", "Cheng Su", "Balaji Veeramani", "Scott Lee", "SangBin Cho", "Clark Zinzow", "Eric Liang", "Ion Stoica", "Stephanie Wang"]
@@ -43,23 +75,6 @@ index:
     code: "https://github.com/flashinfer-ai/flashinfer"
     link: "https://flashinfer.ai/2024/12/16/flashinfer-v02-release.html"
     award: "Best Paper Award"
-
-  - id: "telerag"
-    title: "TeleRAG: Efficient Retrieval-Augmented Generation Inference with Lookahead Retrieval"
-    authors: ["Chien-Yu Lin", "Keisuke Kamahori", "Yiyu Liu", "Xiaoxiang Shi", "Madhav Kashyap", "Yile Gu", "Rulin Shao", "Zihao Ye", "Kan Zhu", "Stephanie Wang", "Arvind Krishnamurthy", "Rohan Kadekodi", "Luis Ceze", "Baris Kasikci"]
-    venue: "arXiv preprint"
-    year: 2025
-    topics: ["LLM Serving"]
-    link: "https://syfi.cs.washington.edu/publications/telerag/"
-    pdf: "https://arxiv.org/pdf/2502.20969"
-
-  - id: "tactic"
-    title: "Tactic: Adaptive Sparse Attention with Clustering and Distribution Fitting for Long-Context LLMs"
-    authors: ["Kan Zhu", "Tian Tang", "Qinyu Xu", "Yile Gu", "Zhichen Zeng", "Rohan Kadekodi", "Liangyu Zhao", "Ang Li", "Arvind Krishnamurthy", "Baris Kasikci"]
-    venue: "arXiv preprint"
-    year: 2025
-    topics: ["LLM Serving"]
-    pdf: "https://arxiv.org/pdf/2502.12216"
 
   - id: "argos"
     title: "Argos: Detecting Dynamic Anomalies in the Cloud with Rule Generation"
