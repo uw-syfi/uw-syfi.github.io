@@ -1,4 +1,12 @@
 index:
+  - id: "flashinfer-bench"
+    title: "FlashInfer-Bench: Building the Virtuous Cycle for AI-driven LLM Systems"
+    authors: ["Shanli Xing", "Yiyan Zhai", "Alexander Jiang", "Yixin Dong", "Yong Wu", "Zihao Ye", "Charlie Ruan", "Yingyi Huang", "Yineng Zhang", "Liangsheng Yin", "Aksara Bayyapu", "Luis Ceze", "Tianqi Chen"]
+    venue: "Annual Conference on Machine Learning and Systems (MLSys)"
+    year: 2026
+    topics: ["LLM Serving"]
+    pdf: "https://arxiv.org/abs/2601.00227"
+
   - id: "sparsespec"
     title: "Accelerating Large-Scale Reasoning Model Inference with Sparse Self-Speculative Decoding"
     authors: ["Yilong Zhao", "Jiaming Tang", "Kan Zhu", "Zihao Ye", "Chi-Chih Chang", "Chaofan Lin", "Jongseok Park", "Guangxuan Xiao", "Mohamed S. Abdelfattah", "Mingyu Gao", "Baris Kasikci", "Song Han", "Ion Stoica"]
