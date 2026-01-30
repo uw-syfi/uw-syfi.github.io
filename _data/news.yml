@@ -1,7 +1,7 @@
 news:
   - id: "2026-01-29-mlsys-iclr-2026"
     date: "Jan 29, 2026"
-    title: "Five papers accepted to MLSys 2026 and ICLR 2026!"
+    title: "Our works have been accepted to MLSys 2026 (DynaFlow, FCP, FlashInfer-Bench, SparseSpec, TeleRAG) and ICLR 2026 (Tactic)!"
     link: "/publications"
 
   - id: "2025-10-06-llmc-release"
