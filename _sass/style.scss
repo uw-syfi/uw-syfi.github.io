@@ -42,6 +42,25 @@ h4, h5, h6 {
   color: #5600b3;
 }
 
+// Blog post content links
+.col-md-12 a {
+  color: #5600b3;
+  text-decoration: underline;
+}
+.col-md-12 a:hover {
+  color: #3d0080;
+  text-decoration: underline;
+}
+
+// Blog post header spacing
+.col-md-12 h2,
+.col-md-12 h3,
+.col-md-12 h4,
+.col-md-12 h5,
+.col-md-12 h6 {
+  margin-top: 2rem;
+}
+
 img {
   max-width: 100% !important;
   height: auto !important;
