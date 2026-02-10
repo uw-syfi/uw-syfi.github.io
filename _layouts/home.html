@@ -24,7 +24,11 @@ layout: default
     {% for item in site.data.news.news limit:5 %}
       <div class="news-item mb-3">
         <span class="badge bg-secondary">{{ item.date }}</span>
-        <a href="{{ site.github.url }}{{ item.link }}">{{ item.title }}</a>
+        {% if item.link contains '://' %}
+          <a href="{{ item.link }}">{{ item.title }}</a>
+        {% else %}
+          <a href="{{ site.github.url }}{{ item.link }}">{{ item.title }}</a>
+        {% endif %}
       </div>
     {% endfor %}
     <a href="{{ site.github.url }}/news/" class="important-link">Read more »</a>
