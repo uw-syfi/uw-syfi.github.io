@@ -1,4 +1,12 @@
 index:
+  - id: "ibp"
+    title: "Reducing the GPU Memory Bottleneck with Lossless Compression for ML"
+    authors: ["Aditya K Kamath", "Arvind Krishnamurthy", "Marco Canini", "Simon Peter"]
+    venue: "European Conference on Computer Systems (EuroSys)"
+    year: 2026
+    topics: ["Efficient AI"]
+    pdf: "/assets/papers/ibp.pdf"
+
   - id: "flashinfer-bench"
     title: "FlashInfer-Bench: Building the Virtuous Cycle for AI-driven LLM Systems"
     authors: ["Shanli Xing", "Yiyan Zhai", "Alexander Jiang", "Yixin Dong", "Yong Wu", "Zihao Ye", "Charlie Ruan", "Yingyi Huang", "Yineng Zhang", "Liangsheng Yin", "Aksara Bayyapu", "Luis Ceze", "Tianqi Chen"]
