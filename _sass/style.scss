@@ -42,6 +42,23 @@ h4, h5, h6 {
   color: #5600b3;
 }
 
+// Blog post body links
+.post-content a {
+  color: #0a58ca;
+}
+.post-content a:hover {
+  color: #0a58ca;
+}
+
+// Collapsible case-study sections
+.post-content details {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.post-content details summary {
+  cursor: pointer;
+}
+
 // Blog post header spacing
 .col-md-12 h2,
 .col-md-12 h3,
