@@ -6,7 +6,7 @@ author: "Keisuke Kamahori, Baris Kasikci"
 excerpt: "We present VoxServe, a high-throughput, low-latency serving system designed specifically for Speech Language Models."
 ---
 
-*This article is cross-posted from https://vox-serve.github.io/2025/09/29/introducing-vox-serve.html.*
+*This article is cross-posted from [https://vox-serve.github.io/2025/09/29/introducing-vox-serve.html](https://vox-serve.github.io/2025/09/29/introducing-vox-serve.html).*
 
 
 **TL;DR**: We present **VoxServe**, a high-throughput, low-latency serving system designed specifically for Speech Language Models (SpeechLMs). Unlike other LLM serving frameworks, VoxServe is built with speech as its primary focus, integrating functionalities such as audio detokenization and streaming generation into the core system. It offers a unified abstraction layer that supports a wide range of speech models through a single, consistent interface. In addition, VoxServe introduces a novel scheduling algorithm optimized for speech services with various scenarios. 
