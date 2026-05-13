@@ -1,4 +1,9 @@
 news:
+  - id: "2026-05-12-vibeserve"
+    date: "May 12, 2026"
+    title: "Introducing VibeServe: let AI agents write your LLM serving stack end-to-end"
+    link: "/blog/2026-05-12-introducing-vibeserve"
+
   - id: "2026-02-09-voxserve-qwen3-tts"
     date: "Feb 9, 2026"
     title: "VoxServe now supports serving Qwen3-TTS. Give it a try!"
