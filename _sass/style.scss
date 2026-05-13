@@ -59,6 +59,21 @@ h4, h5, h6 {
   cursor: pointer;
 }
 
+// Case-study figure: 50% width on desktop, full width on mobile (matches Case F wrap breakpoint)
+.post-content .case-fig {
+  margin: 1.25rem auto;
+  width: 50%;
+}
+.post-content .case-fig figcaption {
+  font-size: 0.9em;
+  font-style: italic;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+@media (max-width: 656px) {
+  .post-content .case-fig { width: 100%; }
+}
+
 // Blog post header spacing
 .col-md-12 h2,
 .col-md-12 h3,
