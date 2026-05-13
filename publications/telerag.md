@@ -22,7 +22,7 @@ TeleRAG is a high-performance inference system designed to optimize Retrieval-Au
 
 ## Core Innovations
 
-![TeleRAG main idea](https://github-production-user-asset-6210df.s3.amazonaws.com/56533574/519175537-657ea3ef-677c-421f-9454-3fc3e0af8300.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20251126%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20251126T123020Z&X-Amz-Expires=300&X-Amz-Signature=eb4dfc3ab1a1167c86c898a506c7d205e8876362a6ec8a05badd24e7f183c343&X-Amz-SignedHeaders=host)
+![TeleRAG main idea](/assets/img/publications/telerag/design.png)
 
 ### 🚀 Lookahead Retrieval
 

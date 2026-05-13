@@ -1,4 +1,12 @@
 index:
+  - id: "voxserve"
+    title: "VoxServe: Streaming-Centric Serving System for Speech Language Models"
+    authors: ["Keisuke Kamahori", "Wei-Tzu Lee", "Atindra Jha", "Rohan Kadekodi", "Stephanie Wang", "Arvind Krishnamurthy", "Baris Kasikci"]
+    year: 2026
+    topics: ["LLM Serving"]
+    link: "https://syfi.cs.washington.edu/blog/2025-09-29-introducing-vox-serve/"
+    pdf: "https://arxiv.org/abs/2602.00269"
+
   - id: "ibp"
     title: "Reducing the GPU Memory Bottleneck with Lossless Compression for ML"
     authors: ["Aditya K Kamath", "Arvind Krishnamurthy", "Marco Canini", "Simon Peter"]
