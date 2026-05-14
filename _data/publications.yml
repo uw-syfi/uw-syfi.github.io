@@ -1,6 +1,6 @@
 index:
   - id: "vibeserve"
-    title: "Let AI Agents Write Your Serving Stack with VibeServe"
+    title: "VibeServe: Can AI Agents Build Bespoke LLM Serving Systems?"
     authors: ["Keisuke Kamahori", "Shihang Li", "Simon Peter", "Baris Kasikci"]
     year: 2026
     topics: ["LLM Serving"]
