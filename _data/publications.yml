@@ -1,4 +1,13 @@
 index:
+  - id: "vibeserve"
+    title: "Let AI Agents Write Your Serving Stack with VibeServe"
+    authors: ["Keisuke Kamahori", "Shihang Li", "Simon Peter", "Baris Kasikci"]
+    year: 2026
+    topics: ["LLM Serving"]
+    link: "https://syfi.cs.washington.edu/blog/2026-05-12-introducing-vibeserve/"
+    pdf: "https://arxiv.org/abs/2605.06068"
+    code: "https://github.com/uw-syfi/vibe-serve"
+
   - id: "voxserve"
     title: "VoxServe: Streaming-Centric Serving System for Speech Language Models"
     authors: ["Keisuke Kamahori", "Wei-Tzu Lee", "Atindra Jha", "Rohan Kadekodi", "Stephanie Wang", "Arvind Krishnamurthy", "Baris Kasikci"]
@@ -6,6 +15,7 @@ index:
     topics: ["LLM Serving"]
     link: "https://syfi.cs.washington.edu/blog/2025-09-29-introducing-vox-serve/"
     pdf: "https://arxiv.org/abs/2602.00269"
+    code: "https://github.com/vox-serve/vox-serve"
 
   - id: "ibp"
     title: "Reducing the GPU Memory Bottleneck with Lossless Compression for ML"
@@ -52,7 +62,8 @@ index:
     year: 2026
     topics: ["LLM Serving"]
     link: "https://syfi.cs.washington.edu/publications/telerag/"
-    pdf: "https://arxiv.org/pdf/2502.20969"
+    pdf: "https://arxiv.org/abs/2502.20969"
+    code: "https://github.com/uw-syfi/TeleRAG"
 
   - id: "tactic"
     title: "Tactic: Adaptive Sparse Attention with Clustering and Distribution Fitting for Long-Context LLMs"
