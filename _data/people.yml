@@ -330,6 +330,18 @@ people:
     image: "assets/img/people/yibo.jpg"
     url: "yibo-wu"
 
+  - name: "Wei-Tzu Lee"
+    role: "student"
+    level: "Undergraduate"
+    department: "Electrical & Computer Engineering"
+    institution: "University of Washington"
+    institution_address: "185 E Stevens Way NE, Seattle, WA 98195"
+    email: "rubywtlee@gmail.com"
+    office: "Paul Allen Center"
+    website: "https://www.linkedin.com/in/rubywtlee/"
+    image: "assets/img/people/rubywtl.jpg"
+    url: "wei-tzu-lee"
+
   # Alumni (7)
   - name: "Zihao Ye"
     role: "alumni"
