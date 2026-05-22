@@ -81,43 +81,21 @@ layout: default
 <section id="talks" class="row g-5 mb-5">
   <div class="col-md-12">
     <h2 class="fw-bold border-bottom pb-3 mb-4">Talks</h2>
-    {% assign recent_talk = site.data.talks.talks | first %}
-    {% if recent_talk %}
+    {% assign recent_talks = site.talks | sort: "date" | reverse %}
+    {% for talk in recent_talks limit:3 %}
     <div class="talk-item mb-4">
-      <h3 class="mb-1">{{ recent_talk.title }}</h3>
-      <p class="text-muted small mb-2">
-        <span class="badge bg-secondary me-2">{{ recent_talk.date }}</span>
+      <h3 class="mb-1"><a href="{{ talk.url | relative_url }}">{{ talk.title }}</a></h3>
+      <p class="text-muted small mb-0">
+        <span class="badge bg-secondary me-2">{{ talk.date | date: "%B %-d, %Y" }}</span>
         <span class="me-2">
-          {{ recent_talk.speaker }}
-          {% if recent_talk.affiliation %}
-            {% if recent_talk.speaker %} &mdash; {% endif %}{{ recent_talk.affiliation }}
+          {{ talk.speaker }}
+          {% if talk.affiliation %}
+            {% if talk.speaker %} &mdash; {% endif %}{{ talk.affiliation }}
           {% endif %}
         </span>
       </p>
-
-      {% if recent_talk.abstract %}
-      <div class="mb-3">
-        <h5 class="fw-bold mb-2">Abstract</h5>
-        <p>{{ recent_talk.abstract }}</p>
-      </div>
-      {% endif %}
-
-      {% if recent_talk.speaker_bio %}
-      <div class="mb-3">
-        <h5 class="fw-bold mb-2">Speaker Bio</h5>
-        <p>{{ recent_talk.speaker_bio }}</p>
-      </div>
-      {% endif %}
-
-      {% if recent_talk.homepage %}
-      <p class="mt-2">
-        <a href="{{ recent_talk.homepage }}" target="_blank" rel="noopener" class="important-link">
-          Speaker Homepage »
-        </a>
-      </p>
-      {% endif %}
     </div>
-    {% endif %}
+    {% endfor %}
     <a href="{{ site.github.url }}/talks/" class="important-link">Read more »</a>
   </div>
 </section>
