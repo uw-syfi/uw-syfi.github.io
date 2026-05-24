@@ -1,0 +1,14 @@
+---
+speaker: Aashaka Shah & Roshan Dathathri
+affiliation: Microsoft
+title: 'MSCCL++: Rethinking GPU Communication Abstractions for AI'
+date: '2025-09-12'
+---
+
+## Abstract
+
+AI applications increasingly run on distributed and fast-evolving heterogeneous hardware to maximize performance, but general-purpose libraries lag in supporting these features. Performance-minded programmers often build custom communication stacks that are fast but error-prone and non-portable. In this talk, we will introduce the Microsoft Collective Communication Library++ (MSCCL++), a collective communication framework that provides a design methodology for developing high-performance, portable communication kernels. MSCCL++ has (1) a low-level, performance-preserving primitive interface that exposes minimal hardware abstractions while hiding the complexities of synchronization and consistency, (2) a higher-level DSL for application developers to implement workload-specific communication algorithms, and (3) a library of efficient algorithms implementing the standard collective API, enabling adoption by users with minimal expertise. Compared to state-of-the-art baselines, MSCCL++ achieves geomean speedups of 1.7x (up to 5.4x) for collective communication and 1.2x (up to 1.4x) for AI inference workloads. MSCCL++ is in production of multiple AI services provided by Microsoft Azure and has also been adopted by RCCL and SGLang. It is open source and available at https://github.com/microsoft/mscclpp. Our two years of experience with MSCCL++ suggest that its abstractions are robust, enabling support for new hardware features, such as multimem, within weeks of development.
+
+## Speaker Bio
+
+Aashaka Shah is a researcher in the Research in Software Engineering (RiSE) group at Microsoft Research. She is interested in building high-performance ML systems, in particular, by optimizing GPU interconnect network utilization and efficient memory management. Her works have been published in top-tier systems, architecture, and ML conferences (NSDI, ISCA, ATC, ICLR). She graduated with her PhD from UT Austin, where she worked on problems at the intersection of systems and ML. Roshan Dathathri is a researcher in the Systems Research Group at Microsoft Research. He received his PhD from the University of Texas at Austin, where he was advised by Dr. Keshav Pingali. His research interests are broadly in the field of programming languages and systems, with an emphasis on optimizing compilers and runtime systems for distributed and heterogeneous architectures. His current focus is on building efficient systems for AI. His past work included building systems for distributed, heterogeneous graph processing and privacy-preserving neural network inferencing. His work has been published in PLDI, ASPLOS, VLDB, IPDPS, PPoPP, and other conferences.

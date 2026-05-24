@@ -1,0 +1,35 @@
+---
+layout: default
+---
+
+<div class="row g-5 mb-5">
+  <div class="col-md-12">
+    <p class="mb-2">
+      <a href="{{ site.github.url }}/talks/" class="important-link">&laquo; All talks</a>
+    </p>
+
+    <h1 class="fw-bold border-bottom pb-3 mb-4">{{ page.title }}</h1>
+
+    <p class="text-muted small mb-3">
+      <span class="badge bg-secondary me-2">{{ page.date | date: "%B %-d, %Y" }}</span>
+      {% if page.speaker or page.affiliation %}
+      <span class="me-2">
+        {% if page.speaker %}{{ page.speaker }}{% endif %}
+        {% if page.affiliation %}
+          {% if page.speaker %} &mdash; {% endif %}{{ page.affiliation }}
+        {% endif %}
+      </span>
+      {% endif %}
+    </p>
+
+    {{ content }}
+
+    {% if page.homepage %}
+    <p class="mt-2">
+      <a href="{{ page.homepage }}" target="_blank" rel="noopener" class="important-link">
+        Speaker Homepage &raquo;
+      </a>
+    </p>
+    {% endif %}
+  </div>
+</div>
