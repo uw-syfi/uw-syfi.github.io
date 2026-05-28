@@ -1,4 +1,9 @@
 news:
+  - id: "2026-05-28-mlsys-kernel-contest"
+    date: "May 28, 2026"
+    title: "Team UW SyFI wins three awards at the FlashInfer AI Kernel Generation Contest at MLSys 2026!"
+    link: "/blog/2026-05-28-mlsys-kernel-contest"
+
   - id: "2026-05-12-vibeserve"
     date: "May 12, 2026"
     title: "Introducing VibeServe: let AI agents write your LLM serving stack end-to-end"
