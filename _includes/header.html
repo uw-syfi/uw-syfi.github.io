@@ -1,13 +1,15 @@
-<header class="d-flex flex-column flex-md-row align-items-center pb-3 mb-5 border-bottom">
-  <div>
-    <a href="{{ site.github.url }}/" class="d-flex align-items-center text-decoration-none site-title">
-      <span class="fs-4 fw-bold">{{ site.title }}</span>
+<header class="site-header d-flex flex-column flex-md-row align-items-center pb-3 mb-5 border-bottom">
+  <div class="site-brand d-flex align-items-center">
+    <a href="{{ site.github.url }}/" class="site-logo-link text-decoration-none" aria-label="{{ site.title }} home">
+      <img src="{{ site.github.url }}/assets/logo/logo_light_bg.svg" alt="" class="site-logo" width="76" height="63">
     </a>
-    <a href="{{ site.github.url }}/" class="d-flex align-items-center text-decoration-none site-title">
-      <span>{{ site.description }}</span>
-    </a>
+    <div class="site-brand-text">
+      <a href="{{ site.github.url }}/" class="d-flex align-items-center text-decoration-none site-title">
+        <span>{{ site.description }}</span>
+      </a>
+    </div>
   </div>
-  <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+  <nav class="site-nav d-inline-flex mt-2 mt-md-0 ms-md-auto">
     {% for item in site.data.settings.menu %}
       <a class="me-3 py-2 text-decoration-none" href="{{ site.github.url }}{{ item.url }}">{{ item.name }}</a>
     {% endfor %}

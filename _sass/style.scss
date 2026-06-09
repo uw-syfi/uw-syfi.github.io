@@ -37,6 +37,33 @@ h4, h5, h6 {
   color: inherit;
 }
 
+.site-header {
+  gap: 1rem;
+}
+
+.site-brand {
+  min-width: 0;
+}
+
+.site-logo-link {
+  flex: 0 0 auto;
+}
+
+.site-logo {
+  margin: 0 0.85rem 0 0;
+  max-width: 76px !important;
+  width: 76px;
+}
+
+.site-brand-text {
+  line-height: 1.2;
+}
+
+.site-nav {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 // Important link
 .important-link {
   color: #5600b3;
@@ -88,4 +115,15 @@ img {
   height: auto !important;
   display: block;
   margin: 0 auto;
+}
+
+@media (max-width: 767.98px) {
+  .site-brand {
+    justify-content: center;
+  }
+
+  .site-logo {
+    max-width: 64px !important;
+    width: 64px;
+  }
 }
