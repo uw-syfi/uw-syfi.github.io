@@ -1,4 +1,13 @@
 index:
+  - id: "mstar"
+    title: "M*: A Modular, Extensible, Serving System for Multimodal Models"
+    authors: ["Atindra Jha", "Naomi Sagan", "Keisuke Kamahori", "Irmak Sivgin", "Rohan Sanda", "Steven Gao", "Mark Horowitz", "Luke Zettlemoyer", "Olivia Hsu", "Jure Leskovec", "Baris Kasikci", "Stephanie Wang"]
+    year: 2026
+    topics: ["LLM Serving"]
+    link: "https://mstar-project.github.io/"
+    pdf: "https://arxiv.org/abs/2606.12688"
+    code: "https://github.com/mstar-project/mstar"
+
   - id: "vibeserve"
     title: "VibeServe: Can AI Agents Build Bespoke LLM Serving Systems?"
     authors: ["Keisuke Kamahori", "Shihang Li", "Simon Peter", "Baris Kasikci"]
