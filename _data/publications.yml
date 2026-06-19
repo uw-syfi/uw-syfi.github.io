@@ -4,7 +4,7 @@ index:
     authors: ["Atindra Jha", "Naomi Sagan", "Keisuke Kamahori", "Irmak Sivgin", "Rohan Sanda", "Steven Gao", "Mark Horowitz", "Luke Zettlemoyer", "Olivia Hsu", "Jure Leskovec", "Baris Kasikci", "Stephanie Wang"]
     year: 2026
     topics: ["LLM Serving"]
-    link: "https://mstar-project.github.io/"
+    link: "https://m-star.org/"
     pdf: "https://arxiv.org/abs/2606.12688"
     code: "https://github.com/mstar-project/mstar"
 
