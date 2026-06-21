@@ -6,7 +6,7 @@
 {%- else -%}
   {%- capture pub_url -%}{{ site.github.url }}/publications/{{ pub.id }}/{%- endcapture -%}
 {%- endif -%}
-<li>
+<li data-venn-areas="{{ pub.areas | join: ' ' }}">
   <a class="research-areas-paper" href="{{ pub_url }}" aria-label="{{ pub.title | escape }}">
     {{ pub.short_title | default: pub.title }}
   </a>
