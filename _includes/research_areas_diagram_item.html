@@ -1,0 +1,13 @@
+{%- assign pub = include.pub -%}
+{%- if pub.link -%}
+  {%- assign pub_url = pub.link -%}
+{%- elsif pub.pdf -%}
+  {%- assign pub_url = pub.pdf -%}
+{%- else -%}
+  {%- capture pub_url -%}{{ site.github.url }}/publications/{{ pub.id }}/{%- endcapture -%}
+{%- endif -%}
+<li>
+  <a class="research-areas-paper" href="{{ pub_url }}" aria-label="{{ pub.title | escape }}">
+    {{ pub.short_title | default: pub.title }}
+  </a>
+</li>
