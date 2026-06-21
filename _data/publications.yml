@@ -114,9 +114,12 @@ index:
 
   - id: "raydata"
     title: "The Streaming Batch Model for Efficient and Fault-Tolerant Heterogeneous Execution"
+    short_title: "Ray Data"
     authors: ["Frank Sifei Luan", "Ron Yifeng Wang", "Yile Gu", "Ziming Mao", "Charlotte Lin", "Amog Kamsetty", "Hao Chen", "Cheng Su", "Balaji Veeramani", "Scott Lee", "SangBin Cho", "Clark Zinzow", "Eric Liang", "Ion Stoica", "Stephanie Wang"]
     year: 2025
     topics: ["ML+Data", "Efficient AI", "Flexible AI"]
+    areas: ["efficient_ai", "flexible_ai"]
+    show_in_venn: true
     pdf: "https://arxiv.org/abs/2501.12407"
 
   - id: "distscheduling"
@@ -165,10 +168,13 @@ index:
 
   - id: "argos"
     title: "Argos: Detecting Dynamic Anomalies in the Cloud with Rule Generation"
+    short_title: "Argos"
     authors: ["Yile Gu", "Hoang Doan Nguyen", "Demirhan Celik", "Sifat Hasan", "Yifan Xiong", "Jonathan Mace", "Yuting Jiang", "Yigong Hu", "Baris Kasikci", "Peng Cheng"]
     venue: "arXiv preprint (2025)"
     year: 2025
     topics: ["Agents", "Cloud Reliability"]
+    areas: ["resilient_ai"]
+    show_in_venn: true
     pdf: "https://arxiv.org/pdf/2501.14170"
 
   - id: "nanoflow"
@@ -194,6 +200,17 @@ index:
     areas: ["efficient_ai", "resilient_ai"]
     show_in_venn: true
     link: "https://syfi.cs.washington.edu/publications/magneton/"
+
+  - id: "gigiprofiler"
+    title: "gigiProfiler: Diagnosing Performance Issues by Uncovering Application Resource Bottlenecks"
+    short_title: "gigiProfiler"
+    authors: ["Yigong Hu", "Haodong Zheng", "Yicheng Liu", "Dedong Xie", "Youliang Huang", "Baris Kasikci"]
+    venue: "arXiv preprint (2025)"
+    year: 2025
+    topics: ["Performance Debugging", "Resource Bottlenecks"]
+    areas: ["efficient_ai", "resilient_ai"]
+    show_in_venn: true
+    pdf: "https://arxiv.org/abs/2507.06452"
 
   - id: "mlsystemsextensibility"
     title: "Towards ML System Extensibility"
