@@ -8,6 +8,14 @@ index:
     pdf: "https://arxiv.org/abs/2606.12688"
     code: "https://github.com/mstar-project/mstar"
 
+  - id: "murmur"
+    title: "MURMUR: An Efficient Inference System for Long-Form ASR"
+    authors: ["Wei-Tzu Lee", "Keisuke Kamahori", "Baris Kasikci"]
+    year: 2026
+    topics: ["LLM Serving"]
+    pdf: "https://arxiv.org/abs/2606.01483"
+    code: "https://github.com/uw-syfi/Murmur"
+
   - id: "vibeserve"
     title: "VibeServe: Can AI Agents Build Bespoke LLM Serving Systems?"
     authors: ["Keisuke Kamahori", "Shihang Li", "Simon Peter", "Baris Kasikci"]
