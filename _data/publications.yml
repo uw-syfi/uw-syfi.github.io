@@ -134,7 +134,7 @@ index:
     venue: "Practical Adoption Challenges of ML for Systems (PACMI)"
     year: 2025
     topics: ["Distributed Training"]
-    areas: ["efficient_ai", "flexible_ai", "resilient_ai"]
+    areas: ["efficient_ai", "flexible_ai"]
     show_in_venn: true
     link: "https://syfi.cs.washington.edu/publications/piper/"
     pdf: "https://dl.acm.org/doi/10.1145/3766882.3767187"
@@ -178,7 +178,7 @@ index:
     venue: "Symposium on Operating Systems Design and Implementation (OSDI)"
     year: 2025
     topics: ["LLM Serving"]
-    areas: ["efficient_ai", "flexible_ai", "resilient_ai"]
+    areas: ["efficient_ai", "flexible_ai"]
     show_in_venn: true
     pdf: "https://arxiv.org/abs/2408.12757v1"
     code: "https://github.com/efeslab/Nanoflow"
