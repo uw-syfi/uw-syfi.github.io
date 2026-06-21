@@ -1,53 +1,71 @@
 index:
   - id: "mstar"
     title: "M*: A Modular, Extensible, Serving System for Multimodal Models"
+    short_title: "M*"
     authors: ["Atindra Jha", "Naomi Sagan", "Keisuke Kamahori", "Irmak Sivgin", "Rohan Sanda", "Steven Gao", "Mark Horowitz", "Luke Zettlemoyer", "Olivia Hsu", "Jure Leskovec", "Baris Kasikci", "Stephanie Wang"]
     year: 2026
     topics: ["LLM Serving"]
+    areas: ["efficient_ai", "flexible_ai"]
+    show_in_venn: true
     link: "https://m-star.org/"
     pdf: "https://arxiv.org/abs/2606.12688"
     code: "https://github.com/mstar-project/mstar"
 
   - id: "vibeserve"
     title: "VibeServe: Can AI Agents Build Bespoke LLM Serving Systems?"
+    short_title: "VibeServe"
     authors: ["Keisuke Kamahori", "Shihang Li", "Simon Peter", "Baris Kasikci"]
     year: 2026
     topics: ["LLM Serving"]
+    areas: ["efficient_ai", "flexible_ai"]
+    show_in_venn: true
     link: "https://syfi.cs.washington.edu/blog/2026-05-12-introducing-vibeserve/"
     pdf: "https://arxiv.org/abs/2605.06068"
     code: "https://github.com/uw-syfi/vibe-serve"
 
   - id: "voxserve"
     title: "VoxServe: Streaming-Centric Serving System for Speech Language Models"
+    short_title: "VoxServe"
     authors: ["Keisuke Kamahori", "Wei-Tzu Lee", "Atindra Jha", "Rohan Kadekodi", "Stephanie Wang", "Arvind Krishnamurthy", "Baris Kasikci"]
     year: 2026
     topics: ["LLM Serving"]
+    areas: ["efficient_ai", "flexible_ai"]
+    show_in_venn: true
     link: "https://syfi.cs.washington.edu/blog/2025-09-29-introducing-vox-serve/"
     pdf: "https://arxiv.org/abs/2602.00269"
     code: "https://github.com/vox-serve/vox-serve"
 
   - id: "ibp"
     title: "Reducing the GPU Memory Bottleneck with Lossless Compression for ML"
+    short_title: "IBP"
     authors: ["Aditya K Kamath", "Arvind Krishnamurthy", "Marco Canini", "Simon Peter"]
     venue: "European Conference on Computer Systems (EuroSys)"
     year: 2026
     topics: ["Efficient AI"]
+    areas: ["efficient_ai"]
+    show_in_venn: true
     pdf: "/assets/papers/ibp.pdf"
 
   - id: "flashinfer-bench"
     title: "FlashInfer-Bench: Building the Virtuous Cycle for AI-driven LLM Systems"
+    short_title: "FI-Bench"
     authors: ["Shanli Xing", "Yiyan Zhai", "Alexander Jiang", "Yixin Dong", "Yong Wu", "Zihao Ye", "Charlie Ruan", "Yingyi Huang", "Yineng Zhang", "Liangsheng Yin", "Aksara Bayyapu", "Luis Ceze", "Tianqi Chen"]
     venue: "Annual Conference on Machine Learning and Systems (MLSys)"
     year: 2026
     topics: ["LLM Serving"]
+    areas: ["efficient_ai", "flexible_ai"]
+    show_in_venn: true
     pdf: "https://arxiv.org/abs/2601.00227"
 
   - id: "sparsespec"
     title: "Accelerating Large-Scale Reasoning Model Inference with Sparse Self-Speculative Decoding"
+    short_title: "SparseSpec"
     authors: ["Yilong Zhao", "Jiaming Tang", "Kan Zhu", "Zihao Ye", "Chi-Chih Chang", "Chaofan Lin", "Jongseok Park", "Guangxuan Xiao", "Mohamed S. Abdelfattah", "Mingyu Gao", "Baris Kasikci", "Song Han", "Ion Stoica"]
     venue: "Annual Conference on Machine Learning and Systems (MLSys)"
     year: 2026
     topics: ["LLM Serving"]
+    areas: ["efficient_ai"]
+    show_in_venn: true
     pdf: "https://arxiv.org/abs/2512.01278"
 
   - id: "dynaflow"
@@ -62,10 +80,13 @@ index:
 
   - id: "fcp"
     title: "Unleashing Scalable Context Parallelism for Foundation Models Pre-Training via FCP"
+    short_title: "FCP"
     authors: ["Yilong Zhao", "Xiaonan Nie", "Kan Zhu", "Shuang Ma", "Zhichao Lai", "Hongxiang Hao", "Yang Zhou", "Baris Kasikci", "Ion Stoica"]
     venue: "Annual Conference on Machine Learning and Systems (MLSys)"
     year: 2026
     topics: ["Distributed Training"]
+    areas: ["efficient_ai", "flexible_ai"]
+    show_in_venn: true
 
   - id: "telerag"
     title: "TeleRAG: Efficient Retrieval-Augmented Generation Inference with Lookahead Retrieval"
@@ -82,17 +103,23 @@ index:
 
   - id: "tactic"
     title: "Tactic: Adaptive Sparse Attention with Clustering and Distribution Fitting for Long-Context LLMs"
+    short_title: "Tactic"
     authors: ["Kan Zhu", "Tian Tang", "Qinyu Xu", "Yile Gu", "Zhichen Zeng", "Rohan Kadekodi", "Liangyu Zhao", "Ang Li", "Arvind Krishnamurthy", "Baris Kasikci"]
     venue: "International Conference on Learning Representations (ICLR)"
     year: 2026
     topics: ["LLM Serving"]
+    areas: ["efficient_ai"]
+    show_in_venn: true
     pdf: "https://arxiv.org/pdf/2502.12216"
 
   - id: "raydata"
     title: "The Streaming Batch Model for Efficient and Fault-Tolerant Heterogeneous Execution"
+    short_title: "Ray Data"
     authors: ["Frank Sifei Luan", "Ron Yifeng Wang", "Yile Gu", "Ziming Mao", "Charlotte Lin", "Amog Kamsetty", "Hao Chen", "Cheng Su", "Balaji Veeramani", "Scott Lee", "SangBin Cho", "Clark Zinzow", "Eric Liang", "Ion Stoica", "Stephanie Wang"]
     year: 2025
     topics: ["ML+Data", "Efficient AI", "Flexible AI"]
+    areas: ["efficient_ai", "flexible_ai"]
+    show_in_venn: true
     pdf: "https://arxiv.org/abs/2501.12407"
 
   - id: "distscheduling"
@@ -141,10 +168,13 @@ index:
 
   - id: "argos"
     title: "Argos: Detecting Dynamic Anomalies in the Cloud with Rule Generation"
+    short_title: "Argos"
     authors: ["Yile Gu", "Hoang Doan Nguyen", "Demirhan Celik", "Sifat Hasan", "Yifan Xiong", "Jonathan Mace", "Yuting Jiang", "Yigong Hu", "Baris Kasikci", "Peng Cheng"]
     venue: "arXiv preprint (2025)"
     year: 2025
     topics: ["Agents", "Cloud Reliability"]
+    areas: ["resilient_ai"]
+    show_in_venn: true
     pdf: "https://arxiv.org/pdf/2501.14170"
 
   - id: "nanoflow"
@@ -170,6 +200,17 @@ index:
     areas: ["efficient_ai", "resilient_ai"]
     show_in_venn: true
     link: "https://syfi.cs.washington.edu/publications/magneton/"
+
+  - id: "gigiprofiler"
+    title: "gigiProfiler: Diagnosing Performance Issues by Uncovering Application Resource Bottlenecks"
+    short_title: "gigiProfiler"
+    authors: ["Yigong Hu", "Haodong Zheng", "Yicheng Liu", "Dedong Xie", "Youliang Huang", "Baris Kasikci"]
+    venue: "arXiv preprint (2025)"
+    year: 2025
+    topics: ["Performance Debugging", "Resource Bottlenecks"]
+    areas: ["efficient_ai", "resilient_ai"]
+    show_in_venn: true
+    pdf: "https://arxiv.org/abs/2507.06452"
 
   - id: "mlsystemsextensibility"
     title: "Towards ML System Extensibility"
