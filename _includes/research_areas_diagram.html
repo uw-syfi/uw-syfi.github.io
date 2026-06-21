@@ -1,0 +1,129 @@
+{%- capture efficient_only -%}
+  {%- for pub in site.data.publications.index -%}
+    {%- assign area_count = pub.areas | size -%}
+    {%- if pub.show_in_venn and area_count == 1 and pub.areas contains "efficient_ai" -%}
+      {%- include research_areas_diagram_item.html pub=pub -%}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endcapture -%}
+{%- assign efficient_only = efficient_only | strip -%}
+
+{%- capture flexible_only -%}
+  {%- for pub in site.data.publications.index -%}
+    {%- assign area_count = pub.areas | size -%}
+    {%- if pub.show_in_venn and area_count == 1 and pub.areas contains "flexible_ai" -%}
+      {%- include research_areas_diagram_item.html pub=pub -%}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endcapture -%}
+{%- assign flexible_only = flexible_only | strip -%}
+
+{%- capture resilient_only -%}
+  {%- for pub in site.data.publications.index -%}
+    {%- assign area_count = pub.areas | size -%}
+    {%- if pub.show_in_venn and area_count == 1 and pub.areas contains "resilient_ai" -%}
+      {%- include research_areas_diagram_item.html pub=pub -%}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endcapture -%}
+{%- assign resilient_only = resilient_only | strip -%}
+
+{%- capture efficient_flexible -%}
+  {%- for pub in site.data.publications.index -%}
+    {%- assign area_count = pub.areas | size -%}
+    {%- if pub.show_in_venn and area_count == 2 and pub.areas contains "efficient_ai" and pub.areas contains "flexible_ai" -%}
+      {%- include research_areas_diagram_item.html pub=pub -%}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endcapture -%}
+{%- assign efficient_flexible = efficient_flexible | strip -%}
+
+{%- capture efficient_resilient -%}
+  {%- for pub in site.data.publications.index -%}
+    {%- assign area_count = pub.areas | size -%}
+    {%- if pub.show_in_venn and area_count == 2 and pub.areas contains "efficient_ai" and pub.areas contains "resilient_ai" -%}
+      {%- include research_areas_diagram_item.html pub=pub -%}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endcapture -%}
+{%- assign efficient_resilient = efficient_resilient | strip -%}
+
+{%- capture flexible_resilient -%}
+  {%- for pub in site.data.publications.index -%}
+    {%- assign area_count = pub.areas | size -%}
+    {%- if pub.show_in_venn and area_count == 2 and pub.areas contains "flexible_ai" and pub.areas contains "resilient_ai" -%}
+      {%- include research_areas_diagram_item.html pub=pub -%}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endcapture -%}
+{%- assign flexible_resilient = flexible_resilient | strip -%}
+
+{%- capture all_areas -%}
+  {%- for pub in site.data.publications.index -%}
+    {%- assign area_count = pub.areas | size -%}
+    {%- if pub.show_in_venn and area_count == 3 and pub.areas contains "efficient_ai" and pub.areas contains "flexible_ai" and pub.areas contains "resilient_ai" -%}
+      {%- include research_areas_diagram_item.html pub=pub -%}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endcapture -%}
+{%- assign all_areas = all_areas | strip -%}
+
+<figure class="research-areas-diagram">
+  <figcaption class="visually-hidden">
+    Featured SyFI publications grouped by Efficient AI, Flexible AI, and Resilient AI.
+  </figcaption>
+  <div class="research-areas-venn" aria-hidden="false">
+    <svg class="research-areas-venn-circles" viewBox="0 0 600 540" role="img" aria-labelledby="research-areas-title research-areas-desc" focusable="false">
+      <title id="research-areas-title">SyFI research areas</title>
+      <desc id="research-areas-desc">A three-circle Venn diagram for Efficient AI, Flexible AI, and Resilient AI.</desc>
+      <circle class="research-areas-circle research-areas-circle--resilient" cx="403" cy="340" r="191" />
+      <circle class="research-areas-circle research-areas-circle--flexible" cx="275" cy="191" r="191" />
+      <circle class="research-areas-circle research-areas-circle--efficient" cx="191" cy="300" r="191" />
+      <text class="research-areas-label" x="275" y="45" text-anchor="middle">Flexible AI</text>
+      <text class="research-areas-label" x="170" y="445" text-anchor="middle">Efficient AI</text>
+      <text class="research-areas-label" x="467" y="445" text-anchor="middle">Resilient AI</text>
+    </svg>
+
+    {%- if flexible_only != "" -%}
+      <div class="research-areas-region research-areas-region--flexible" aria-label="Flexible AI papers">
+        <ul>{{ flexible_only }}</ul>
+      </div>
+    {%- endif -%}
+
+    {%- if efficient_only != "" -%}
+      <div class="research-areas-region research-areas-region--efficient" aria-label="Efficient AI papers">
+        <ul>{{ efficient_only }}</ul>
+      </div>
+    {%- endif -%}
+
+    {%- if resilient_only != "" -%}
+      <div class="research-areas-region research-areas-region--resilient" aria-label="Resilient AI papers">
+        <ul>{{ resilient_only }}</ul>
+      </div>
+    {%- endif -%}
+
+    {%- if efficient_flexible != "" -%}
+      <div class="research-areas-region research-areas-region--efficient-flexible" aria-label="Efficient AI and Flexible AI papers">
+        <ul>{{ efficient_flexible }}</ul>
+      </div>
+    {%- endif -%}
+
+    {%- if efficient_resilient != "" -%}
+      <div class="research-areas-region research-areas-region--efficient-resilient" aria-label="Efficient AI and Resilient AI papers">
+        <ul>{{ efficient_resilient }}</ul>
+      </div>
+    {%- endif -%}
+
+    {%- if flexible_resilient != "" -%}
+      <div class="research-areas-region research-areas-region--flexible-resilient" aria-label="Flexible AI and Resilient AI papers">
+        <ul>{{ flexible_resilient }}</ul>
+      </div>
+    {%- endif -%}
+
+    {%- if all_areas != "" -%}
+      <div class="research-areas-region research-areas-region--all" aria-label="Efficient AI, Flexible AI, and Resilient AI papers">
+        <ul>{{ all_areas }}</ul>
+      </div>
+    {%- endif -%}
+  </div>
+</figure>

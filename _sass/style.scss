@@ -69,6 +69,123 @@ h4, h5, h6 {
   color: #5600b3;
 }
 
+// Homepage research areas diagram
+.research-areas-home {
+  max-width: 360px;
+  width: 100%;
+}
+
+.research-areas-diagram {
+  margin: 0;
+}
+
+.research-areas-venn {
+  aspect-ratio: 10 / 9;
+  position: relative;
+  width: 100%;
+}
+
+.research-areas-venn-circles {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.research-areas-circle {
+  fill-opacity: 0.5;
+  stroke: none;
+}
+
+.research-areas-circle--efficient {
+  fill: #fff2cc;
+}
+
+.research-areas-circle--flexible {
+  fill: #f4cccc;
+}
+
+.research-areas-circle--resilient {
+  fill: #cfe2f3;
+}
+
+.research-areas-label {
+  fill: #595959;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.research-areas-region {
+  position: absolute;
+  z-index: 1;
+}
+
+.research-areas-region ul {
+  display: grid;
+  gap: 0.18rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.research-areas-paper {
+  background: #ffffff;
+  border: 1px solid #707070;
+  color: #000000;
+  display: block;
+  font-size: 0.68rem;
+  line-height: 1.1;
+  min-height: 1.25rem;
+  overflow-wrap: anywhere;
+  padding: 0.16rem 0.28rem;
+  text-align: center;
+}
+
+.research-areas-paper:hover {
+  color: #5600b3;
+}
+
+.research-areas-region--flexible {
+  left: 38%;
+  top: 14%;
+  width: 25%;
+}
+
+.research-areas-region--efficient {
+  left: 3%;
+  top: 49%;
+  width: 25%;
+}
+
+.research-areas-region--resilient {
+  left: 73%;
+  top: 55%;
+  width: 24%;
+}
+
+.research-areas-region--efficient-flexible {
+  left: 26%;
+  top: 25%;
+  width: 27%;
+}
+
+.research-areas-region--efficient-resilient {
+  left: 43%;
+  top: 69%;
+  width: 29%;
+}
+
+.research-areas-region--flexible-resilient {
+  left: 55%;
+  top: 36%;
+  width: 28%;
+}
+
+.research-areas-region--all {
+  left: 40%;
+  top: 43%;
+  width: 23%;
+}
+
 // Blog post body links
 .post-content a {
   color: #0a58ca;
@@ -120,6 +237,12 @@ img {
 @media (max-width: 767.98px) {
   .site-brand {
     justify-content: center;
+  }
+
+  .research-areas-home {
+    float: none !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
 
   .site-logo {
