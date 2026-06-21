@@ -60,10 +60,13 @@ index:
 
   - id: "dynaflow"
     title: "DynaFlow: Transparent and Flexible Intra-Device Parallelism via Programmable Operator Scheduling"
+    short_title: "DynaFlow"
     authors: ["Yi Pan", "Yile Gu", "Jinbin Luo", "Yibo Wu", "Ziren Wang", "Hongtao Zhang", "Ziyi Xu", "Shengkai Lin", "Baris Kasikci", "Stephanie Wang"]
     venue: "Annual Conference on Machine Learning and Systems (MLSys)"
     year: 2026
     topics: ["Efficient AI"]
+    areas: ["efficient_ai", "flexible_ai"]
+    show_in_venn: true
 
   - id: "fcp"
     title: "Unleashing Scalable Context Parallelism for Foundation Models Pre-Training via FCP"
@@ -74,10 +77,13 @@ index:
 
   - id: "telerag"
     title: "TeleRAG: Efficient Retrieval-Augmented Generation Inference with Lookahead Retrieval"
+    short_title: "TeleRAG"
     authors: ["Chien-Yu Lin", "Keisuke Kamahori", "Yiyu Liu", "Xiaoxiang Shi", "Madhav Kashyap", "Yile Gu", "Rulin Shao", "Zihao Ye", "Kan Zhu", "Stephanie Wang", "Arvind Krishnamurthy", "Rohan Kadekodi", "Luis Ceze", "Baris Kasikci"]
     venue: "Annual Conference on Machine Learning and Systems (MLSys)"
     year: 2026
     topics: ["LLM Serving"]
+    areas: ["efficient_ai"]
+    show_in_venn: true
     link: "https://syfi.cs.washington.edu/publications/telerag/"
     pdf: "https://arxiv.org/abs/2502.20969"
     code: "https://github.com/uw-syfi/TeleRAG"
@@ -107,10 +113,13 @@ index:
 
   - id: "piper"
     title: "Piper: Towards Flexible Pipeline Parallelism for PyTorch"
+    short_title: "Piper"
     authors: ["Megan Frisella", "Arvin Oentoro", "Xiangyu Gao", "Gilbert Bernstein", "Stephanie Wang"]
     venue: "Practical Adoption Challenges of ML for Systems (PACMI)"
     year: 2025
     topics: ["Distributed Training"]
+    areas: ["efficient_ai", "flexible_ai"]
+    show_in_venn: true
     link: "https://syfi.cs.washington.edu/publications/piper/"
     pdf: "https://dl.acm.org/doi/10.1145/3766882.3767187"
 
@@ -126,10 +135,13 @@ index:
 
   - id: "flashinfer"
     title: "FlashInfer: Efficient and Customizable Attention Engine for LLM Inference Serving"
+    short_title: "FlashInfer"
     authors: ["Zihao Ye", "Lequn Chen", "Ruihang Lai", "Wuwei Lin", "Yineng Zhang", "Stephanie Wang", "Tianqi Chen", "Baris Kasikci", "Vinod Grover", "Arvind Krishnamurthy", "Luis Ceze"]
     venue: "Annual Conference on Machine Learning and Systems (MLSys)"
     year: 2025
     topics: ["LLM Serving"]
+    areas: ["efficient_ai", "flexible_ai"]
+    show_in_venn: true
     pdf: "https://arxiv.org/abs/2501.01005"
     code: "https://github.com/flashinfer-ai/flashinfer"
     link: "https://flashinfer.ai/2024/12/16/flashinfer-v02-release.html"
@@ -145,13 +157,27 @@ index:
 
   - id: "nanoflow"
     title: "NanoFlow: Towards Optimal Large Language Model Serving Throughput"
+    short_title: "NanoFlow"
     authors: ["Kan Zhu", "Yufei Gao", "Yilong Zhao", "Liangyu Zhao", "Gefei Zuo", "Yile Gu", "Dedong Xie", "Tian Tang", "Qinyu Xu", "Zihao Ye", "Keisuke Kamahori", "Chien-Yu Lin", "Ziren Wang", "Stephanie Wang", "Arvind Krishnamurthy", "Baris Kasikci"]
     venue: "Symposium on Operating Systems Design and Implementation (OSDI)"
     year: 2025
     topics: ["LLM Serving"]
+    areas: ["efficient_ai", "flexible_ai"]
+    show_in_venn: true
     pdf: "https://arxiv.org/abs/2408.12757v1"
     code: "https://github.com/efeslab/Nanoflow"
     link: "https://syfi.cs.washington.edu/publications/nanoflow/"
+
+  - id: "magneton"
+    title: "Magneton: Optimizing Energy Efficiency of ML Systems via Differential Energy Debugging"
+    short_title: "Magneton"
+    authors: ["Yi Pan", "Wenbo Qian", "Dedong Xie", "Ruiyan Hu", "Yigong Hu", "Baris Kasikci"]
+    venue: "arXiv preprint (2025)"
+    year: 2025
+    topics: ["Energy Efficiency", "ML Systems"]
+    areas: ["efficient_ai", "resilient_ai"]
+    show_in_venn: true
+    link: "https://syfi.cs.washington.edu/publications/magneton/"
 
   - id: "mlsystemsextensibility"
     title: "Towards ML System Extensibility"
@@ -163,10 +189,13 @@ index:
 
   - id: "fiddler"
     title: "Fiddler: CPU-GPU Orchestration for Fast Inference of Mixture-of-Experts Models"
+    short_title: "Fiddler"
     authors: ["Keisuke Kamahori", "Tian Tang", "Yile Gu", "Kan Zhu", "Baris Kasikci"]
     venue: "International Conference on Learning Representations (ICLR)"
     year: 2025
     topics: ["LLM Serving"]
+    areas: ["efficient_ai"]
+    show_in_venn: true
     pdf: "https://arxiv.org/pdf/2402.07033"
     code: "https://github.com/efeslab/fiddler"
     link: "https://syfi.cs.washington.edu/publications/fiddler/"
@@ -191,10 +220,13 @@ index:
 
   - id: "atom"
     title: "Atom: Low-bit Quantization for Efficient and Accurate LLM Serving"
+    short_title: "Atom"
     authors: ["Yilong Zhao", "Chien-Yu Lin", "Kan Zhu", "Zihao Ye", "Lequn Chen", "Size Zheng", "Luis Ceze", "Arvind Krishnamurthy", "Tianqi Chen", "Baris Kasikci"]
     venue: "Annual Conference on Machine Learning and Systems (MLSys)"
     year: 2024
     topics: ["LLM Serving"]
+    areas: ["efficient_ai"]
+    show_in_venn: true
     pdf: "https://arxiv.org/pdf/2310.19102"
     code: "https://github.com/efeslab/Atom"
     link: "https://syfi.cs.washington.edu/publications/atom/"
