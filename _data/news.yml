@@ -1,4 +1,9 @@
 news:
+  - id: "2026-06-19-mstar"
+    date: "June 19, 2026"
+    title: "Introducing M*: a modular, extensible serving system that treats multimodal models as graphs and requests as Walks"
+    link: "/blog/2026-06-19-mstar"
+
   - id: "2026-05-28-mlsys-kernel-contest"
     date: "May 28, 2026"
     title: "Team UW SyFI wins three awards at the FlashInfer AI Kernel Generation Contest at MLSys 2026!"
