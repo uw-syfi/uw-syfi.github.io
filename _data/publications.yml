@@ -1,4 +1,13 @@
 index:
+  - id: "piper-2"
+    title: "Piper: A Programmable Distributed Training System"
+    authors: ["Megan Frisella", "Shubham Tiwari", "Andy Ruan", "Yi Pan", "Parker Gustafson", "Mat Jacob", "Gilbert Bernstein", "Stephanie Wang"]
+    year: 2026
+    topics: ["Distributed Training"]
+    link: "https://syfi.cs.washington.edu/blog/2026-06-05-piper/"
+    pdf: "https://arxiv.org/abs/2606.11169"
+    code: "https://github.com/uw-syfi/piper"
+
   - id: "mstar"
     title: "M*: A Modular, Extensible, Serving System for Multimodal Models"
     authors: ["Atindra Jha", "Naomi Sagan", "Keisuke Kamahori", "Irmak Sivgin", "Rohan Sanda", "Steven Gao", "Mark Horowitz", "Luke Zettlemoyer", "Olivia Hsu", "Jure Leskovec", "Baris Kasikci", "Stephanie Wang"]
