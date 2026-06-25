@@ -1,4 +1,13 @@
 index:
+  - id: "piper-2"
+    title: "Piper: A Programmable Distributed Training System"
+    authors: ["Megan Frisella", "Shubham Tiwari", "Andy Ruan", "Yi Pan", "Parker Gustafson", "Mat Jacob", "Gilbert Bernstein", "Stephanie Wang"]
+    year: 2026
+    topics: ["Distributed Training"]
+    link: "https://syfi.cs.washington.edu/blog/2026-06-05-piper/"
+    pdf: "https://arxiv.org/abs/2606.11169"
+    code: "https://github.com/uw-syfi/piper"
+
   - id: "vibeserve"
     title: "VibeServe: Can AI Agents Build Bespoke LLM Serving Systems?"
     authors: ["Keisuke Kamahori", "Shihang Li", "Simon Peter", "Baris Kasikci"]
