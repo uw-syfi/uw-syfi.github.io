@@ -21,6 +21,9 @@ title: "Publications"
       {% if pub.code %}
         <a href="{{ pub.code }}" class="btn btn-sm btn-outline-secondary">Code</a>
       {% endif %}
+      {% if pub.website %}
+        <a href="{{ pub.website }}" class="btn btn-sm btn-outline-secondary">Website</a>
+      {% endif %}
     </div>
   </div>
 </div>

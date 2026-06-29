@@ -1,4 +1,9 @@
 news:
+  - id: "2026-06-25-tracelab"
+    date: "June 25, 2026"
+    title: "Introducing TraceLab: real-world coding-agent traces for systems research and optimization, with an open pipeline to collect, analyze, and replay your own traces."
+    link: "/blog/2026-06-25-tracelab"
+
   - id: "2026-06-19-mstar"
     date: "June 19, 2026"
     title: "Introducing M*: a modular, extensible serving system that treats multimodal models as graphs and requests as Walks"

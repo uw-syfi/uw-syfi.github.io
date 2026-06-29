@@ -47,6 +47,11 @@ layout: default
           Code
         </a>
       {% endif %}
+      {% if page.website %}
+        <a href="{{ page.website }}" class="btn btn-sm btn-outline-secondary" target="_blank" rel="noopener">
+          Website
+        </a>
+      {% endif %}
     </div>
 
     {% if page.tldr %}

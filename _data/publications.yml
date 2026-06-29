@@ -1,4 +1,14 @@
 index:
+  - id: "tracelab"
+    title: "TraceLab: Characterizing Coding Agent Workloads for LLM Serving"
+    authors: ["Kan Zhu", "Mathew Jacob", "Chenxi Ma", "Yi Pan", "Stephanie Wang", "Arvind Krishnamurthy", "Baris Kasikci"]
+    year: 2026
+    topics: ["LLM Serving"]
+    link: "https://syfi.cs.washington.edu/blog/2026-06-25-tracelab/"
+    pdf: "https://tracelab.cs.washington.edu/paper.pdf"
+    code: "https://github.com/uw-syfi/TraceLab"
+    website: "https://tracelab.cs.washington.edu/"
+
   - id: "piper-2"
     title: "Piper: A Programmable Distributed Training System"
     authors: ["Megan Frisella", "Shubham Tiwari", "Andy Ruan", "Yi Pan", "Parker Gustafson", "Mat Jacob", "Gilbert Bernstein", "Stephanie Wang"]
