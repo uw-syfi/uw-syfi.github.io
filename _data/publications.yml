@@ -5,7 +5,7 @@ index:
     year: 2026
     topics: ["LLM Serving"]
     link: "https://syfi.cs.washington.edu/blog/2026-06-25-tracelab/"
-    pdf: "https://tracelab.cs.washington.edu/paper.pdf"
+    pdf: "https://arxiv.org/abs/2606.30560"
     code: "https://github.com/uw-syfi/TraceLab"
     website: "https://tracelab.cs.washington.edu/"
 
