@@ -1,4 +1,13 @@
 index:
+  - id: "ekka"
+    title: "Ekka: Automated Diagnosis of Silent Errors in LLM Inference"
+    authors: ["Yile Gu", "Zhen Zhang", "Shaowei Zhu", "Xinwei Fu", "Jun Wu", "Yida Wang", "Baris Kasikci"]
+    venue: "International Conference on Machine Learning (ICML)"
+    year: 2026
+    topics: ["LLM Serving"]
+    link: "/blog/2026-06-29-ekka/"
+    pdf: "https://arxiv.org/abs/2606.04594"
+
   - id: "tracelab"
     title: "TraceLab: Characterizing Coding Agent Workloads for LLM Serving"
     authors: ["Kan Zhu", "Mathew Jacob", "Chenxi Ma", "Yi Pan", "Stephanie Wang", "Arvind Krishnamurthy", "Baris Kasikci"]

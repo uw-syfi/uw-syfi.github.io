@@ -1,4 +1,9 @@
 news:
+  - id: "2026-06-29-ekka"
+    date: "June 29, 2026"
+    title: "Introducing Ekka: automated diagnosis of silent errors in LLM inference via differential debugging, accepted to ICML 2026!"
+    link: "/blog/2026-06-29-ekka"
+
   - id: "2026-06-25-tracelab"
     date: "June 25, 2026"
     title: "Introducing TraceLab: real-world coding-agent traces for systems research and optimization, with an open pipeline to collect, analyze, and replay your own traces."
