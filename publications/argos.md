@@ -1,6 +1,6 @@
 ---
 layout: publication
-title: "Argos: Detecting Dynamic Anomalies in the Cloud with Rule Generation
+title: "Argos: Detecting Dynamic Anomalies in the Cloud with Rule Generation"
 authors: ["Yile Gu", "Hoang Doan Nguyen", "Demirhan Celik", "Sifat Hasan", "Yifan Xiong", "Jonathan Mace", "Yuting Jiang", "Yigong Hu", "Baris Kasikci", "Peng Cheng"]
 venue: "arXiv preprint (2025)"
 year: 2025
@@ -32,7 +32,7 @@ Engineers typically trust manual rules (e.g., "If CPU > 90% for 5 mins") because
 
 ## Core Innovations
 
-![Argos Overview](https://raw.githubusercontent.com/microsoft/argos/figs/figs/design_v11.pdf)
+![Argos Overview](/assets/img/publications/argos/design.png)
 
 ### Decoupling Training from Deployment
 Unlike previous LLM approaches that prompt models during inference (which is slow and inconsistent), Argos uses LLMs only during a "training" phase. The LLM generates Python code to detect anomalies, which is then deployed as a lightweight function. This ensures that the online detection process is fast, deterministic, and free of LLM hallucinations.
@@ -66,7 +66,7 @@ Argos consistently outperforms baselines. On the internal Microsoft dataset, it 
 
 ### Ablation Study: Syntax Checker and Rule Validator are Critical
 
-![Ablation Study](https://raw.githubusercontent.com/microsoft/argos/figs/figs/evaluation_correctness_accuracy_v2.pdf)
+![Ablation Study](/assets/img/publications/argos/ablation.png)
 
 To validate the agentic workflow, the authors compared the full Argos system against a simple "Detection Only" baseline (using just the Rule Proposer without the feedback loop). The results confirm that iterative feedback is critical for success:
 

@@ -172,6 +172,7 @@ index:
     venue: "arXiv preprint (2025)"
     year: 2025
     topics: ["Agents", "Cloud Reliability"]
+    link: "https://syfi.cs.washington.edu/publications/argos/"
     pdf: "https://arxiv.org/pdf/2501.14170"
 
   - id: "nanoflow"
