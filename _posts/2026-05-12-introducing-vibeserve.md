@@ -4,6 +4,7 @@ title: "Let AI Agents Write Your Serving Stack with VibeServe"
 date: 2026-05-12
 author: "Keisuke Kamahori, Shihang Vic Li, Simon Peter, Baris Kasikci"
 excerpt: "We present VibeServe, a multi-agent system that synthesizes a complete LLM serving runtime end-to-end, specialized to a user-specified model, hardware, and workload."
+tags: [research, inference, agents]
 ---
 
 **TL;DR:** Generic LLM serving stacks cover the mainstream use cases well, but struggle on the long tail of new models, accelerators, and workloads. **VibeServe** is a multi-agent system that synthesizes a complete serving runtime end-to-end, specialized to a user-specified model, hardware, and workload. Across six case studies, it matches vLLM and SGLang on a heavily optimized mainstream setup (Llama-3.1-8B on H100) and delivers **1.69×–6.27×** speedups on non-standard ones. This is early evidence that **AI agents can build an entire system end-to-end** and **beat human-engineered baselines on long-horizon performance work**.

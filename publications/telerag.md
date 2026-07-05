@@ -5,6 +5,7 @@ authors: ["Chien-Yu Lin", "Keisuke Kamahori", "Yiyu Liu", "Xiaoxiang Shi", "Madh
 venue: "arXiv preprint"
 year: 2025
 topics: ["LLM Serving", "RAG"]
+tags: [inference, data]
 pdf: "https://arxiv.org/pdf/2502.20969"
 code: "https://github.com/efeslab/TeleRAG"
 tldr: "TeleRAG is an efficient RAG inference system that reduces latency and improves throughput using lookahead retrieval to prefetch data from CPU to GPU in parallel with LLM generation."

@@ -4,6 +4,7 @@ title: "Efficient Serving of SpeechLMs with VoxServe"
 date: 2025-09-29
 author: "Keisuke Kamahori, Baris Kasikci"
 excerpt: "We present VoxServe, a high-throughput, low-latency serving system designed specifically for Speech Language Models."
+tags: [research, inference, multimodal]
 ---
 
 *This article is cross-posted from [https://vox-serve.github.io/2025/09/29/introducing-vox-serve.html](https://vox-serve.github.io/2025/09/29/introducing-vox-serve.html).*

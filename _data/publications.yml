@@ -3,7 +3,7 @@ index:
     title: "TraceLab: Characterizing Coding Agent Workloads for LLM Serving"
     authors: ["Kan Zhu", "Mathew Jacob", "Chenxi Ma", "Yi Pan", "Stephanie Wang", "Arvind Krishnamurthy", "Baris Kasikci"]
     year: 2026
-    topics: ["LLM Serving"]
+    tags: [inference, agents]
     link: "https://syfi.cs.washington.edu/blog/2026-06-25-tracelab/"
     pdf: "https://arxiv.org/abs/2606.30560"
     code: "https://github.com/uw-syfi/TraceLab"
@@ -13,7 +13,7 @@ index:
     title: "Piper: A Programmable Distributed Training System"
     authors: ["Megan Frisella", "Shubham Tiwari", "Andy Ruan", "Yi Pan", "Parker Gustafson", "Mat Jacob", "Gilbert Bernstein", "Stephanie Wang"]
     year: 2026
-    topics: ["Distributed Training"]
+    tags: [training, programmability]
     link: "https://syfi.cs.washington.edu/blog/2026-06-05-piper/"
     pdf: "https://arxiv.org/abs/2606.11169"
     code: "https://github.com/uw-syfi/piper"
@@ -22,7 +22,7 @@ index:
     title: "M*: A Modular, Extensible, Serving System for Multimodal Models"
     authors: ["Atindra Jha", "Naomi Sagan", "Keisuke Kamahori", "Irmak Sivgin", "Rohan Sanda", "Steven Gao", "Mark Horowitz", "Luke Zettlemoyer", "Olivia Hsu", "Jure Leskovec", "Baris Kasikci", "Stephanie Wang"]
     year: 2026
-    topics: ["LLM Serving"]
+    tags: [inference, multimodal, programmability]
     link: "https://m-star.org/"
     pdf: "https://arxiv.org/abs/2606.12688"
     code: "https://github.com/mstar-project/mstar"
@@ -31,7 +31,7 @@ index:
     title: "MURMUR: An Efficient Inference System for Long-Form ASR"
     authors: ["Wei-Tzu Lee", "Keisuke Kamahori", "Baris Kasikci"]
     year: 2026
-    topics: ["LLM Serving"]
+    tags: [inference, multimodal]
     pdf: "https://arxiv.org/abs/2606.01483"
     code: "https://github.com/uw-syfi/Murmur"
 
@@ -39,7 +39,7 @@ index:
     title: "VibeServe: Can AI Agents Build Bespoke LLM Serving Systems?"
     authors: ["Keisuke Kamahori", "Shihang Li", "Simon Peter", "Baris Kasikci"]
     year: 2026
-    topics: ["LLM Serving"]
+    tags: [inference, agents]
     link: "https://syfi.cs.washington.edu/blog/2026-05-12-introducing-vibeserve/"
     pdf: "https://arxiv.org/abs/2605.06068"
     code: "https://github.com/uw-syfi/vibe-serve"
@@ -48,7 +48,7 @@ index:
     title: "VoxServe: Streaming-Centric Serving System for Speech Language Models"
     authors: ["Keisuke Kamahori", "Wei-Tzu Lee", "Atindra Jha", "Rohan Kadekodi", "Stephanie Wang", "Arvind Krishnamurthy", "Baris Kasikci"]
     year: 2026
-    topics: ["LLM Serving"]
+    tags: [inference, multimodal]
     link: "https://syfi.cs.washington.edu/blog/2025-09-29-introducing-vox-serve/"
     pdf: "https://arxiv.org/abs/2602.00269"
     code: "https://github.com/vox-serve/vox-serve"
@@ -58,7 +58,7 @@ index:
     authors: ["Aditya K Kamath", "Arvind Krishnamurthy", "Marco Canini", "Simon Peter"]
     venue: "European Conference on Computer Systems (EuroSys)"
     year: 2026
-    topics: ["Efficient AI"]
+    tags: [training]
     pdf: "/assets/papers/ibp.pdf"
 
   - id: "flashinfer-bench"
@@ -66,7 +66,7 @@ index:
     authors: ["Shanli Xing", "Yiyan Zhai", "Alexander Jiang", "Yixin Dong", "Yong Wu", "Zihao Ye", "Charlie Ruan", "Yingyi Huang", "Yineng Zhang", "Liangsheng Yin", "Aksara Bayyapu", "Luis Ceze", "Tianqi Chen"]
     venue: "Annual Conference on Machine Learning and Systems (MLSys)"
     year: 2026
-    topics: ["LLM Serving"]
+    tags: [inference, agents]
     pdf: "https://arxiv.org/abs/2601.00227"
 
   - id: "sparsespec"
@@ -74,7 +74,7 @@ index:
     authors: ["Yilong Zhao", "Jiaming Tang", "Kan Zhu", "Zihao Ye", "Chi-Chih Chang", "Chaofan Lin", "Jongseok Park", "Guangxuan Xiao", "Mohamed S. Abdelfattah", "Mingyu Gao", "Baris Kasikci", "Song Han", "Ion Stoica"]
     venue: "Annual Conference on Machine Learning and Systems (MLSys)"
     year: 2026
-    topics: ["LLM Serving"]
+    tags: [inference]
     pdf: "https://arxiv.org/abs/2512.01278"
 
   - id: "dynaflow"
@@ -83,7 +83,7 @@ index:
     authors: ["Yi Pan", "Yile Gu", "Jinbin Luo", "Yibo Wu", "Ziren Wang", "Hongtao Zhang", "Ziyi Xu", "Shengkai Lin", "Baris Kasikci", "Stephanie Wang"]
     venue: "Annual Conference on Machine Learning and Systems (MLSys)"
     year: 2026
-    topics: ["Efficient AI"]
+    tags: [inference, programmability]
     areas: ["efficient_ai", "flexible_ai"]
     show_in_venn: true
 
@@ -92,7 +92,7 @@ index:
     authors: ["Yilong Zhao", "Xiaonan Nie", "Kan Zhu", "Shuang Ma", "Zhichao Lai", "Hongxiang Hao", "Yang Zhou", "Baris Kasikci", "Ion Stoica"]
     venue: "Annual Conference on Machine Learning and Systems (MLSys)"
     year: 2026
-    topics: ["Distributed Training"]
+    tags: [training]
 
   - id: "telerag"
     title: "TeleRAG: Efficient Retrieval-Augmented Generation Inference with Lookahead Retrieval"
@@ -100,7 +100,7 @@ index:
     authors: ["Chien-Yu Lin", "Keisuke Kamahori", "Yiyu Liu", "Xiaoxiang Shi", "Madhav Kashyap", "Yile Gu", "Rulin Shao", "Zihao Ye", "Kan Zhu", "Stephanie Wang", "Arvind Krishnamurthy", "Rohan Kadekodi", "Luis Ceze", "Baris Kasikci"]
     venue: "Annual Conference on Machine Learning and Systems (MLSys)"
     year: 2026
-    topics: ["LLM Serving"]
+    tags: [inference, data]
     areas: ["efficient_ai"]
     show_in_venn: true
     link: "https://syfi.cs.washington.edu/publications/telerag/"
@@ -112,14 +112,14 @@ index:
     authors: ["Kan Zhu", "Tian Tang", "Qinyu Xu", "Yile Gu", "Zhichen Zeng", "Rohan Kadekodi", "Liangyu Zhao", "Ang Li", "Arvind Krishnamurthy", "Baris Kasikci"]
     venue: "International Conference on Learning Representations (ICLR)"
     year: 2026
-    topics: ["LLM Serving"]
+    tags: [inference]
     pdf: "https://arxiv.org/pdf/2502.12216"
 
   - id: "raydata"
     title: "The Streaming Batch Model for Efficient and Fault-Tolerant Heterogeneous Execution"
     authors: ["Frank Sifei Luan", "Ron Yifeng Wang", "Yile Gu", "Ziming Mao", "Charlotte Lin", "Amog Kamsetty", "Hao Chen", "Cheng Su", "Balaji Veeramani", "Scott Lee", "SangBin Cho", "Clark Zinzow", "Eric Liang", "Ion Stoica", "Stephanie Wang"]
     year: 2025
-    topics: ["ML+Data", "Efficient AI", "Flexible AI"]
+    tags: [data, training]
     pdf: "https://arxiv.org/abs/2501.12407"
 
   - id: "distscheduling"
@@ -127,7 +127,7 @@ index:
     authors: ["Yuyao Wang", "Xiangfeng Zhu", "Ratul Mahajan", "Stephanie Wang"]
     venue: "Hot Topics in Networks (HotNets)"
     year: 2025
-    topics: ["Distributed Scheduling"]
+    tags: [programmability]
     pdf: "https://dl.acm.org/doi/10.1145/3772356.3772391"
 
   - id: "piper"
@@ -136,7 +136,7 @@ index:
     authors: ["Megan Frisella", "Arvin Oentoro", "Xiangyu Gao", "Gilbert Bernstein", "Stephanie Wang"]
     venue: "Practical Adoption Challenges of ML for Systems (PACMI)"
     year: 2025
-    topics: ["Distributed Training"]
+    tags: [training, programmability]
     areas: ["efficient_ai", "flexible_ai"]
     show_in_venn: true
     link: "https://syfi.cs.washington.edu/publications/piper/"
@@ -147,7 +147,7 @@ index:
     authors: ["Keisuke Kamahori", "Jungo Kasai", "Noriyuki Kojima", "Baris Kasikci"]
     venue: "Conference on Empirical Methods in Natural Language Processing (EMNLP)"
     year: 2025
-    topics: ["Efficient ML"]
+    tags: [inference, multimodal]
     link: "https://syfi.cs.washington.edu/publications/liteasr/"
     pdf: "https://arxiv.org/abs/2502.20583"
     code: "https://github.com/efeslab/LiteASR"
@@ -158,7 +158,7 @@ index:
     authors: ["Zihao Ye", "Lequn Chen", "Ruihang Lai", "Wuwei Lin", "Yineng Zhang", "Stephanie Wang", "Tianqi Chen", "Baris Kasikci", "Vinod Grover", "Arvind Krishnamurthy", "Luis Ceze"]
     venue: "Annual Conference on Machine Learning and Systems (MLSys)"
     year: 2025
-    topics: ["LLM Serving"]
+    tags: [inference]
     areas: ["efficient_ai", "flexible_ai"]
     show_in_venn: true
     pdf: "https://arxiv.org/abs/2501.01005"
@@ -171,7 +171,7 @@ index:
     authors: ["Yile Gu", "Hoang Doan Nguyen", "Demirhan Celik", "Sifat Hasan", "Yifan Xiong", "Jonathan Mace", "Yuting Jiang", "Yigong Hu", "Baris Kasikci", "Peng Cheng"]
     venue: "arXiv preprint (2025)"
     year: 2025
-    topics: ["Agents", "Cloud Reliability"]
+    tags: [agents, reliability]
     pdf: "https://arxiv.org/pdf/2501.14170"
 
   - id: "nanoflow"
@@ -180,7 +180,7 @@ index:
     authors: ["Kan Zhu", "Yufei Gao", "Yilong Zhao", "Liangyu Zhao", "Gefei Zuo", "Yile Gu", "Dedong Xie", "Tian Tang", "Qinyu Xu", "Zihao Ye", "Keisuke Kamahori", "Chien-Yu Lin", "Ziren Wang", "Stephanie Wang", "Arvind Krishnamurthy", "Baris Kasikci"]
     venue: "Symposium on Operating Systems Design and Implementation (OSDI)"
     year: 2025
-    topics: ["LLM Serving"]
+    tags: [inference]
     areas: ["efficient_ai", "flexible_ai"]
     show_in_venn: true
     pdf: "https://arxiv.org/abs/2408.12757v1"
@@ -193,7 +193,7 @@ index:
     authors: ["Yi Pan", "Wenbo Qian", "Dedong Xie", "Ruiyan Hu", "Yigong Hu", "Baris Kasikci"]
     venue: "arXiv preprint (2025)"
     year: 2025
-    topics: ["Energy Efficiency", "ML Systems"]
+    tags: [reliability]
     areas: ["efficient_ai", "resilient_ai"]
     show_in_venn: true
     link: "https://syfi.cs.washington.edu/publications/magneton/"
@@ -203,7 +203,7 @@ index:
     authors: ["Weixin Deng", "Andy Ruan", "Megan Frisella", "Kai-Hsun Chen", "SangBin Cho", "Jack Tigar Humphries", "Rui Qiao", "Stephanie Wang"]
     venue: "Hot Topics in Operating Systems (HotOS)"
     year: 2025
-    topics: ["Flexible AI", "Efficient AI"]
+    tags: [programmability]
     pdf: "https://dl.acm.org/doi/10.1145/3713082.3730392"
 
   - id: "fiddler"
@@ -212,7 +212,7 @@ index:
     authors: ["Keisuke Kamahori", "Tian Tang", "Yile Gu", "Kan Zhu", "Baris Kasikci"]
     venue: "International Conference on Learning Representations (ICLR)"
     year: 2025
-    topics: ["LLM Serving"]
+    tags: [inference]
     areas: ["efficient_ai"]
     show_in_venn: true
     pdf: "https://arxiv.org/pdf/2402.07033"
@@ -224,7 +224,7 @@ index:
     authors: ["Jeffrey Li", "Alex Fang", "Georgios Smyrnis", "Maor Ivgi", "Matt Jordan", "Samir Gadre", "Hritik Bansal", "Etash Guha", "Sedrick Keh", "Kushal Arora", "Saurabh Garg", "Rui Xin", "Niklas Muennighoff", "Reinhard Heckel", "Jean Mercat", "Mayee Chen", "Suchin Gururangan", "Mitchell Wortsman", "Alon Albalak", "Yonatan Bitton", "Marianna Nezhurina", "Amro Abbas", "Cheng-Yu Hsieh", "Dhruba Ghosh", "Josh Gardner", "Maciej Kilian", "Hanlin Zhang", "Rulin Shao", "Sarah Pratt", "Sunny Sanyal", "Gabriel Ilharco", "Giannis Daras", "Kalyani Marathe", "Aaron Gokaslan", "Jieyu Zhang", "Khyathi Chandu", "Thao Nguyen", "Igor Vasiljevic", "Sham Kakade", "Shuran Song", "Sujay Sanghavi", "Fartash Faghri", "Sewoong Oh", "Luke Zettlemoyer", "Kyle Lo", "Alaaeldin El-Nouby", "Hadi Pouransari", "Alexander Toshev", "Stephanie Wang", "Dirk Groeneveld", "Luca Soldaini", "Pang Wei Koh", "Jenia Jitsev", "Thomas Kollar", "Alexandros G Dimakis", "Yair Carmon", "Achal Dave", "Ludwig Schmidt", "Vaishaal Shankar"]
     venue: "Conference on Neural Information Processing Systems (NeurIPS)"
     year: 2024
-    topics: ["ML+Data"]
+    tags: [data]
     pdf: "https://proceedings.neurips.cc/paper_files/paper/2024/hash/19e4ea30dded58259665db375885e412-Abstract-Datasets_and_Benchmarks_Track.html"
 
   - id: "quest"
@@ -232,7 +232,7 @@ index:
     authors: ["Jiaming Tang", "Yilong Zhao", "Kan Zhu", "Guangxuan Xiao", "Baris Kasikci", "Song Han"]
     venue: "International Conference on Machine Learning (ICML)"
     year: 2024
-    topics: ["LLM Serving"]
+    tags: [inference]
     pdf: "https://arxiv.org/pdf/2406.10774"
     code: "https://github.com/mit-han-lab/Quest"
     link: "https://syfi.cs.washington.edu/publications/quest/"
@@ -243,7 +243,7 @@ index:
     authors: ["Yilong Zhao", "Chien-Yu Lin", "Kan Zhu", "Zihao Ye", "Lequn Chen", "Size Zheng", "Luis Ceze", "Arvind Krishnamurthy", "Tianqi Chen", "Baris Kasikci"]
     venue: "Annual Conference on Machine Learning and Systems (MLSys)"
     year: 2024
-    topics: ["LLM Serving"]
+    tags: [inference]
     areas: ["efficient_ai"]
     show_in_venn: true
     pdf: "https://arxiv.org/pdf/2310.19102"

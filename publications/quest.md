@@ -5,6 +5,7 @@ authors: ["Jiaming Tang", "Yilong Zhao", "Kan Zhu", "Guangxuan Xiao", "Baris Kas
 venue: "International Conference on Machine Learning (ICML)"
 year: 2024
 topics: ["LLM Serving"]
+tags: [inference]
 pdf: "https://arxiv.org/pdf/2406.10774"
 code: "https://github.com/mit-han-lab/Quest"
 tldr: "Quest is a query-aware sparsity technique for long-context LLM inference that achieves up to 7.03x self-attention speedup and 2.23x latency reduction by selectively loading only the most critical KV cache pages based on dynamic query-driven criticality estimation."

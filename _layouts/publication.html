@@ -19,7 +19,9 @@ layout: default
     </p>
     {% endif %}
 
-    {% if page.topics %}
+    {% if page.tags %}
+    <p class="mb-2">{% include tag_badges.html tags=page.tags %}</p>
+    {% elsif page.topics %}
     <p class="mb-2">
       {% for topic in page.topics %}
         <span class="badge bg-secondary me-1">{{ topic }}</span>
