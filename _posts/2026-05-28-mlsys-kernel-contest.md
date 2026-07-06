@@ -4,6 +4,7 @@ title: "SyFI Team Wins CUDA Kernel Agent Contest at MLSys 2026"
 date: 2026-05-28
 author: "Keisuke Kamahori, Steven Gao, Vic Shihang Li, Wei Shen, Yile Gu"
 excerpt: "Team UW SyFI won three awards across two tracks at the FlashInfer AI Kernel Generation Contest at MLSys 2026 — every line of kernel code written by coding agents, not humans."
+tags: [lab-update, agents]
 ---
 
 At the [**FlashInfer AI Kernel Generation Contest**](https://mlsys26.flashinfer.ai/) at MLSys 2026, Team UW SyFI received awards in three categories out of 245 submissions:

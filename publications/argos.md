@@ -1,10 +1,11 @@
 ---
 layout: publication
-title: "Argos: Detecting Dynamic Anomalies in the Cloud with Rule Generation
+title: "Argos: Detecting Dynamic Anomalies in the Cloud with Rule Generation"
 authors: ["Yile Gu", "Hoang Doan Nguyen", "Demirhan Celik", "Sifat Hasan", "Yifan Xiong", "Jonathan Mace", "Yuting Jiang", "Yigong Hu", "Baris Kasikci", "Peng Cheng"]
 venue: "arXiv preprint (2025)"
 year: 2025
 topics: ["Agents", "Cloud Reliability"]
+tags: [agents, reliability]
 pdf: "https://arxiv.org/pdf/2501.14170"
 tldr: "Argos is an agentic system that leverages Large Language Models (LLMs) to automatically generate and refine explainable, reproducible Python rules for detecting dynamic cloud anomalies."
 keywords:

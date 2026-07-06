@@ -5,6 +5,7 @@ authors: ["Yi Pan", "Wenbo Qian", "Dedong Xie", "Ruiyan Hu", "Yigong Hu", "Baris
 venue: "arXiv preprint (2025)"
 year: 2025
 topics: ["Energy Efficiency", "ML Systems"]
+tags: [reliability]
 pdf: "https://syfi.cs.washington.edu/publications/magneton"
 tldr: "Magneton is a differential energy profiler designed to detect and diagnose invisible inefficiencies in ML systems."
 keywords:

@@ -5,6 +5,7 @@ authors: ["Keisuke Kamahori", "Tian Tang", "Yile Gu", "Kan Zhu", "Baris Kasikci"
 venue: "International Conference on Learning Representations (ICLR)"
 year: 2025
 topics: ["LLM Serving"]
+tags: [inference]
 pdf: "https://arxiv.org/pdf/2402.07033"
 code: "https://github.com/efeslab/fiddler"
 tldr: "Fiddler is a resource-efficient inference system for Mixture-of-Experts (MoE) models that achieves lower latency than existing offloading methods by orchestrating CPU and GPU resources to minimize data movement."

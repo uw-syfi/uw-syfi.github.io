@@ -1,0 +1,30 @@
+# Canonical tag vocabulary shared by papers and blog posts.
+#
+# - Blog posts (_posts/*.md) declare `tags: [<slugs>]` in their front matter,
+#   typically starting with the post kind (research / lab-update).
+# - Publications (_data/publications.yml and publications/*.md) declare
+#   `tags: [<slugs>]`.
+#
+# The /research/ page filters both kinds of content by these slugs.
+
+tags:
+  # Blog post kinds
+  - slug: research
+    label: "New Research"
+  - slug: lab-update
+    label: "Lab Update"
+  # Research areas
+  - slug: inference
+    label: "Inference & Serving"
+  - slug: training
+    label: "Training"
+  - slug: agents
+    label: "Agents"
+  - slug: multimodal
+    label: "Multimodal"
+  - slug: data
+    label: "ML + Data"
+  - slug: reliability
+    label: "Reliability & Energy"
+  - slug: programmability
+    label: "Programmable Systems"

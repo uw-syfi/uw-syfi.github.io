@@ -6,6 +6,7 @@ layout: default
   <div class="col-md-12 post-content">
     <h1 class="fw-bold mb-2">{{ page.title }}</h1>
     {% if page.author %}<p class="text-muted mb-1">{{ page.author }}</p>{% endif %}
+    {% if page.tags %}<p class="mb-2">{% include tag_badges.html tags=page.tags %}</p>{% endif %}
     <p class="text-muted border-bottom pb-3 mb-5">{{ page.date | date: "%B %-d, %Y" }}</p>
     {{ content }}
   </div>

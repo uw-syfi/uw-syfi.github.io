@@ -5,6 +5,7 @@ authors: ["Megan Frisella", "Arvin Oentoro", "Xiangyu Gao", "Gilbert Bernstein",
 venue: "Practical Adoption Challenges of ML for Systems (PACMI)"
 year: 2025
 topics: ["Distributed Training"]
+tags: [training, programmability]
 pdf: "https://dl.acm.org/doi/10.1145/3766882.3767187"
 tldr: "Piper is a PyTorch library for training large models with flexible pipeline parallel schedules."
 keywords:
