@@ -5,6 +5,7 @@ authors: ["Keisuke Kamahori", "Jungo Kasai", "Noriyuki Kojima", "Baris Kasikci"]
 venue: "Conference on Empirical Methods in Natural Language Processing (EMNLP)"
 year: 2025
 topics: ["Efficient ML", "Speech"]
+tags: [inference, multimodal]
 pdf: "https://arxiv.org/abs/2502.20583"
 code: "https://github.com/efeslab/LiteASR"
 tldr: "LiteASR is a low-rank compression scheme for ASR encoders that reduces Whisper Large-v3's encoder size by over 40% and improves inference speed by ~1.4x while maintaining transcription accuracy."

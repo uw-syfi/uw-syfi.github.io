@@ -4,6 +4,7 @@ title: "Meet LLMc: Beating All Compression with LLMs"
 date: 2025-10-03
 author: "UW SyFI Lab"
 excerpt: "We present LLMc, an open-source tool to compress natural language using LLMs as the world's most reference-packed dictionary."
+tags: [research, inference]
 ---
 
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

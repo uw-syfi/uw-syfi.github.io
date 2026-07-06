@@ -5,6 +5,7 @@ authors: ["Yi Pan", "Yile Gu", "Jinbin Luo", "Yibo Wu", "Ziren Wang", "Hongtao Z
 venue: "arXiv preprint (2025)"
 year: 2025
 topics: ["ML Systems"]
+tags: [inference, programmability]
 pdf: "https://syfi.cs.washington.edu/publications/dynaflow"
 tldr: "DynaFlow is a programmable intra-device parallelism framework for ML systems that achieves high performance and low effort."
 keywords:

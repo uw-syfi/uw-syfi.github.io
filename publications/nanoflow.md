@@ -5,6 +5,7 @@ authors: ["Kan Zhu", "Yufei Gao", "Yilong Zhao", "Liangyu Zhao", "Gefei Zuo", "Y
 venue: "Symposium on Operating Systems Design and Implementation (OSDI)"
 year: 2025
 topics: ["LLM Serving"]
+tags: [inference]
 pdf: "https://arxiv.org/abs/2408.12757v1"
 code: "https://github.com/efeslab/Nanoflow"
 tldr: "NanoFlow is a throughput-oriented high-performance serving framework for LLMs that achieves up to 1.91x throughput boost compared to TensorRT-LLM by exploiting intra-device parallelism and asynchronous CPU scheduling."

@@ -1,0 +1,5 @@
+{% comment %}
+Clickable tag badges that deep-link into the filterable /research/ page.
+Usage: {% include tag_badges.html tags=page.tags %}
+  - tags: array of tag slugs (see _data/tags.yml)
+{% endcomment %}{% for _slug in include.tags %}{% assign _tag = site.data.tags.tags | where: "slug", _slug | first %}{% if _tag %}<a href="{{ site.github.url }}/research/?tag={{ _tag.slug }}" class="badge rounded-pill bg-light text-dark border text-decoration-none me-1">{{ _tag.label }}</a>{% endif %}{% endfor %}

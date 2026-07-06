@@ -13,6 +13,7 @@ title: "Publications"
       <h5><a href="{{ pub.pdf }}">{{ pub.title }}</a></h5>
     {% endif %}
     {% if pub.award %}<span class="badge bg-warning text-dark">{{ pub.award }}</span>{% endif %}
+    {% if pub.tags %}<p class="mb-1">{% include tag_badges.html tags=pub.tags %}</p>{% endif %}
     <p class="text-muted">{{ pub.authors | join: ", " }} &mdash; {{ pub.venue }} ({{ pub.year }})</p>
     <div class="d-flex gap-2">
       {% if pub.pdf %}

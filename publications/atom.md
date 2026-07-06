@@ -5,6 +5,7 @@ authors: ["Yilong Zhao", "Chien-Yu Lin", "Kan Zhu", "Zihao Ye", "Lequn Chen", "S
 venue: "Annual Conference on Machine Learning and Systems (MLSys)"
 year: 2024
 topics: ["LLM Serving"]
+tags: [inference]
 pdf: "https://arxiv.org/pdf/2310.19102"
 code: "https://github.com/efeslab/Atom"
 tldr: "Atom is a low-bit quantization method for LLM serving that achieves up to 7.73x throughput improvement over FP16 and 2.53x over INT8, with negligible accuracy loss, by leveraging 4-bit integer operators and mixed-precision quantization."
