@@ -39,6 +39,16 @@ title: "People"
                 <i class="fas fa-globe"></i>
               </a>
             {% endif %}
+            {% if person.linkedin %}
+              <a href="{{ person.linkedin }}" target="_blank" class="text-muted" title="LinkedIn" style="text-decoration: none; font-size: 0.9rem;">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            {% endif %}
+            {% if person.twitter %}
+              <a href="https://x.com/{{ person.twitter }}" target="_blank" class="text-muted" title="X" style="text-decoration: none; font-size: 0.9rem;">
+                <i class="fab fa-x-twitter"></i>
+              </a>
+            {% endif %}
           </div>
         </div>
       </div>
