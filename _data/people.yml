@@ -9,6 +9,8 @@ people:
     email: "baris@cs.washington.edu"
     office: "Paul Allen Center"
     website: "https://homes.cs.washington.edu/~baris/"
+    twitter: "bariskasikci"
+    linkedin: "https://www.linkedin.com/in/bariskasikci/"
     image: "assets/img/people/baris.jpeg"
     url: "baris-kasikci"
 
@@ -21,6 +23,8 @@ people:
     email: "smwang@cs.washington.edu"
     office: "Paul Allen Center"
     website: "https://stephanie-wang.github.io/"
+    twitter: "thepadawang"
+    linkedin: "https://www.linkedin.com/in/swang93/"
     image: "assets/img/people/stephanie.jpg"
     url: "stephanie-wang"
 
@@ -34,6 +38,8 @@ people:
     email: "luisceze@cs.washington.edu"
     office: "Paul Allen Center"
     website: "https://homes.cs.washington.edu/~luisceze/"
+    twitter: "luisceze"
+    linkedin: "https://www.linkedin.com/in/luis-ceze-50b2314/"
     image: "assets/img/people/ceze.jpg"
     url: "luis-ceze"
 
@@ -46,6 +52,8 @@ people:
     email: "arvind@cs.washington.edu"
     office: "Paul Allen Center"
     website: "https://homes.cs.washington.edu/~arvind/"
+    twitter: "arvind_uw"
+    linkedin: "https://www.linkedin.com/in/arvind-krishnamurthy-9a3b803/"
     image: "assets/img/people/arvind.png"
     url: "arvind-krishnamurthy"
 
@@ -58,6 +66,7 @@ people:
     email: "simpeter@cs.washington.edu"
     office: "Paul Allen Center"
     website: "https://homes.cs.washington.edu/~simpeter/"
+    linkedin: "https://www.linkedin.com/in/simon-peter-a375785/"
     image: "assets/img/people/simon.jpeg"
     url: "simon-peter"
 
@@ -70,6 +79,8 @@ people:
     email: "banghua@cs.washington.edu"
     office: "Paul Allen Center"
     website: "https://banghuazhu.github.io/"
+    twitter: "BanghuaZ"
+    linkedin: "https://www.linkedin.com/in/banghua-zhu-171902aa/"
     image: "assets/img/people/banghua.jpg"
     url: "banghua-zhu"
 
@@ -82,6 +93,7 @@ people:
     email: "xiangyug@cs.washington.edu"
     office: "Paul Allen Center"
     website: "https://xiangyug.github.io/"
+    linkedin: "https://www.linkedin.com/in/xiangyu-gao-82987993/"
     image: "assets/img/people/xiangyu.jpg"
     url: "xiangyu-gao"
 
@@ -93,6 +105,8 @@ people:
     email: "kadekodirohan@gmail.com"
     office: "Paul Allen Center"
     website: "https://scholar.google.com/citations?user=IVnxMOkAAAAJ&hl=en"
+    twitter: "RohanKadekodi"
+    linkedin: "https://www.linkedin.com/in/rohan-kadekodi-775b4a124/"
     image: "assets/img/people/rohan.jpeg"
     url: "rohan-kadekodi"
 
@@ -115,7 +129,7 @@ people:
     institution_address: "185 E Stevens Way NE, Seattle, WA 98195"
     email: "wshen@cs.washington.edu"
     office: "Paul Allen Center"
-    website: "https://www.linkedin.com/in/wei-shen-675b471a1/"
+    linkedin: "https://www.linkedin.com/in/wei-shen-675b471a1/"
     image: "assets/img/people/wei.jpeg"
     url: "wei-shen"
 
@@ -127,6 +141,7 @@ people:
     email: "mgiordan@cs.washington.edu"
     office: "Paul Allen Center"
     website: "https://homes.cs.washington.edu/~mgiordan/"
+    linkedin: "https://www.linkedin.com/in/matthew-giordano-18650242/"
     image: "assets/img/people/matthew.jpg"
     url: "matthew-giordano"
   
@@ -138,6 +153,8 @@ people:
     email: "shli@cs.washington.edu"
     office: "Paul Allen Center"
     website: "https://vic-li.me/"
+    twitter: "sudopowr"
+    linkedin: "https://www.linkedin.com/in/vic-shihang-li/"
     image: "assets/img/people/vic.webp"
     url: "vic-li"
 
@@ -160,6 +177,8 @@ people:
     email: "yilegu@cs.washington.edu"
     office: "Paul Allen Center"
     website: "https://ikace.github.io/"
+    twitter: "MichaelGu341332"
+    linkedin: "https://www.linkedin.com/in/yile-gu-3907881a0/"
     image: "assets/img/people/yilegu.jpg"
     url: "michael-gu"
 
@@ -171,6 +190,8 @@ people:
     email: "kamahori@cs.washington.edu"
     office: "Paul Allen Center"
     website: "https://kamahori.org/"
+    twitter: "KeisukeKamahori"
+    linkedin: "https://www.linkedin.com/in/kamahori/"
     image: "assets/img/people/keisuke.png"
     url: "keisuke-kamahori"
 
@@ -182,6 +203,7 @@ people:
     email: "hrpeng@cs.washington.edu"
     office: "Paul Allen Center"
     website: "https://hurrypeng.cc/"
+    linkedin: "https://www.linkedin.com/in/hurrypeng/"
     image: "assets/img/people/haoran.webp"
     url: "haoran-peng"
 
@@ -193,6 +215,7 @@ people:
     email: "dedongx@cs.washington.edu"
     office: "Paul Allen Center"
     website: "https://ddxxdd-code.github.io/"
+    linkedin: "https://www.linkedin.com/in/dedong-xie-547a501a8/"
     image: "assets/img/people/dedong.jpg"
     url: "dedong-xie"
 
@@ -204,6 +227,7 @@ people:
     email: "kanzhu@cs.washington.edu"
     office: "Paul Allen Center"
     website: "https://kanzhu.netlify.app/"
+    twitter: "KanZhu854772"
     image: "assets/img/people/kanzhu.jpg"
     url: "kan-zhu"
 
@@ -215,6 +239,7 @@ people:
     email: "yingbosun@cs.washington.edu"
     office: "Paul Allen Center"
     website: ""
+    linkedin: "https://www.linkedin.com/in/yingbo-sun/"
     image: "assets/img/people/yingbo.jpeg"
     url: "yingbo-sun"
 
@@ -237,6 +262,7 @@ people:
     email: "mfris@cs.washington.edu"
     office: "Paul Allen Center"
     website: "https://homes.cs.washington.edu/~mfris/"
+    linkedin: "https://www.linkedin.com/in/megan-frisella/"
     image: "assets/img/people/mfris.jpeg"
     url: "megan-frisella"
 
@@ -248,6 +274,7 @@ people:
     email: "hongtaoz@cs.washington.edu"
     office: "Paul Allen Center"
     website: "https://github.com/taooceros"
+    linkedin: "https://www.linkedin.com/in/taooceros/"
     image: "assets/img/people/hongtao.jpg"
     url: "hongtao-zhang"
 
@@ -269,7 +296,8 @@ people:
     institution_address: "185 E Stevens Way NE, Seattle, WA 98195"
     email: "me@stevengao.net"
     office: "Paul Allen Center"
-    website: "https://stevengao.net/"
+    website: "https://steven.ml/"
+    twitter: "ste_veng"
     image: "assets/img/people/default.jpg"
     url: "steven-gao"
 
@@ -281,6 +309,8 @@ people:
     email: "mjacob2@cs.washington.edu"
     office: "Paul Allen Center"
     website: "https://mjacob1002.github.io/"
+    twitter: "mat_jacob1002"
+    linkedin: "https://www.linkedin.com/in/mathew-jacob-5155721a7/"
     image: "assets/img/people/mat.png"
     url: "mat-jacob"
 
@@ -305,6 +335,7 @@ people:
     email: "conlesspan@sjtu.edu.cn"
     office: "Paul Allen Center"
     website: "https://conless.dev/"
+    twitter: "conlesspan"
     image: "assets/img/people/yipan.png"
     url: "yi-pan"
 
@@ -316,6 +347,7 @@ people:
     institution_address: "185 E Stevens Way NE, Seattle, WA 98195"
     email: "zirenw2@uw.edu"
     office: "Paul Allen Center"
+    linkedin: "https://www.linkedin.com/in/ziren-wang-586b56377/"
     image: "assets/img/people/ziren.jpeg"
     url: "ziren-wang"
 
@@ -338,7 +370,7 @@ people:
     institution_address: "185 E Stevens Way NE, Seattle, WA 98195"
     email: "rubywtlee@gmail.com"
     office: "Paul Allen Center"
-    website: "https://www.linkedin.com/in/rubywtlee/"
+    linkedin: "https://www.linkedin.com/in/rubywtlee/"
     image: "assets/img/people/rubywtl.jpg"
     url: "wei-tzu-lee"
 
@@ -354,6 +386,7 @@ people:
     email: "zhye@cs.washington.edu"
     office: "Paul Allen Center"
     website: "https://homes.cs.washington.edu/~zhye/"
+    linkedin: "https://www.linkedin.com/in/zihao-ye-045446166/"
     image: "assets/img/people/zhye.png"
     url: "zihao-ye"
 
@@ -368,6 +401,7 @@ people:
     email: "gongxini@cs.washington.edu"
     office: "Paul Allen Center"
     website: "https://yigonghu.github.io/"
+    linkedin: "https://www.linkedin.com/in/yigong-hu-01499912a/"
     image: "assets/img/people/yigong.jpeg"
     url: "yigong-hu"
 
@@ -382,6 +416,7 @@ people:
     email: "cyclin@meta.com"
     office: "Paul Allen Center"
     website: "https://cylinbao.github.io/"
+    linkedin: "https://www.linkedin.com/in/chien-yu-lin-4b534ba0/"
     image: "assets/img/people/chienyu.jpg"
     url: "chien-yu-lin"
 
@@ -410,6 +445,8 @@ people:
     email: "tian21@cs.washington.edu"
     office: "Paul Allen Center"
     website: "https://tang-t21.github.io/"
+    twitter: "Tangt03"
+    linkedin: "https://www.linkedin.com/in/tian-tang-323b002ba/"
     image: "assets/img/people/tian.png"
     url: "tian-tang"
 
@@ -424,6 +461,8 @@ people:
     email: "yilongzhao@berkeley.edu"
     office: "Paul Allen Center"
     website: "https://happierpig.github.io/"
+    twitter: "ylzhao_dreamer"
+    linkedin: "https://www.linkedin.com/in/yilong-zhao-162151279/"
     image: "assets/img/people/ylzhao.jpg"
     url: "yilong-zhao"
 
@@ -437,6 +476,8 @@ people:
     institution_address: "185 E Stevens Way NE, Seattle, WA 98195"
     email: "yixind@andrew.cmu.edu"
     office: "Paul Allen Center"
+    twitter: "yi_xin_dong"
+    linkedin: "https://www.linkedin.com/in/yixin-dong-19972b325/"
     website: ""
     image: "assets/img/people/yixin.png"
     url: "yixin-dong"
