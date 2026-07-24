@@ -1,4 +1,9 @@
 news:
+  - id: "2026-07-24-tracelab-bash"
+    date: "July 24, 2026"
+    title: "TraceLab V2: Breaking Down the Bash Commands Used by Coding Agents."
+    link: "/blog/2026-07-24-tracelab-bash"
+
   - id: "2026-06-29-ekka"
     date: "June 29, 2026"
     title: "Introducing Ekka: automated diagnosis of silent errors in LLM inference via differential debugging, accepted to ICML 2026!"
