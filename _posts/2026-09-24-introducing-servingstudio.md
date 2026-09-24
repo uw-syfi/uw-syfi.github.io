@@ -84,3 +84,18 @@ We plan to:
 ServingStudio Sim helps engineers explore optimization ideas faster in simulation. ServingStudio Agent then implements promising changes and validates their effects on real hardware.
 
 Explore ServingStudio on [GitHub](https://github.com/SyFI-ServingStudio/ServingStudio) and read the [project overview](https://syfi-servingstudio.github.io/ServingStudioIntro/).
+
+## Citation
+
+If you use ServingStudio in your research, please cite:
+
+```bibtex
+@misc{zhu2026servingstudio,
+  title        = {Introducing ServingStudio: An Integrated Workbench for Simulating, Analyzing, and Optimizing LLM Serving Systems},
+  author       = {Kan Zhu and Michael Gu and Sheetal Sriram and Keisuke Kamahori and Vic Li and Mathew Jacob and Dedong Xie and Stephanie Wang and Arvind Krishnamurthy and Baris Kasikci},
+  year         = {2026},
+  month        = sep,
+  howpublished = {\url{https://syfi.cs.washington.edu/blog/2026-09-24-introducing-servingstudio/}},
+  note         = {Code: \url{https://github.com/SyFI-ServingStudio/ServingStudio}}
+}
+```
