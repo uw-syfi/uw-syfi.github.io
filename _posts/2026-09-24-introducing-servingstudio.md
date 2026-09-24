@@ -53,7 +53,7 @@ The following cases show how we used ServingStudio to improve serving performanc
 
 ### Case 1: Extending SGLang's MoE Autotuning
 
-During Agent-guided alignment, comparing SGLang’s measurements with the Simulator’s predictions showed that prefill MoE kernels were slower than expected. Autotuning did not cover the exact kernel called inside prefill CUDA graphs. We instructed the Agent to add a tuning pass for that path and tested GLM-5.2 NVFP4 on four B200 GPUs with four-way tensor parallelism (TP4). The benchmark used 240 requests, each with 4,096 input tokens and 8 output tokens, at concurrency 24. Input throughput improved by **5.6%** over unmodified SGLang. [PR](https://github.com/sgl-project/sglang/pull/38560)
+During Agent-guided alignment, comparing SGLang’s measurements with the Simulator’s predictions showed that prefill MoE kernels were slower than expected. Autotuning did not cover the exact kernel called inside prefill CUDA graphs. We instructed the Agent to add [a tuning pass for that path](https://github.com/sgl-project/sglang/pull/38560) and tested GLM-5.2 NVFP4 on four B200 GPUs with four-way tensor parallelism (TP4). The benchmark used 240 requests, each with 4,096 input tokens and 8 output tokens, at concurrency 24. Input throughput improved by **5.6%** over unmodified SGLang.
 
 ### Case 2: Restoring CUDA Graph Replay in vLLM
 
