@@ -2,7 +2,7 @@
 layout: post
 title: "Introducing ServingStudio: An Integrated Workbench for Simulating, Analyzing, and Optimizing LLM Serving Systems"
 date: 2026-09-24
-author: "Kan Zhu, Michael Gu, Sheetal Sriram, Keisuke Kamahori, Vic Li, Mathew Jacob, Dedong Xie, Stephanie Wang, Arvind Krishnamurthy, Baris Kasikci"
+author: "Kan Zhu, Michael Gu, Sheetal Sriram, Mathew Jacob, Keisuke Kamahori, Vic Li, Dedong Xie, Stephanie Wang, Arvind Krishnamurthy, Baris Kasikci"
 excerpt: "ServingStudio's Simulator predicts LLM serving performance and analyzes execution costs from measured GPU kernel timings. Its Agent uses these results to implement promising changes in real serving frameworks and validate them on hardware."
 tags: [research, inference, agents]
 ---
@@ -92,7 +92,7 @@ If you use ServingStudio in your research, please cite:
 ```bibtex
 @misc{zhu2026servingstudio,
   title        = {Introducing ServingStudio: An Integrated Workbench for Simulating, Analyzing, and Optimizing LLM Serving Systems},
-  author       = {Kan Zhu and Michael Gu and Sheetal Sriram and Keisuke Kamahori and Vic Li and Mathew Jacob and Dedong Xie and Stephanie Wang and Arvind Krishnamurthy and Baris Kasikci},
+  author       = {Kan Zhu and Michael Gu and Sheetal Sriram and Mathew Jacob and Keisuke Kamahori and Vic Li and Dedong Xie and Stephanie Wang and Arvind Krishnamurthy and Baris Kasikci},
   year         = {2026},
   month        = sep,
   howpublished = {\url{https://syfi.cs.washington.edu/blog/2026-09-24-introducing-servingstudio/}},
