@@ -34,7 +34,7 @@ To help the Agent investigate performance and implement changes, we provide a li
 - Alignment with real serving frameworks
 - Experiment design
 - Performance analysis
-- Serving system optimization
+- Serving-system optimization
 
 ## From Real Measurement to Real Improvement
 
@@ -57,11 +57,11 @@ During Agent-guided alignment, comparing SGLang’s measurements with the Simula
 
 ### Case 2: Restoring CUDA Graph Replay in vLLM
 
-During alignment, the Agent reported unexpected CPU overhead in vLLM’s multi-token prediction (MTP) execution. For GLM-5.2 NVFP4 on four B200 GPUs with TP4 and four-way expert parallelism (EP4), CPU bubbles took up to 18.5% of the end-to-end run time. We then prompted the Agent to investigate where the gap was coming from. Agent found that, with five draft tokens, each verification step processes six tokens per request, and vLLM’s V1 runner restricted piecewise graph sizes to multiples of six. This forced 2,048-token prefill batches to run eagerly, adding CPU overhead from individual kernel launches. Raising both the scheduler budget and graph limit to 2,052 tokens restored replay. In a separate 100-request benchmark, the updated configuration achieved **10.8%** higher output throughput than the original 2,048-token configuration.
+During alignment, the Agent reported unexpected CPU overhead in vLLM’s multi-token prediction (MTP) execution. For GLM-5.2 NVFP4 on four B200 GPUs with TP4 and four-way expert parallelism (EP4), CPU bubbles took up to 18.5% of the end-to-end run time. We then prompted the Agent to investigate where the gap was coming from. The Agent found that, with five draft tokens, each verification step processes six tokens per request, and vLLM’s V1 runner restricted piecewise graph sizes to multiples of six. This forced 2,048-token prefill batches to run eagerly, adding CPU overhead from individual kernel launches. Raising both the scheduler budget and graph limit to 2,052 tokens restored replay. In a separate 100-request benchmark, the updated configuration achieved **10.8%** higher output throughput than the original 2,048-token configuration.
 
 ### Case 3: Building a Qwen3-235B Path in Mini-SGLang
 
-Mini-SGLang did not support Qwen3-235B, so we used the Agent to build a FP8 implementation starting from the Mini-SGLang. Guided by simulation and kernel analysis, the Agent simplified execution and fused kernels. We compared the implementation with vLLM on the same prefill-heavy workload: 256 requests at concurrency 32, with both engines running on four H200 GPUs using TP4 and EP4. The implementation delivered **25.6% higher output throughput than vLLM**.
+Mini-SGLang did not support Qwen3-235B, so we used the Agent to build an FP8 implementation starting from Mini-SGLang. Guided by simulation and kernel analysis, the Agent simplified execution and fused kernels. We compared the implementation with vLLM on the same prefill-heavy workload: 256 requests at concurrency 32, with both engines running on four H200 GPUs using TP4 and EP4. The implementation delivered **25.6% higher output throughput than vLLM**.
 
 ## How ServingStudio Can Be Used
 
