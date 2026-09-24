@@ -1,4 +1,9 @@
 news:
+  - id: "2026-09-24-introducing-servingstudio"
+    date: "September 24, 2026"
+    title: "Introducing ServingStudio: an integrated workbench for simulating, analyzing, and optimizing LLM serving systems."
+    link: "/blog/2026-09-24-introducing-servingstudio"
+
   - id: "2026-07-24-tracelab-bash"
     date: "July 24, 2026"
     title: "TraceLab V2: Breaking Down the Bash Commands Used by Coding Agents."
