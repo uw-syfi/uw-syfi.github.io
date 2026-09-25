@@ -374,7 +374,21 @@ people:
     image: "assets/img/people/rubywtl.jpg"
     url: "wei-tzu-lee"
 
-  # Alumni (7)
+  # Alumni (8)
+  - name: "Shanli Xing"
+    role: "alumni"
+    degree: "Undergraduate"
+    year: 2026
+    current_position: "PhD Student at CMU"
+    department: "Computer Science & Engineering"
+    institution: "University of Washington"
+    email: "shanlix@cs.cmu.edu"
+    website: "https://xsl.ing/"
+    twitter: "shanli_xing"
+    linkedin: "https://www.linkedin.com/in/shanli-xing/"
+    image: "assets/img/people/shanlixing.png"
+    url: "shanli-xing"
+
   - name: "Zihao Ye"
     role: "alumni"
     degree: "PhD"
