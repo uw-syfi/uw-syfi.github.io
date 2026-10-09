@@ -1,4 +1,9 @@
 news:
+  - id: "2026-10-08-qwen35-mi300a"
+    date: "October 8, 2026"
+    title: "VibeSys agents build a Qwen3.5-397B engine on MI300A, 2.3× tuned SGLang."
+    link: "/blog/2026-10-08-qwen35-mi300a"
+
   - id: "2026-09-24-introducing-servingstudio"
     date: "September 24, 2026"
     title: "Introducing ServingStudio: an integrated workbench for simulating, analyzing, and optimizing LLM serving systems."
