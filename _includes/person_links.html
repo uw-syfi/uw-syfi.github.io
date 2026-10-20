@@ -1,0 +1,22 @@
+<div class="alumni-links d-flex justify-content-start flex-wrap gap-2 mb-0">
+  {% if include.person.email and include.person.email != empty %}
+    <a href="mailto:{{ include.person.email }}" class="text-muted" title="Email" aria-label="Email {{ include.person.name }}">
+      <i class="fas fa-envelope"></i>
+    </a>
+  {% endif %}
+  {% if include.person.website and include.person.website != empty %}
+    <a href="{{ include.person.website }}" target="_blank" rel="noopener noreferrer" class="text-muted" title="Website" aria-label="{{ include.person.name }} website">
+      <i class="fas fa-globe"></i>
+    </a>
+  {% endif %}
+  {% if include.person.linkedin and include.person.linkedin != empty %}
+    <a href="{{ include.person.linkedin }}" target="_blank" rel="noopener noreferrer" class="text-muted" title="LinkedIn" aria-label="{{ include.person.name }} on LinkedIn">
+      <i class="fab fa-linkedin"></i>
+    </a>
+  {% endif %}
+  {% if include.person.twitter and include.person.twitter != empty %}
+    <a href="https://x.com/{{ include.person.twitter }}" target="_blank" rel="noopener noreferrer" class="text-muted" title="X" aria-label="{{ include.person.name }} on X">
+      <i class="fab fa-x-twitter"></i>
+    </a>
+  {% endif %}
+</div>

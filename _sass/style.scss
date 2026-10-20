@@ -117,6 +117,55 @@ img {
   margin: 0 auto;
 }
 
+.alumni-person {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.alumni-profile {
+  // Split each alumni entry into two small columns with a 24px gutter.
+  flex: 0 0 calc(50% - 12px);
+  min-width: 100px;
+  // Reclaim the empty space after the centered photo for the text.
+  margin-right: min(0px, calc(56px - 25%));
+  text-align: center;
+}
+
+.alumni-avatar {
+  width: 100px;
+  height: 100px !important;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.alumni-links a {
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.alumni-details {
+  flex: 1;
+  min-width: 0;
+  overflow-wrap: anywhere;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 5px;
+  line-height: 1.25;
+  text-align: left;
+}
+
+.alumni-details > h6 {
+  // Optical alignment of the larger, bold name with the smaller text below.
+  margin-left: -1px;
+}
+
+.alumni-position,
+.alumni-next {
+  min-height: 1.25em;
+}
+
 @media (max-width: 767.98px) {
   .site-brand {
     justify-content: center;

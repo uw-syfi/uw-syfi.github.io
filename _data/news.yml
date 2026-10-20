@@ -1,4 +1,12 @@
 news:
+  - id: "2026-10-19-nsf-ai-efficiency-challenge"
+    date: "October 19, 2026"
+    title: "SyFI was just selected for a multi-million dollar award from the NSF to work on the AI Efficiency Challenge!"
+    content: >-
+      SyFI was just selected for a multi-million dollar award from the NSF to work on the AI Efficiency Challenge!
+      Read more about it [<u>here</u>](https://www.nsf.gov/tip/updates/nsf-announces-teams-selected-accelerate-efficiency-gains-us?utm_medium=email&utm_source=govdelivery)
+      and [<u>here</u>](https://stride-ventures.com/start2-groups-initiative-funded-by-u-s-national-science-foundation-identifies-nine-teams-to-accelerate-efficiency-gains-in-u-s-super-intelligence-infrastructure/)!
+
   - id: "2026-10-08-qwen35-mi300a"
     date: "October 8, 2026"
     title: "VibeSys agents build a Qwen3.5-397B engine on MI300A, 2.3× tuned SGLang."
