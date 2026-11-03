@@ -1,12 +1,26 @@
 index:
+  - id: "consumerbench"
+    title: "ConsumerBench: Benchmarking Generative AI Applications on End-User Devices"
+    authors: ["Yile Gu", "Rohan Kadekodi", "Sahi Chitrapu", "Aradhya Agrawal", "Camille Sawa", "Hoang Doan Nguyen", "Keisuke Kamahori", "Yiyu Liu", "Baris Kasikci"]
+    venue: "Conference on Language Modeling (COLM)"
+    year: 2026
+    tags: [inference, benchmark]
+    areas: ["efficient_ai"]
+    show_in_venn: true
+    link: "https://consumerbench.github.io/"
+    pdf: "https://arxiv.org/abs/2506.17538"
+    code: "https://github.com/efeslab/ConsumerBench"
+    website: "https://consumerbench.github.io/"
+
   - id: "ekka"
     title: "Ekka: Automated Diagnosis of Silent Errors in LLM Inference"
     authors: ["Yile Gu", "Zhen Zhang", "Shaowei Zhu", "Xinwei Fu", "Jun Wu", "Yida Wang", "Baris Kasikci"]
     venue: "International Conference on Machine Learning (ICML)"
     year: 2026
-    topics: ["LLM Serving"]
+    tags: [inference, reliability, agents]
     link: "/blog/2026-06-29-ekka/"
     pdf: "https://arxiv.org/abs/2606.04594"
+    code: "https://github.com/uw-syfi/Ekka"
 
   - id: "tracelab"
     title: "TraceLab: Characterizing Coding Agent Workloads for LLM Serving"
@@ -183,6 +197,7 @@ index:
     tags: [agents, reliability]
     link: "https://syfi.cs.washington.edu/publications/argos/"
     pdf: "https://arxiv.org/pdf/2501.14170"
+    code: "https://github.com/microsoft/argos"
 
   - id: "nanoflow"
     title: "NanoFlow: Towards Optimal Large Language Model Serving Throughput"
