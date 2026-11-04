@@ -252,7 +252,7 @@ index:
     authors: ["Yi Pan", "Wenbo Qian", "Dedong Xie", "Ruiyan Hu", "Yigong Hu", "Baris Kasikci"]
     venue: "arXiv preprint (2025)"
     year: 2025
-    tags: [reliability]
+    tags: [energy]
     areas: ["efficient_ai", "resilient_ai"]
     show_in_venn: true
     link: "https://syfi.cs.washington.edu/publications/magneton/"
