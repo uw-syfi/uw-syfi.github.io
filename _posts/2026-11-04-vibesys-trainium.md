@@ -110,7 +110,7 @@ Predictions were often close to the measurements. In round 2, the simulator coun
 
 VibeSys is available at [github.com/uw-syfi/vibesys](https://github.com/uw-syfi/vibesys), and the [paper](https://arxiv.org/abs/2605.06068) describes its design. ServingStudio is at [github.com/SyFI-ServingStudio/ServingStudio](https://github.com/SyFI-ServingStudio/ServingStudio).
 
-We plan to release the full records of both experiments later, including code, per-round evidence, framework event logs, and agent transcripts.
+The full records of both experiments, including code, per-round evidence, framework event logs, and agent transcripts, are available at [github.com/vibesys-playground/qwen3.8-trainium2-vibesys](https://github.com/vibesys-playground/qwen3.8-trainium2-vibesys).
 
 ## Acknowledgements
 
