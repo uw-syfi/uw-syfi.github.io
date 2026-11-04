@@ -1,4 +1,15 @@
 index:
+  - id: "sdo"
+    title: "A Self-Defining Operator for Distributed Applications"
+    short_title: "SDO"
+    authors: ["Shihang Li", "Thomas Anderson", "Ratul Mahajan", "Simon Peter", "Luke Zettlemoyer"]
+    year: 2026
+    tags: [agents, reliability]
+    areas: ["flexible_ai", "resilient_ai"]
+    show_in_venn: true
+    pdf: "https://arxiv.org/abs/2610.14547"
+    code: "https://github.com/self-defining-systems/sdo"
+
   - id: "ekka"
     title: "Ekka: Automated Diagnosis of Silent Errors in LLM Inference"
     short_title: "Ekka"
