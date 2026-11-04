@@ -1,5 +1,7 @@
 {%- assign pub = include.pub -%}
-{%- if pub.link -%}
+{%- if pub.blog -%}
+  {%- assign pub_url = pub.blog -%}
+{%- elsif pub.link -%}
   {%- assign pub_url = pub.link -%}
 {%- elsif pub.pdf -%}
   {%- assign pub_url = pub.pdf -%}

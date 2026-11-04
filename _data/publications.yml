@@ -1,10 +1,14 @@
 index:
   - id: "ekka"
     title: "Ekka: Automated Diagnosis of Silent Errors in LLM Inference"
+    short_title: "Ekka"
     authors: ["Yile Gu", "Zhen Zhang", "Shaowei Zhu", "Xinwei Fu", "Jun Wu", "Yida Wang", "Baris Kasikci"]
     venue: "International Conference on Machine Learning (ICML)"
     year: 2026
     topics: ["LLM Serving"]
+    areas: ["resilient_ai"]
+    show_in_venn: true
+    blog: "https://syfi.cs.washington.edu/blog/2026-06-29-ekka/"
     link: "/blog/2026-06-29-ekka/"
     pdf: "https://arxiv.org/abs/2606.04594"
 
@@ -31,10 +35,12 @@ index:
     title: "M*: A Modular, Extensible, Serving System for Multimodal Models"
     short_title: "M*"
     authors: ["Atindra Jha", "Naomi Sagan", "Keisuke Kamahori", "Irmak Sivgin", "Rohan Sanda", "Steven Gao", "Mark Horowitz", "Luke Zettlemoyer", "Olivia Hsu", "Jure Leskovec", "Baris Kasikci", "Stephanie Wang"]
+    venue: "Conference on Neural Information Processing Systems (NeurIPS)"
     year: 2026
     tags: [inference, multimodal, programmability]
     areas: ["efficient_ai", "flexible_ai"]
     show_in_venn: true
+    blog: "https://syfi.cs.washington.edu/blog/2026-06-19-mstar/"
     link: "https://m-star.org/"
     pdf: "https://arxiv.org/abs/2606.12688"
     code: "https://github.com/mstar-project/mstar"
@@ -53,8 +59,9 @@ index:
     authors: ["Keisuke Kamahori", "Shihang Li", "Simon Peter", "Baris Kasikci"]
     year: 2026
     tags: [inference, agents]
-    areas: ["efficient_ai", "flexible_ai"]
+    areas: ["efficient_ai", "flexible_ai", "resilient_ai"]
     show_in_venn: true
+    blog: "https://syfi.cs.washington.edu/blog/2026-05-12-introducing-vibeserve/"
     link: "https://syfi.cs.washington.edu/blog/2026-05-12-introducing-vibeserve/"
     pdf: "https://arxiv.org/abs/2605.06068"
     code: "https://github.com/uw-syfi/vibe-serve"
@@ -67,6 +74,7 @@ index:
     tags: [inference, multimodal]
     areas: ["efficient_ai", "flexible_ai"]
     show_in_venn: true
+    blog: "https://syfi.cs.washington.edu/blog/2025-09-29-introducing-vox-serve/"
     link: "https://syfi.cs.washington.edu/blog/2025-09-29-introducing-vox-serve/"
     pdf: "https://arxiv.org/abs/2602.00269"
     code: "https://github.com/vox-serve/vox-serve"
@@ -122,7 +130,6 @@ index:
     year: 2026
     tags: [training]
     areas: ["efficient_ai", "flexible_ai"]
-    show_in_venn: true
 
   - id: "telerag"
     title: "TeleRAG: Efficient Retrieval-Augmented Generation Inference with Lookahead Retrieval"
@@ -173,8 +180,9 @@ index:
     venue: "Practical Adoption Challenges of ML for Systems (PACMI)"
     year: 2025
     tags: [training, programmability]
-    areas: ["efficient_ai", "flexible_ai"]
+    areas: ["efficient_ai", "flexible_ai", "resilient_ai"]
     show_in_venn: true
+    blog: "https://syfi.cs.washington.edu/blog/2026-06-05-piper/"
     link: "https://syfi.cs.washington.edu/publications/piper/"
     pdf: "https://dl.acm.org/doi/10.1145/3766882.3767187"
 
@@ -195,7 +203,7 @@ index:
     venue: "Annual Conference on Machine Learning and Systems (MLSys)"
     year: 2025
     tags: [inference]
-    areas: ["efficient_ai", "flexible_ai"]
+    areas: ["efficient_ai", "flexible_ai", "resilient_ai"]
     show_in_venn: true
     pdf: "https://arxiv.org/abs/2501.01005"
     code: "https://github.com/flashinfer-ai/flashinfer"

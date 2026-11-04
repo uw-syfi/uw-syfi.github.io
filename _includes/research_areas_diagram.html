@@ -1,5 +1,9 @@
+{%- assign venn_items = site.data.publications.index -%}
+{%- if site.data.venn_extras.index -%}
+  {%- assign venn_items = venn_items | concat: site.data.venn_extras.index -%}
+{%- endif -%}
 {%- capture efficient_only -%}
-  {%- for pub in site.data.publications.index -%}
+  {%- for pub in venn_items -%}
     {%- assign area_count = pub.areas | size -%}
     {%- if pub.show_in_venn and area_count == 1 and pub.areas contains "efficient_ai" -%}
       {%- include research_areas_diagram_item.html pub=pub -%}
@@ -9,7 +13,7 @@
 {%- assign efficient_only = efficient_only | strip -%}
 
 {%- capture flexible_only -%}
-  {%- for pub in site.data.publications.index -%}
+  {%- for pub in venn_items -%}
     {%- assign area_count = pub.areas | size -%}
     {%- if pub.show_in_venn and area_count == 1 and pub.areas contains "flexible_ai" -%}
       {%- include research_areas_diagram_item.html pub=pub -%}
@@ -19,7 +23,7 @@
 {%- assign flexible_only = flexible_only | strip -%}
 
 {%- capture resilient_only -%}
-  {%- for pub in site.data.publications.index -%}
+  {%- for pub in venn_items -%}
     {%- assign area_count = pub.areas | size -%}
     {%- if pub.show_in_venn and area_count == 1 and pub.areas contains "resilient_ai" -%}
       {%- include research_areas_diagram_item.html pub=pub -%}
@@ -29,7 +33,7 @@
 {%- assign resilient_only = resilient_only | strip -%}
 
 {%- capture efficient_flexible -%}
-  {%- for pub in site.data.publications.index -%}
+  {%- for pub in venn_items -%}
     {%- assign area_count = pub.areas | size -%}
     {%- if pub.show_in_venn and area_count == 2 and pub.areas contains "efficient_ai" and pub.areas contains "flexible_ai" -%}
       {%- include research_areas_diagram_item.html pub=pub -%}
@@ -39,7 +43,7 @@
 {%- assign efficient_flexible = efficient_flexible | strip -%}
 
 {%- capture efficient_resilient -%}
-  {%- for pub in site.data.publications.index -%}
+  {%- for pub in venn_items -%}
     {%- assign area_count = pub.areas | size -%}
     {%- if pub.show_in_venn and area_count == 2 and pub.areas contains "efficient_ai" and pub.areas contains "resilient_ai" -%}
       {%- include research_areas_diagram_item.html pub=pub -%}
@@ -49,7 +53,7 @@
 {%- assign efficient_resilient = efficient_resilient | strip -%}
 
 {%- capture flexible_resilient -%}
-  {%- for pub in site.data.publications.index -%}
+  {%- for pub in venn_items -%}
     {%- assign area_count = pub.areas | size -%}
     {%- if pub.show_in_venn and area_count == 2 and pub.areas contains "flexible_ai" and pub.areas contains "resilient_ai" -%}
       {%- include research_areas_diagram_item.html pub=pub -%}
@@ -59,7 +63,7 @@
 {%- assign flexible_resilient = flexible_resilient | strip -%}
 
 {%- capture all_areas -%}
-  {%- for pub in site.data.publications.index -%}
+  {%- for pub in venn_items -%}
     {%- assign area_count = pub.areas | size -%}
     {%- if pub.show_in_venn and area_count == 3 and pub.areas contains "efficient_ai" and pub.areas contains "flexible_ai" and pub.areas contains "resilient_ai" -%}
       {%- include research_areas_diagram_item.html pub=pub -%}
