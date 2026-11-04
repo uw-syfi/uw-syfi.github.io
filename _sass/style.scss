@@ -69,6 +69,148 @@ h4, h5, h6 {
   color: #5600b3;
 }
 
+// Homepage research areas diagram
+.research-areas-home {
+  max-width: 360px;
+  width: 100%;
+}
+
+.research-areas-diagram {
+  margin: 0;
+}
+
+.research-areas-venn {
+  aspect-ratio: 10 / 9;
+  position: relative;
+  width: 100%;
+}
+
+.research-areas-venn-circles {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.research-areas-circle {
+  fill-opacity: 0.5;
+  stroke: none;
+}
+
+.research-areas-circle--efficient {
+  fill: #fff2cc;
+}
+
+.research-areas-circle--flexible {
+  fill: #f4cccc;
+}
+
+.research-areas-circle--resilient {
+  fill: #cfe2f3;
+}
+
+.research-areas-label {
+  fill: #595959;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.research-areas-region {
+  position: absolute;
+  z-index: 1;
+}
+
+.research-areas-region ul {
+  display: grid;
+  gap: 0.18rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.research-areas-paper {
+  background: #ffffff;
+  border: 1px solid #707070;
+  color: #000000;
+  display: inline-block;
+  font-size: 0.6rem;
+  line-height: 1.1;
+  min-height: 1.1rem;
+  min-width: 1.75rem;
+  overflow-wrap: anywhere;
+  padding: 0.14rem 0.22rem;
+  pointer-events: auto;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.research-areas-paper:hover {
+  color: #5600b3;
+}
+
+.research-areas-region--flexible {
+  left: 38%;
+  top: 14%;
+  width: 25%;
+}
+
+.research-areas-region--efficient {
+  left: 0;
+  top: 50%;
+  width: 23%;
+}
+
+.research-areas-region--resilient {
+  left: 73%;
+  top: 55%;
+  width: 24%;
+}
+
+.research-areas-region--efficient-flexible {
+  left: 24%;
+  top: 22%;
+  width: 25%;
+}
+
+.research-areas-region--efficient-resilient {
+  left: 58%;
+  top: 66%;
+  width: 26%;
+}
+
+.research-areas-region--flexible-resilient {
+  left: 55%;
+  top: 36%;
+  width: 28%;
+}
+
+.research-areas-region--all {
+  left: 50%;
+  top: 44%;
+  width: 20%;
+}
+
+.research-areas-venn--auto-layout .research-areas-region {
+  inset: 0;
+  pointer-events: none;
+  width: 100%;
+}
+
+.research-areas-venn--auto-layout .research-areas-region ul {
+  display: block;
+  inset: 0;
+  position: absolute;
+}
+
+.research-areas-venn--auto-layout .research-areas-region li {
+  line-height: 0;
+  position: absolute;
+  width: max-content;
+}
+
+.research-areas-venn--auto-layout .research-areas-paper {
+  pointer-events: auto;
+}
+
 // Blog post body links
 .post-content a {
   color: #0a58ca;
@@ -202,6 +344,19 @@ img {
 @media (max-width: 767.98px) {
   .site-brand {
     justify-content: center;
+  }
+
+  .research-areas-home {
+    float: none !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .research-areas-paper {
+    font-size: 0.54rem;
+    min-height: 1rem;
+    min-width: 1.5rem;
+    padding: 0.11rem 0.18rem;
   }
 
   .site-logo {
