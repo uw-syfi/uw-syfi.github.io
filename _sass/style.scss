@@ -101,6 +101,39 @@ h4, h5, h6 {
   .post-content .case-fig { width: 100%; }
 }
 
+// Markdown tables in blog posts
+.post-content table {
+  border-collapse: collapse;
+  font-size: 0.95em;
+  margin: 1.5rem 0;
+  width: 100%;
+}
+.post-content th,
+.post-content td {
+  border-bottom: 1px solid #dee2e6;
+  padding: 0.5rem 0.75rem;
+  vertical-align: top;
+}
+.post-content thead th {
+  background: #f8f9fa;
+  border-bottom: 2px solid #adb5bd;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.post-content tbody tr:nth-child(even) {
+  background: #fcfcfd;
+}
+.post-content tbody tr:hover {
+  background: #f1f3f5;
+}
+@media (max-width: 767.98px) {
+  // Let wide tables scroll sideways instead of overflowing the page
+  .post-content table {
+    display: block;
+    overflow-x: auto;
+  }
+}
+
 // Blog post header spacing
 .col-md-12 h2,
 .col-md-12 h3,
