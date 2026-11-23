@@ -26,6 +26,8 @@ tags:
     label: "ML + Data"
   - slug: reliability
     label: "Reliability"
+  - slug: energy
+    label: "Energy"
   - slug: programmability
     label: "Programmable Systems"
   - slug: benchmark

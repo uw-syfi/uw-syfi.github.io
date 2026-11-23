@@ -1,0 +1,10 @@
+# Extra items for the homepage research-areas Venn diagram that are not
+# publications (e.g. projects announced only via a blog post).
+# Same fields as _data/publications.yml entries used by the diagram.
+index:
+  - id: "servingstudio"
+    title: "ServingStudio: An Integrated Workbench for Simulating, Analyzing, and Optimizing LLM Serving Systems"
+    short_title: "ServingStudio"
+    areas: ["efficient_ai", "flexible_ai"]
+    show_in_venn: true
+    blog: "https://syfi.cs.washington.edu/blog/2026-09-24-introducing-servingstudio/"

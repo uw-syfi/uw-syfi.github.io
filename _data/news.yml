@@ -1,4 +1,9 @@
 news:
+  - id: "2026-11-04-vibesys-trainium"
+    date: "November 4, 2026"
+    title: "VibeSys on Trainium: agents build and tune Qwen3.8 serving engines on AWS Trainium2."
+    link: "/blog/2026-11-04-vibesys-trainium"
+
   - id: "2026-10-19-nsf-ai-efficiency-challenge"
     date: "October 19, 2026"
     title: "SyFI was just selected for a multi-million dollar award from the NSF to work on the AI Efficiency Challenge!"
