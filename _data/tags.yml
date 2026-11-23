@@ -30,3 +30,5 @@ tags:
     label: "Energy"
   - slug: programmability
     label: "Programmable Systems"
+  - slug: benchmark
+    label: "Benchmark"
