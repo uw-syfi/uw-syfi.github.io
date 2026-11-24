@@ -2,7 +2,7 @@
 layout: post
 title: "Introducing Humanity's Last System"
 date: 2026-11-20
-author: "Steven Gao, Rulin Shao, Keisuke Kamahori, Yuetai Li, Yufei Gao, Atindra Jha, Junjie Oscar Yin, Shihang Li, Radha Poovendran, Jure Leskovec, Hannaneh Hajishirzi, Pang Wei Koh, Luke Zettlemoyer, Stephanie Wang, Baris Kasikci"
+author: "Steven Gao, Rulin Shao, Keisuke Kamahori, Yuetai Li, Yufei Gao, Atindra Jha, Junjie Oscar Yin, Shihang Li, Kan Zhu, Radha Poovendran, Jure Leskovec, Hannaneh Hajishirzi, Pang Wei Koh, Luke Zettlemoyer, Stephanie Wang, Baris Kasikci"
 excerpt: "How good are coding agents at building inference systems from scratch? HLS gives frontier agents live H200 sandboxes and production workloads, then verifies and times what they build."
 tags: [research, inference, agents]
 ---
